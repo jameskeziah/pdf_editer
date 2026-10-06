@@ -1,0 +1,20 @@
+{
+  "source": "C:\\Users\\james\\Downloads\\pdf_branding_v3_4_6\\pdf_branding_v3_4_6\\foundation_notes\\6th class\\science\\07 Measurement and Motion\\Measurement and Motion.pdf",
+  "output": "C:\\Users\\james\\Downloads\\pdf_branding_v3_4_6\\pdf_branding_v3_4_6\\v3_output_346\\6th class\\science\\07 Measurement and Motion\\Measurement and Motion.pdf",
+  "passed": true,
+  "page_count_source": 21,
+  "page_count_output": 21,
+  "issues": [],
+  "metrics": {
+    "average_body_text_retention": 0.9995,
+    "legacy_text_hits": 0,
+    "pages_checked": 21,
+    "body_position_checks": 83,
+    "max_body_position_shift_pt": 0.912,
+    "page_strategy_counts": {
+      "designed_page_preserve": 1,
+      "standard_header_footer_replacement": 20
+    },
+    "repeated_footer_confidence": 0.99
+  }
+}

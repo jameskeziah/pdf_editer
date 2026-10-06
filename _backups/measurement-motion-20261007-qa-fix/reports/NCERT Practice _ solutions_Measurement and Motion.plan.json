@@ -1,0 +1,110 @@
+{
+  "source": "C:\\Users\\james\\Downloads\\pdf_branding_v3_4_6\\pdf_branding_v3_4_6\\foundation_notes\\6th class\\science\\07 Measurement and Motion\\NCERT Practice _ solutions_Measurement and Motion.pdf",
+  "meta": {
+    "class_name": "6",
+    "subject": "physics",
+    "chapter": "Measurement and Motion",
+    "chapter_number": "07",
+    "material_type": "NCERT PRACTICE",
+    "page_count": 2,
+    "duration": "20 minutes",
+    "max_marks": "10"
+  },
+  "profile": {
+    "path": "C:\\Users\\james\\Downloads\\pdf_branding_v3_4_6\\pdf_branding_v3_4_6\\foundation_notes\\6th class\\science\\07 Measurement and Motion\\NCERT Practice _ solutions_Measurement and Motion.pdf",
+    "document_type": "ncert",
+    "confidence": 0.78,
+    "reasons": [
+      "material type normalized as NCERT PRACTICE"
+    ]
+  },
+  "repeated_bands": {
+    "header_bottom": 27.5,
+    "footer_top": 599.0662102593315,
+    "header_confidence": 0.99,
+    "footer_confidence": 0.99,
+    "header_signatures": [],
+    "footer_signatures": []
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "first_page_large_logo_replacement",
+      "header_template": "practice",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 76.0
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 86.0
+        }
+      ],
+      "vertical_text_rects": [],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 27.5,
+      "recommended_crop_bottom": 242.8537726508248,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=27.5",
+        "legacy cleanup y=0..54.0; adaptive SSKEMS header y=0..54.0",
+        "first-page unsearchable-logo fallback extends cleanup to y=86.0 for NCERT PRACTICE",
+        "replace legacy top band in-place through y=86.0; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 2,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "practice",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 54.0
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 54.0
+        }
+      ],
+      "vertical_text_rects": [],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 27.5,
+      "recommended_crop_bottom": 242.8537726508248,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=27.5",
+        "legacy cleanup y=0..54.0; adaptive SSKEMS header y=0..54.0",
+        "replace legacy top band in-place through y=54.0; body coordinates unchanged"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "source": "C:\\Users\\james\\Downloads\\pdf_branding_v3_4_6\\pdf_branding_v3_4_6\\foundation_notes\\6th class\\science\\07 Measurement and Motion\\Measurement and Motion_Key point.pdf",
+  "meta": {
+    "class_name": "6",
+    "subject": "physics",
+    "chapter": "Measurement and Motion",
+    "chapter_number": "07",
+    "material_type": "KEY POINTS",
+    "page_count": 6,
+    "duration": null,
+    "max_marks": null
+  },
+  "profile": {
+    "path": "C:\\Users\\james\\Downloads\\pdf_branding_v3_4_6\\pdf_branding_v3_4_6\\foundation_notes\\6th class\\science\\07 Measurement and Motion\\Measurement and Motion_Key point.pdf",
+    "document_type": "key_points",
+    "confidence": 0.78,
+    "reasons": [
+      "material type normalized as KEY POINTS"
+    ]
+  },
+  "repeated_bands": {
+    "header_bottom": 0.0,
+    "footer_top": 589.5286010742187,
+    "header_confidence": 0.0,
+    "footer_confidence": 0.99,
+    "header_signatures": [],
+    "footer_signatures": []
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "page_type": "designed",
+      "strategy": "replace_logo_only",
+      "page_strategy": "designed_page_logo_only",
+      "header_template": "none",
+      "confidence": 0.97,
+      "header_rect": null,
+      "footer_rect": null,
+      "cleanup_rects": [],
+      "vertical_text_rects": [],
+      "logo_replace_rect": {
+        "x0": 2.383760009765625,
+        "y0": 6.737447265625,
+        "x1": 107.26920043945312,
+        "y1": 69.05883447265626
+      },
+      "logo_background": [
+        0.25882352941176473,
+        0.20784313725490197,
+        0.16470588235294117
+      ],
+      "recommended_crop_top": 0.0,
+      "recommended_crop_bottom": 0.0,
+      "crop_is_safe": false,
+      "reasons": [
+        "Key Points material preserves designed artwork",
+        "profile fallback logo region used on designed page",
+        "replace verified legacy logo only; preserve designed artwork 1:1",
+        "designed page: generic dynamic footer suppressed"
+      ]
+    },
+    {
+      "page_number": 2,
+      "page_type": "designed",
+      "strategy": "replace_logo_only",
+      "page_strategy": "designed_page_logo_only",
+      "header_template": "none",
+      "confidence": 0.97,
+      "header_rect": null,
+      "footer_rect": null,
+      "cleanup_rects": [],
+      "vertical_text_rects": [],
+      "logo_replace_rect": {
+        "x0": 2.389574462890625,
+        "y0": 6.7374697265625,
+        "x1": 107.53085083007812,
+        "y1": 69.05906469726563
+      },
+      "logo_background": [
+        0.19215686274509805,
+        0.22745098039215686,
+        0.30980392156862746
+      ],
+      "recommended_crop_top": 0.0,
+      "recommended_crop_bottom": 0.0,
+      "crop_is_safe": false,
+      "reasons": [
+        "Key Points material preserves designed artwork",
+        "profile fallback logo region used on designed page",
+        "replace verified legacy logo only; preserve designed artwork 1:1",
+        "designed page: generic dynamic footer suppressed"
+      ]
+    },
+    {
+      "page_number": 3,
+      "page_type": "designed",
+      "strategy": "replace_logo_only",
+      "page_strategy": "designed_page_logo_only",
+      "header_template": "none",
+      "confidence": 0.97,
+      "header_rect": null,
+      "footer_rect": null,
+      "cleanup_rects": [],
+      "vertical_text_rects": [],
+      "logo_replace_rect": {
+        "x0": 2.3945908203125,
+        "y0": 6.7506064453125,
+        "x1": 107.7565869140625,
+        "y1": 69.19371606445313
+      },
+      "logo_background": [
+        0.027450980392156862,
+        0.41568627450980394,
+        0.33725490196078434
+      ],
+      "recommended_crop_top": 0.0,
+      "recommended_crop_bottom": 0.0,
+      "crop_is_safe": false,
+      "reasons": [
+        "Key Points material preserves designed artwork",
+        "profile fallback logo region used on designed page",
+        "replace verified legacy logo only; preserve designed artwork 1:1",
+        "designed page: generic dynamic footer suppressed"
+      ]
+    },
+    {
+      "page_number": 4,
+      "page_type": "designed",
+      "strategy": "replace_logo_only",
+      "page_strategy": "designed_page_logo_only",
+      "header_template": "none",
+      "confidence": 0.97,
+      "header_rect": null,
+      "footer_rect": null,
+      "cleanup_rects": [],
+      "vertical_text_rects": [],
+      "logo_replace_rect": {
+        "x0": 2.389574462890625,
+        "y0": 6.7374697265625,
+        "x1": 107.53085083007812,
+        "y1": 69.05906469726563
+      },
+      "logo_background": [
+        0.20784313725490197,
+        0.2,
+        0.19607843137254902
+      ],
+      "recommended_crop_top": 0.0,
+      "recommended_crop_bottom": 0.0,
+      "crop_is_safe": false,
+      "reasons": [
+        "Key Points material preserves designed artwork",
+        "profile fallback logo region used on designed page",
+        "replace verified legacy logo only; preserve designed artwork 1:1",
+        "designed page: generic dynamic footer suppressed"
+      ]
+    },
+    {
+      "page_number": 5,
+      "page_type": "designed",
+      "strategy": "replace_logo_only",
+      "page_strategy": "designed_page_logo_only",
+      "header_template": "none",
+      "confidence": 0.97,
+      "header_rect": null,
+      "footer_rect": null,
+      "cleanup_rects": [],
+      "vertical_text_rects": [],
+      "logo_replace_rect": {
+        "x0": 2.381102294921875,
+        "y0": 6.7351181640625,
+        "x1": 107.14960327148437,
+        "y1": 69.03496118164063
+      },
+      "logo_background": [
+        0.20784313725490197,
+        0.2,
+        0.19607843137254902
+      ],
+      "recommended_crop_top": 0.0,
+      "recommended_crop_bottom": 0.0,
+      "crop_is_safe": false,
+      "reasons": [
+        "Key Points material preserves designed artwork",
+        "profile fallback logo region used on designed page",
+        "replace verified legacy logo only; preserve designed artwork 1:1",
+        "designed page: generic dynamic footer suppressed"
+      ]
+    },
+    {
+      "page_number": 6,
+      "page_type": "designed",
+      "strategy": "replace_logo_only",
+      "page_strategy": "designed_page_logo_only",
+      "header_template": "none",
+      "confidence": 0.97,
+      "header_rect": null,
+      "footer_rect": null,
+      "cleanup_rects": [],
+      "vertical_text_rects": [],
+      "logo_replace_rect": {
+        "x0": 2.381102294921875,
+        "y0": 6.7351181640625,
+        "x1": 107.14960327148437,
+        "y1": 69.03496118164063
+      },
+      "logo_background": [
+        0.20784313725490197,
+        0.2,
+        0.19607843137254902
+      ],
+      "recommended_crop_top": 0.0,
+      "recommended_crop_bottom": 0.0,
+      "crop_is_safe": false,
+      "reasons": [
+        "Key Points material preserves designed artwork",
+        "profile fallback logo region used on designed page",
+        "replace verified legacy logo only; preserve designed artwork 1:1",
+        "designed page: generic dynamic footer suppressed"
+      ]
+    }
+  ]
+}

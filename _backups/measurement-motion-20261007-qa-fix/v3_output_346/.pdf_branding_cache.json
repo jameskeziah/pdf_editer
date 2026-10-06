@@ -1,0 +1,65 @@
+{
+  "version": 2,
+  "items": {
+    "6th class/science/07 measurement and motion/exercise _ solutions_measurement and motion.pdf": {
+      "source_size": 426793,
+      "source_mtime_ns": 1779779449000000000,
+      "source_sha256": "9575e0fda5de312a8d3a2fb33c3522b481c42c288f0aed35ef2b6ecf38955abe",
+      "profile_hash": "11bfbd1098355d0705323e1bee46c57bcc2dc3c1f0d376e6fe28735a1a45b312",
+      "engine_version": "3.4.6",
+      "output_size": 1497995,
+      "output_sha256": "c7b2426b48e4856a87e01e3278cda9cad34fb8cff5a3ccd6fa9f7ccfca7e3ef0",
+      "qa_passed": true
+    },
+    "6th class/science/07 measurement and motion/measurement and motion.pdf": {
+      "source_size": 1754957,
+      "source_mtime_ns": 1779779444000000000,
+      "source_sha256": "9368349be89c3a45278492a54f9f10b7eb41716f8c43929f9585e6505590ac75",
+      "profile_hash": "11bfbd1098355d0705323e1bee46c57bcc2dc3c1f0d376e6fe28735a1a45b312",
+      "engine_version": "3.4.6",
+      "output_size": 2830785,
+      "output_sha256": "5839178adead26facc37a3ced76dff173d1a3b6c35d6f90d55359c7a99969fa1",
+      "qa_passed": true
+    },
+    "6th class/science/07 measurement and motion/measurement and motion_key point.pdf": {
+      "source_size": 15857174,
+      "source_mtime_ns": 1779779448000000000,
+      "source_sha256": "a4b422a1e35950a5338c6feacb7264e85ac7df31630c8204dacb55789dea7fc6",
+      "profile_hash": "11bfbd1098355d0705323e1bee46c57bcc2dc3c1f0d376e6fe28735a1a45b312",
+      "engine_version": "3.4.6",
+      "output_size": 16109333,
+      "output_sha256": "84e8de6a909c259fdfddd7d2b9ee9e0f6ecfa1d98af47516c2abd2bb22502424",
+      "qa_passed": true
+    },
+    "6th class/science/07 measurement and motion/ncert _ solutions_measurement and motion.pdf": {
+      "source_size": 129063,
+      "source_mtime_ns": 1779779450000000000,
+      "source_sha256": "bc4a11af97f3c691b59dee78a378d99cdd476948053f123afcf09a3988aad40a",
+      "profile_hash": "11bfbd1098355d0705323e1bee46c57bcc2dc3c1f0d376e6fe28735a1a45b312",
+      "engine_version": "3.4.6",
+      "output_size": 1205016,
+      "output_sha256": "b71892f06a16d5ef64e10835517c7ad98cd101dde92efbb1827a09d110ebbb2e",
+      "qa_passed": true
+    },
+    "6th class/science/07 measurement and motion/ncert practice _ solutions_measurement and motion.pdf": {
+      "source_size": 221548,
+      "source_mtime_ns": 1779779454000000000,
+      "source_sha256": "4aba946f15a72c54873ee99350820cc956352901e364b94f35b6a0e3d53dea8c",
+      "profile_hash": "11bfbd1098355d0705323e1bee46c57bcc2dc3c1f0d376e6fe28735a1a45b312",
+      "engine_version": "3.4.6",
+      "output_size": 1286949,
+      "output_sha256": "2ec055229959d59b583d0c72bbab3c0ab772c965738689e7ed04400e3aeb91c3",
+      "qa_passed": true
+    },
+    "6th class/science/07 measurement and motion/test _ solutions_measurement and motion.pdf": {
+      "source_size": 297105,
+      "source_mtime_ns": 1779779452000000000,
+      "source_sha256": "767b73709698dfde3ab34a5771aebe035a12636c15af7fb50edb893cb1ad3aca",
+      "profile_hash": "11bfbd1098355d0705323e1bee46c57bcc2dc3c1f0d376e6fe28735a1a45b312",
+      "engine_version": "3.4.6",
+      "output_size": 1345836,
+      "output_sha256": "da77a6e942a4dc11ab7d290c54d7ec588bf53d1a7857cc405bced81809174d26",
+      "qa_passed": true
+    }
+  }
+}

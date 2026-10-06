@@ -1,0 +1,78 @@
+{
+  "id": "sskem-foundation-v3.4.6",
+  "school": {
+    "short_name": "SHREE SAMARTH KRUPA",
+    "line2": "ENGLISH MEDIUM SCHOOL",
+    "full_name": "Shree Samarth Krupa English Medium School & Jr. College (C.B.S.E.)"
+  },
+  "assets": {
+    "logo": "../assets/school_emblem_transparent.png",
+    "logo_white": "../assets/school_emblem_white.png"
+  },
+  "colors": {
+    "navy": "#0A2A43",
+    "blue": "#145391",
+    "red": "#AB1823",
+    "gray": "#555555",
+    "white": "#FFFFFF"
+  },
+  "layout": {
+    "header_height": 54,
+    "header_min_height": 42,
+    "footer_height": 18,
+    "left_margin": 16,
+    "right_margin": 16,
+    "safety_gap": 7,
+    "side_text_width": 68,
+    "allow_rebuild_crop": false,
+    "header_max_height": 150,
+    "dark_page_threshold": 0.45,
+    "cleanup_max_height": 150,
+    "footer_max_replacement_height": 60,
+    "header_adaptive_max_height": 76,
+    "designed_page_large_image_ratio": 0.075,
+    "designed_page_title_min_font": 17,
+    "designed_page_title_top_ratio": 0.3
+  },
+  "legacy": {
+    "terms": [
+      "ALLEN"
+    ],
+    "side_text_terms": [
+      "PNCF",
+      "SMD_DATA",
+      "Print Module",
+      "LIVE Module",
+      "NCERT",
+      "SET-1"
+    ],
+    "designed_logo_fallback_ratio": [
+      0.004,
+      0.008,
+      0.18,
+      0.082
+    ],
+    "logo_padding_x": 30,
+    "logo_padding_y": 12,
+    "logo_min_width": 92,
+    "logo_min_height": 28,
+    "logo_max_width": 280,
+    "logo_max_height": 110,
+    "allow_designed_fallback": true,
+    "first_page_cleanup_targets": {
+      "TEST": 96,
+      "PRACTICE TEST": 96,
+      "CHAPTER TEST": 96,
+      "PRACTICE SHEET": 86,
+      "NCERT PRACTICE": 86
+    }
+  },
+  "qa": {
+    "min_body_text_retention": 0.985,
+    "legacy_text_is_error": true,
+    "max_body_position_shift_pt": 2.5,
+    "page_size_tolerance_pt": 0.5,
+    "side_text_is_error": false,
+    "repeated_footer_missing_is_error": true
+  }
+}

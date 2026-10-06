@@ -1,0 +1,19 @@
+{
+  "source": "C:\\Users\\james\\Downloads\\pdf_branding_v3_4_6\\pdf_branding_v3_4_6\\foundation_notes\\6th class\\science\\07 Measurement and Motion\\NCERT _ solutions_Measurement and Motion.pdf",
+  "output": "C:\\Users\\james\\Downloads\\pdf_branding_v3_4_6\\pdf_branding_v3_4_6\\v3_output_346\\6th class\\science\\07 Measurement and Motion\\NCERT _ solutions_Measurement and Motion.pdf",
+  "passed": true,
+  "page_count_source": 2,
+  "page_count_output": 2,
+  "issues": [],
+  "metrics": {
+    "average_body_text_retention": 1.0,
+    "legacy_text_hits": 0,
+    "pages_checked": 2,
+    "body_position_checks": 8,
+    "max_body_position_shift_pt": 0.0,
+    "page_strategy_counts": {
+      "standard_header_footer_replacement": 2
+    },
+    "repeated_footer_confidence": 0.99
+  }
+}

@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Source PDF library - keep locally, not in GitHub
+foundation_notes/
+
+# Generated outputs
+v3_output/
+v3_output_346/
+output/
+outputs/
+preview/
+previews/
+
+# Temporary QA / rendered images
+tmp/
+
+# Logs / caches
+*.log
+.pdf_branding_cache.json
+
+# OS files
+.DS_Store
+Thumbs.db

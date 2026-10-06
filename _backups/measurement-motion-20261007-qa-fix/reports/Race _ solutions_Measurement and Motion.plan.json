@@ -1,0 +1,974 @@
+{
+  "source": "C:\\Users\\james\\Downloads\\pdf_branding_v3_4_6\\pdf_branding_v3_4_6\\foundation_notes\\6th class\\science\\07 Measurement and Motion\\Race _ solutions_Measurement and Motion.pdf",
+  "meta": {
+    "class_name": "6",
+    "subject": "physics",
+    "chapter": "Measurement and Motion",
+    "chapter_number": "07",
+    "material_type": "DPP",
+    "page_count": 20,
+    "duration": null,
+    "max_marks": null
+  },
+  "profile": {
+    "path": "C:\\Users\\james\\Downloads\\pdf_branding_v3_4_6\\pdf_branding_v3_4_6\\foundation_notes\\6th class\\science\\07 Measurement and Motion\\Race _ solutions_Measurement and Motion.pdf",
+    "document_type": "dpp",
+    "confidence": 0.94,
+    "reasons": [
+      "material type normalized as DPP",
+      "DPP text found on first page"
+    ]
+  },
+  "repeated_bands": {
+    "header_bottom": 58.4749755859375,
+    "footer_top": 783.7884324815537,
+    "header_confidence": 0.99,
+    "footer_confidence": 0.99,
+    "header_signatures": [
+      "ncert basics class #"
+    ],
+    "footer_signatures": []
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 2,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 3,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 4,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 5,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 6,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 7,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 8,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 9,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 10,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 11,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 12,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 13,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 14,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 15,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 16,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 17,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 18,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 19,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 20,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.916,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 14.139999389648438,
+          "y0": 529.9099731445312,
+          "x1": 25.172000885009766,
+          "y1": 787.6400146484375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    }
+  ]
+}

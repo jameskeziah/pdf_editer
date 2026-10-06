@@ -1,0 +1,126 @@
+{
+  "source": "C:\\Users\\james\\Downloads\\pdf_branding_v3_4_6\\pdf_branding_v3_4_6\\foundation_notes\\6th class\\science\\07 Measurement and Motion\\NCERT _ solutions_Measurement and Motion.pdf",
+  "meta": {
+    "class_name": "6",
+    "subject": "physics",
+    "chapter": "Measurement and Motion",
+    "chapter_number": "07",
+    "material_type": "NCERT SOLUTIONS",
+    "page_count": 2,
+    "duration": null,
+    "max_marks": null
+  },
+  "profile": {
+    "path": "C:\\Users\\james\\Downloads\\pdf_branding_v3_4_6\\pdf_branding_v3_4_6\\foundation_notes\\6th class\\science\\07 Measurement and Motion\\NCERT _ solutions_Measurement and Motion.pdf",
+    "document_type": "ncert",
+    "confidence": 0.93,
+    "reasons": [
+      "material type normalized as NCERT SOLUTIONS",
+      "NCERT heading found"
+    ]
+  },
+  "repeated_bands": {
+    "header_bottom": 77.23995971679688,
+    "footer_top": 766.7200012207031,
+    "header_confidence": 0.99,
+    "footer_confidence": 0.99,
+    "header_signatures": [],
+    "footer_signatures": []
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "practice",
+      "confidence": 0.9108,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 73.60001373291016
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 73.60001373291016
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 26.020000457763672,
+          "y0": 510.83001708984375,
+          "x1": 37.052001953125,
+          "y1": 768.5599975585938
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 73.60001373291016,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=77.2",
+        "cleanup bounded before first academic content y=80.6",
+        "legacy cleanup y=0..73.6; adaptive SSKEMS header y=0..73.6",
+        "replace legacy top band in-place through y=73.6; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 2,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "practice",
+      "confidence": 0.9108,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 72.0999984741211
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 72.0999984741211
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 553.2999877929688,
+          "y0": 508.1899719238281,
+          "x1": 564.3319702148438,
+          "y1": 765.9199829101562
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 72.0999984741211,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=77.2",
+        "cleanup bounded before first academic content y=79.1",
+        "legacy cleanup y=0..72.1; adaptive SSKEMS header y=0..72.1",
+        "replace legacy top band in-place through y=72.1; body coordinates unchanged"
+      ]
+    }
+  ]
+}

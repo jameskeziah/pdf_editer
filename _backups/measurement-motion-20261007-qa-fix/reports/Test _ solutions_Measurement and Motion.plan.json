@@ -1,0 +1,357 @@
+{
+  "source": "C:\\Users\\james\\Downloads\\pdf_branding_v3_4_6\\pdf_branding_v3_4_6\\foundation_notes\\6th class\\science\\07 Measurement and Motion\\Test _ solutions_Measurement and Motion.pdf",
+  "meta": {
+    "class_name": "6",
+    "subject": "physics",
+    "chapter": "Measurement and Motion",
+    "chapter_number": "07",
+    "material_type": "TEST",
+    "page_count": 7,
+    "duration": "30 Minutes",
+    "max_marks": "20"
+  },
+  "profile": {
+    "path": "C:\\Users\\james\\Downloads\\pdf_branding_v3_4_6\\pdf_branding_v3_4_6\\foundation_notes\\6th class\\science\\07 Measurement and Motion\\Test _ solutions_Measurement and Motion.pdf",
+    "document_type": "test",
+    "confidence": 0.96,
+    "reasons": [
+      "material type normalized as TEST",
+      "test instructions found on first page"
+    ]
+  },
+  "repeated_bands": {
+    "header_bottom": 58.4749755859375,
+    "footer_top": 783.7884324815537,
+    "header_confidence": 0.99,
+    "footer_confidence": 0.99,
+    "header_signatures": [
+      "ncert basics class #"
+    ],
+    "footer_signatures": []
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "first_page_large_logo_replacement",
+      "header_template": "test",
+      "confidence": 0.9264,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 76.0
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 96.0
+        }
+      ],
+      "vertical_text_rects": [],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "first-page unsearchable-logo fallback extends cleanup to y=96.0 for TEST",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=96.0; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 2,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.9264,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 13.90000057220459,
+          "y0": 494.5099792480469,
+          "x1": 24.9320011138916,
+          "y1": 788.239990234375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 3,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.9264,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 13.90000057220459,
+          "y0": 494.5099792480469,
+          "x1": 24.9320011138916,
+          "y1": 788.239990234375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 4,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.9264,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 13.90000057220459,
+          "y0": 494.5099792480469,
+          "x1": 24.9320011138916,
+          "y1": 788.239990234375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 5,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.9264,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 13.90000057220459,
+          "y0": 494.5099792480469,
+          "x1": 24.9320011138916,
+          "y1": 788.239990234375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 6,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.9264,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 13.90000057220459,
+          "y0": 494.5099792480469,
+          "x1": 24.9320011138916,
+          "y1": 788.239990234375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 7,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "test",
+      "confidence": 0.9264,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 58.4749755859375
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 783.7884324815537,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 58.4749755859375
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 13.90000057220459,
+          "y0": 494.5099792480469,
+          "x1": 24.9320011138916,
+          "y1": 788.239990234375
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 58.4749755859375,
+      "recommended_crop_bottom": 58.13155042860251,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=58.5",
+        "legacy cleanup y=0..58.5; adaptive SSKEMS header y=0..58.5",
+        "verified repeated graphic/text footer begins at y=783.8; replace old footer in-place",
+        "replace legacy top band in-place through y=58.5; body coordinates unchanged"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,997 @@
+{
+  "source": "C:\\Users\\james\\Downloads\\pdf_branding_v3_4_6\\pdf_branding_v3_4_6\\foundation_notes\\6th class\\science\\07 Measurement and Motion\\Measurement and Motion.pdf",
+  "meta": {
+    "class_name": "6",
+    "subject": "physics",
+    "chapter": "Measurement and Motion",
+    "chapter_number": "07",
+    "material_type": "NOTES",
+    "page_count": 21,
+    "duration": null,
+    "max_marks": null
+  },
+  "profile": {
+    "path": "C:\\Users\\james\\Downloads\\pdf_branding_v3_4_6\\pdf_branding_v3_4_6\\foundation_notes\\6th class\\science\\07 Measurement and Motion\\Measurement and Motion.pdf",
+    "document_type": "notes",
+    "confidence": 0.78,
+    "reasons": [
+      "material type normalized as NOTES"
+    ]
+  },
+  "repeated_bands": {
+    "header_bottom": 79.26397705078125,
+    "footer_top": 766.7200012207031,
+    "header_confidence": 0.99,
+    "footer_confidence": 0.99,
+    "header_signatures": [
+      "ncert basics class #",
+      "physics"
+    ],
+    "footer_signatures": []
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "page_type": "designed",
+      "strategy": "preserve",
+      "page_strategy": "designed_page_preserve",
+      "header_template": "none",
+      "confidence": 0.92,
+      "header_rect": null,
+      "footer_rect": null,
+      "cleanup_rects": [],
+      "vertical_text_rects": [
+        {
+          "x0": 31.89999771118164,
+          "y0": 505.66998291015625,
+          "x1": 42.93199920654297,
+          "y1": 763.3999633789062
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 0.0,
+      "recommended_crop_bottom": 0.0,
+      "crop_is_safe": false,
+      "reasons": [
+        "designed chapter opener: prominent chapter title font=55.0pt at y=74.3, large-image ratio=0.19, structural repeated header absent",
+        "preserve designed artwork 1:1; generic header insertion forbidden",
+        "designed page: generic dynamic footer suppressed"
+      ]
+    },
+    {
+      "page_number": 2,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 73.94801330566406
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 73.94801330566406
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 553.7799682617188,
+          "y0": 507.3499755859375,
+          "x1": 564.8119506835938,
+          "y1": 765.0799560546875
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 73.94801330566406,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "cleanup bounded before first academic content y=80.9",
+        "legacy cleanup y=0..73.9; adaptive SSKEMS header y=0..73.9",
+        "replace legacy top band in-place through y=73.9; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 3,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 73.77999114990234
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 73.77999114990234
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 34.89999771118164,
+          "y0": 508.1899719238281,
+          "x1": 45.93199920654297,
+          "y1": 765.9199829101562
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 73.77999114990234,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "cleanup bounded before first academic content y=80.8",
+        "legacy cleanup y=0..73.8; adaptive SSKEMS header y=0..73.8",
+        "replace legacy top band in-place through y=73.8; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 4,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 73.82795715332031
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 73.82795715332031
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 553.7799682617188,
+          "y0": 507.3499755859375,
+          "x1": 564.8119506835938,
+          "y1": 765.0799560546875
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 73.82795715332031,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "cleanup bounded before first academic content y=80.8",
+        "legacy cleanup y=0..73.8; adaptive SSKEMS header y=0..73.8",
+        "replace legacy top band in-place through y=73.8; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 5,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 73.89998626708984
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 73.89998626708984
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 34.89999771118164,
+          "y0": 508.1899719238281,
+          "x1": 45.93199920654297,
+          "y1": 765.9199829101562
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 73.89998626708984,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "cleanup bounded before first academic content y=80.9",
+        "legacy cleanup y=0..73.9; adaptive SSKEMS header y=0..73.9",
+        "replace legacy top band in-place through y=73.9; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 6,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 76.0
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 79.26397705078125
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 553.7799682617188,
+          "y0": 507.3499755859375,
+          "x1": 564.8119506835938,
+          "y1": 765.0799560546875
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 79.26397705078125,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "legacy cleanup y=0..79.3; adaptive SSKEMS header y=0..76.0",
+        "replace legacy top band in-place through y=79.3; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 7,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 73.77999114990234
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 73.77999114990234
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 34.89999771118164,
+          "y0": 508.1899719238281,
+          "x1": 45.93199920654297,
+          "y1": 765.9199829101562
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 73.77999114990234,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "cleanup bounded before first academic content y=80.8",
+        "legacy cleanup y=0..73.8; adaptive SSKEMS header y=0..73.8",
+        "replace legacy top band in-place through y=73.8; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 8,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 76.0
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 79.26397705078125
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 553.7799682617188,
+          "y0": 507.3499755859375,
+          "x1": 564.8119506835938,
+          "y1": 765.0799560546875
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 79.26397705078125,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "legacy cleanup y=0..79.3; adaptive SSKEMS header y=0..76.0",
+        "replace legacy top band in-place through y=79.3; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 9,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 73.73197174072266
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 73.73197174072266
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 34.89999771118164,
+          "y0": 508.1899719238281,
+          "x1": 45.93199920654297,
+          "y1": 765.9199829101562
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 73.73197174072266,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "cleanup bounded before first academic content y=80.7",
+        "legacy cleanup y=0..73.7; adaptive SSKEMS header y=0..73.7",
+        "replace legacy top band in-place through y=73.7; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 10,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 73.89998626708984
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 73.89998626708984
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 553.7799682617188,
+          "y0": 507.3499755859375,
+          "x1": 564.8119506835938,
+          "y1": 765.0799560546875
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 73.89998626708984,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "cleanup bounded before first academic content y=80.9",
+        "legacy cleanup y=0..73.9; adaptive SSKEMS header y=0..73.9",
+        "replace legacy top band in-place through y=73.9; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 11,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 76.0
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 79.26397705078125
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 34.89999771118164,
+          "y0": 508.1899719238281,
+          "x1": 45.93199920654297,
+          "y1": 765.9199829101562
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 79.26397705078125,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "legacy cleanup y=0..79.3; adaptive SSKEMS header y=0..76.0",
+        "replace legacy top band in-place through y=79.3; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 12,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 73.77999114990234
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 73.77999114990234
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 553.7799682617188,
+          "y0": 507.3499755859375,
+          "x1": 564.8119506835938,
+          "y1": 765.0799560546875
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 73.77999114990234,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "cleanup bounded before first academic content y=80.8",
+        "legacy cleanup y=0..73.8; adaptive SSKEMS header y=0..73.8",
+        "replace legacy top band in-place through y=73.8; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 13,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 73.77999114990234
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 73.77999114990234
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 34.89999771118164,
+          "y0": 508.1899719238281,
+          "x1": 45.93199920654297,
+          "y1": 765.9199829101562
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 73.77999114990234,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "cleanup bounded before first academic content y=80.8",
+        "legacy cleanup y=0..73.8; adaptive SSKEMS header y=0..73.8",
+        "replace legacy top band in-place through y=73.8; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 14,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 76.0
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 79.26397705078125
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 553.7799682617188,
+          "y0": 507.3499755859375,
+          "x1": 564.8119506835938,
+          "y1": 765.0799560546875
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 79.26397705078125,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "legacy cleanup y=0..79.3; adaptive SSKEMS header y=0..76.0",
+        "replace legacy top band in-place through y=79.3; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 15,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 73.77999114990234
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 73.77999114990234
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 34.89999771118164,
+          "y0": 508.1899719238281,
+          "x1": 45.93199920654297,
+          "y1": 765.9199829101562
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 73.77999114990234,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "cleanup bounded before first academic content y=80.8",
+        "legacy cleanup y=0..73.8; adaptive SSKEMS header y=0..73.8",
+        "replace legacy top band in-place through y=73.8; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 16,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 76.0
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 79.26397705078125
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 553.7799682617188,
+          "y0": 507.3499755859375,
+          "x1": 564.8119506835938,
+          "y1": 765.0799560546875
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 79.26397705078125,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "legacy cleanup y=0..79.3; adaptive SSKEMS header y=0..76.0",
+        "replace legacy top band in-place through y=79.3; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 17,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 73.77999114990234
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 73.77999114990234
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 34.89999771118164,
+          "y0": 508.1899719238281,
+          "x1": 45.93199920654297,
+          "y1": 765.9199829101562
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 73.77999114990234,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "cleanup bounded before first academic content y=80.8",
+        "legacy cleanup y=0..73.8; adaptive SSKEMS header y=0..73.8",
+        "replace legacy top band in-place through y=73.8; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 18,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 76.0
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 79.26397705078125
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 553.7799682617188,
+          "y0": 507.3499755859375,
+          "x1": 564.8119506835938,
+          "y1": 765.0799560546875
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 79.26397705078125,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "legacy cleanup y=0..79.3; adaptive SSKEMS header y=0..76.0",
+        "replace legacy top band in-place through y=79.3; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 19,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 73.77999114990234
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 73.77999114990234
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 34.89999771118164,
+          "y0": 508.1899719238281,
+          "x1": 45.93199920654297,
+          "y1": 765.9199829101562
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 73.77999114990234,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "cleanup bounded before first academic content y=80.8",
+        "legacy cleanup y=0..73.8; adaptive SSKEMS header y=0..73.8",
+        "replace legacy top band in-place through y=73.8; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 20,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 76.0
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 79.2399673461914
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 557.5,
+          "y0": 356.72998046875,
+          "x1": 568.531982421875,
+          "y1": 766.0399780273438
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 79.2399673461914,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "cleanup bounded before first academic content y=86.2",
+        "legacy cleanup y=0..79.2; adaptive SSKEMS header y=0..76.0",
+        "replace legacy top band in-place through y=79.2; body coordinates unchanged"
+      ]
+    },
+    {
+      "page_number": 21,
+      "page_type": "standard",
+      "strategy": "overlay",
+      "page_strategy": "standard_header_footer_replacement",
+      "header_template": "notes",
+      "confidence": 0.8328000000000001,
+      "header_rect": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 595.3200073242188,
+        "y1": 72.0999984741211
+      },
+      "footer_rect": {
+        "x0": 0,
+        "y0": 823.9199829101562,
+        "x1": 595.3200073242188,
+        "y1": 841.9199829101562
+      },
+      "cleanup_rects": [
+        {
+          "x0": 0,
+          "y0": 0,
+          "x1": 595.3200073242188,
+          "y1": 72.0999984741211
+        }
+      ],
+      "vertical_text_rects": [
+        {
+          "x0": 23.5,
+          "y0": 360.0899658203125,
+          "x1": 34.53200149536133,
+          "y1": 769.3999633789062
+        }
+      ],
+      "logo_replace_rect": null,
+      "logo_background": null,
+      "recommended_crop_top": 72.0999984741211,
+      "recommended_crop_bottom": 75.19998168945312,
+      "crop_is_safe": true,
+      "reasons": [
+        "repeated header band ends at y=79.3",
+        "cleanup bounded before first academic content y=79.1",
+        "legacy cleanup y=0..72.1; adaptive SSKEMS header y=0..72.1",
+        "replace legacy top band in-place through y=72.1; body coordinates unchanged"
+      ]
+    }
+  ]
+}
