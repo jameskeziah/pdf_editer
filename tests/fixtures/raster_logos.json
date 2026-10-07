@@ -1,0 +1,2765 @@
+{
+  "review_method": "Visually reviewed original top-band image crops; only complete standalone publisher logos included. Illustrations, titles, labels and mixed artwork excluded.",
+  "sources": [
+    {
+      "digest": "f9c23ed21ba24ad50a20ec69a060448e",
+      "source_id": "9th class/science/05 The Fundamental Unit Of Life/Exercise _ Solutions_ The Fundamental Unit Of Life.pdf",
+      "source_sha256": "ddc70a07db83213168d9f07f4f1320fd8453f42aa533fd43c4b1e9a83fb9bd17",
+      "image_bbox": [
+        496.29998779296875,
+        57.599998474121094,
+        544.8999633789062,
+        72.0
+      ],
+      "catalog_index": 0
+    },
+    {
+      "digest": "d56b481307dfe134a0afe5b1bdfd533f",
+      "source_id": "9th class/math/01 Number System/Exercise _ solutions_Number System.pdf",
+      "source_sha256": "681943d38ed7a58ba987fefcf2f19ed5db063b73d0e5e0297c3e0de52ec2d26a",
+      "image_bbox": [
+        50.400001525878906,
+        60.59699249267578,
+        105.69999694824219,
+        74.989990234375
+      ],
+      "catalog_index": 1
+    },
+    {
+      "digest": "acab05e72808d96d60951cbace6ebf4f",
+      "source_id": "9th class/science/05 The Fundamental Unit Of Life/Practice Sheet _ Solutions_ The Fundamental Unit Of Life.pdf",
+      "source_sha256": "82d2624565abf082cac032d09432f4560b3933ec1142acc1116de2c6cdf83359",
+      "image_bbox": [
+        477.75,
+        28.147966384887695,
+        562.8499755859375,
+        53.3399658203125
+      ],
+      "catalog_index": 2
+    },
+    {
+      "digest": "363bc1628b8c5604795dff9106e51dbc",
+      "source_id": "9th class/science/05 The Fundamental Unit Of Life/Practice Sheet _ Solutions_ The Fundamental Unit Of Life.pdf",
+      "source_sha256": "82d2624565abf082cac032d09432f4560b3933ec1142acc1116de2c6cdf83359",
+      "image_bbox": [
+        209.6999969482422,
+        40.103981018066406,
+        388.94000244140625,
+        93.16998291015625
+      ],
+      "catalog_index": 3
+    },
+    {
+      "digest": "de72a71cf6c258e2d5c187b63ecb8f0b",
+      "source_id": "9th class/math/01 Number System/Practice Exercise _ solutions_Number System.pdf",
+      "source_sha256": "aefa528efa4a629d27ef4322c40696d55726c6401a413c251f19520316537ec1",
+      "image_bbox": [
+        211.27000427246094,
+        39.002986907958984,
+        415.1600036621094,
+        92.04998779296875
+      ],
+      "catalog_index": 6
+    },
+    {
+      "digest": "7e226572b10be8c89bded68af5b9afa4",
+      "source_id": "9th class/math/01 Number System/Practice Exercise _ solutions_Number System.pdf",
+      "source_sha256": "aefa528efa4a629d27ef4322c40696d55726c6401a413c251f19520316537ec1",
+      "image_bbox": [
+        472.0,
+        31.05195426940918,
+        559.75,
+        53.88995361328125
+      ],
+      "catalog_index": 7
+    },
+    {
+      "digest": "2ee0a4be0573dc47c5688eef080f2cba",
+      "source_id": "9th class/science/03 Atoms And Molecules/Atoms And Molecules.pdf",
+      "source_sha256": "74313d97cb65f27a5e801963d01b12b5058cec0159529f62e8f2d9ea49cca57f",
+      "image_bbox": [
+        496.29998779296875,
+        57.59699249267578,
+        544.8999633789062,
+        71.989990234375
+      ],
+      "catalog_index": 8
+    },
+    {
+      "digest": "3b63958cc9433cec2e4cc237a2f9d72f",
+      "source_id": "9th class/science/01 Matter In Our Surroundings/Exercise _ Solutions_ Matter In Our Surroundings.pdf",
+      "source_sha256": "b7319f010486a3c97b45fe5abb18a30081a8d825b458d5747f8101abcc53af22",
+      "image_bbox": [
+        50.400001525878906,
+        57.59699249267578,
+        99.0,
+        71.989990234375
+      ],
+      "catalog_index": 9
+    },
+    {
+      "digest": "a56506023525c92dd8b7e834141763ed",
+      "source_id": "9th class/science/07 Motion/Practice Sheet _ Solutions_ Motion.pdf",
+      "source_sha256": "69602b02420fdbf7355c3056284372fb259797115521ce72a9d5d8c99c783ba3",
+      "image_bbox": [
+        479.3999938964844,
+        33.75397491455078,
+        552.2999877929688,
+        55.3499755859375
+      ],
+      "catalog_index": 11
+    },
+    {
+      "digest": "e389793b749ae49a2bbd2f02fdecc195",
+      "source_id": "9th class/science/03 Atoms And Molecules/Practice Sheet _ Solutions_ Atoms And Molecules.pdf",
+      "source_sha256": "3413cc29440327ed0d54c8292ddbeed917577fb62bc32ebc049870383209043c",
+      "image_bbox": [
+        473.1000061035156,
+        31.449962615966797,
+        558.0499877929688,
+        55.39996337890625
+      ],
+      "catalog_index": 12
+    },
+    {
+      "digest": "a237cb29d55f63890d3b0affffce0898",
+      "source_id": "9th class/science/01 Matter In Our Surroundings/Practice Sheet _ Solutions_ Matter In Our Surroundings.pdf",
+      "source_sha256": "0781f373a20339424d1ffe47fc3736e111d5a43138c5b6424d821ba854b49937",
+      "image_bbox": [
+        193.25,
+        35.9999885559082,
+        401.8999938964844,
+        95.04998779296875
+      ],
+      "catalog_index": 13
+    },
+    {
+      "digest": "5909b9abc449fd8b24b25624e5659555",
+      "source_id": "9th class/science/01 Matter In Our Surroundings/Practice Sheet _ Solutions_ Matter In Our Surroundings.pdf",
+      "source_sha256": "0781f373a20339424d1ffe47fc3736e111d5a43138c5b6424d821ba854b49937",
+      "image_bbox": [
+        471.25,
+        31.449962615966797,
+        555.7000122070312,
+        55.39996337890625
+      ],
+      "catalog_index": 14
+    },
+    {
+      "digest": "05d8d0b500822f624216648122183b41",
+      "source_id": "9th class/math/05 Introduction To Euclids Geometry/Practice Sheet _ Solutions_ Introduction To Euclids Geometry.pdf",
+      "source_sha256": "57545b35fa73e771b024948a983bfd13114d430d1cd699c444ecbb32922e4d66",
+      "image_bbox": [
+        477.04998779296875,
+        31.148990631103516,
+        554.2000122070312,
+        53.989990234375
+      ],
+      "catalog_index": 16
+    },
+    {
+      "digest": "24cb9e25b046aff8ec839764864d7fd8",
+      "source_id": "7th class/science/04 Acids Bases And Salts/NCERT Practice Exercise _ solutions_Acids _bases and salts.pdf",
+      "source_sha256": "b931ea10fdc14e464bdcb0022b05f4118efef70d08bc06251d4935fb381bf957",
+      "image_bbox": [
+        476.3500061035156,
+        31.449987411499023,
+        561.2630004882812,
+        53.54998779296875
+      ],
+      "catalog_index": 17
+    },
+    {
+      "digest": "27bfe3c4187aeda8452b7914448eccdd",
+      "source_id": "9th class/science/05 The Fundamental Unit Of Life/Test _ Solutions_ The Fundamental Unit Of Life.pdf",
+      "source_sha256": "d341a1dceb6e38d3c3f63149108cf218c53a520ffd2a348633a40fe81a75d940",
+      "image_bbox": [
+        213.8000030517578,
+        31.500011444091797,
+        379.4000244140625,
+        80.45001220703125
+      ],
+      "catalog_index": 18
+    },
+    {
+      "digest": "f9f03f19d00cda39d314cc2e00e0e697",
+      "source_id": "9th class/science/12 Natural Resources/Race _ Solutions_ Natural Resources.pdf",
+      "source_sha256": "238c07c5117f336638ab54aac03e74346ea000e5a0ae3db35156bdd9fc305f7c",
+      "image_bbox": [
+        479.8500061035156,
+        31.501989364624023,
+        556.6500244140625,
+        54.239990234375
+      ],
+      "catalog_index": 19
+    },
+    {
+      "digest": "6351b6514bd44993b1b7c3637a5994a9",
+      "source_id": "9th class/science/09 Thrust And Pressure/Race _ Solutions_ Thrust And Pressure.pdf",
+      "source_sha256": "083201670eb920ac422587ae1091dc29e275f25e41ac8c7306f99086fa281f71",
+      "image_bbox": [
+        485.45001220703125,
+        36.00296401977539,
+        553.5,
+        56.14996337890625
+      ],
+      "catalog_index": 21
+    },
+    {
+      "digest": "5b9d9e94f1ce0369213b5ed3af76540c",
+      "source_id": "9th class/math/01 Number System/Number System_Key point.pdf",
+      "source_sha256": "b1580014623f6b9406d062a2a83c5bc5cbf436ae80b64c1bf67f06cfa23127e8",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 22
+    },
+    {
+      "digest": "79bcc80ac9dc1fa0a27d9e88a5f762ec",
+      "source_id": "9th class/science/07 Motion/Test _ Solutions_ Motion.pdf",
+      "source_sha256": "687372ace32bac6e22b14ca5afe701c09e4949f9db95c1c0b1b8e55dfb008be8",
+      "image_bbox": [
+        479.75,
+        31.499963760375977,
+        552.8759765625,
+        53.14996337890625
+      ],
+      "catalog_index": 23
+    },
+    {
+      "digest": "5b4b359499772828b0c8acc955666005",
+      "source_id": "9th class/math/01 Number System/Race _ solutions_Number System.pdf",
+      "source_sha256": "aba9b9b59bb8e5ef4c75115769f64e720a175e12bdbc5ef9ec93ba5b7fc4ac0b",
+      "image_bbox": [
+        471.95001220703125,
+        31.499963760375977,
+        563.7789916992188,
+        55.39996337890625
+      ],
+      "catalog_index": 24
+    },
+    {
+      "digest": "aad787691fe98a88e88b9cb2f62e5aec",
+      "source_id": "9th class/math/04 Linear Equations in Two Variables/Race _ solutions_Linear Equations in Two Variables.pdf",
+      "source_sha256": "81f8c7577982b6b34e3e68627dd90354811e82c7cce6771865511c8125ea7740",
+      "image_bbox": [
+        475.1000061035156,
+        30.749975204467773,
+        559.052978515625,
+        52.5999755859375
+      ],
+      "catalog_index": 25
+    },
+    {
+      "digest": "b73c65cc4be9be965f1dc10ffbcfd57f",
+      "source_id": "8th class/math/06 Comparing Quantities/Race _ solutions_Comparing Quantities.pdf",
+      "source_sha256": "32a9469f727e31f96d74553f6ec387c7456217270a2dea43ee224bbd7e1a9b39",
+      "image_bbox": [
+        473.79998779296875,
+        30.09497833251953,
+        558.8999633789062,
+        55.28997802734375
+      ],
+      "catalog_index": 26
+    },
+    {
+      "digest": "420aaa93f1ff351500cfe4de58744556",
+      "source_id": "7th class/science/01 Nutrition In Plants/Chapter Test_ Nutrition in Plants.pdf",
+      "source_sha256": "5d104f7788c6511128519fe4e9e7d9db42d97e464ce38b52ebcc75a54a505067",
+      "image_bbox": [
+        213.84397888183594,
+        35.96072769165039,
+        379.86907958984375,
+        79.13046264648438
+      ],
+      "catalog_index": 27
+    },
+    {
+      "digest": "20838937e24722b0d259cc5192bf1271",
+      "source_id": "9th class/science/06 Tissues/Test _ Solutions_ Tissues.pdf",
+      "source_sha256": "7a45f7664cc47cf8ec28592cbd246c8af53fc5e217720892b86af40f1ad93c50",
+      "image_bbox": [
+        496.6499938964844,
+        31.509960174560547,
+        565.6690063476562,
+        51.9599609375
+      ],
+      "catalog_index": 28
+    },
+    {
+      "digest": "3b54246b219143f4c76af95242d47ac0",
+      "source_id": "9th class/science/07 Motion/Practice Sheet _ Solutions_ Motion.pdf",
+      "source_sha256": "69602b02420fdbf7355c3056284372fb259797115521ce72a9d5d8c99c783ba3",
+      "image_bbox": [
+        212.5500030517578,
+        35.99995422363281,
+        382.75,
+        86.38995361328125
+      ],
+      "catalog_index": 29
+    },
+    {
+      "digest": "ee545642f0035f8e9a88b2cffdab69e2",
+      "source_id": "9th class/math/04 Linear Equations in Two Variables/NCERT Practice _ solutions_Linear Equations in Two Variables.pdf",
+      "source_sha256": "c06e83bece49b685f169f5393db16377262271433e87d3a849f4c0c546fbcd17",
+      "image_bbox": [
+        475.54998779296875,
+        32.199974060058594,
+        552.9500122070312,
+        52.3499755859375
+      ],
+      "catalog_index": 30
+    },
+    {
+      "digest": "5b17b0a91c684bd1180500a50dd65a92",
+      "source_id": "10th class/math/01 Real Numbers/953_Maths_\u27a4_Real_Numbers_\u27a4_Practice_Race_&_Solutions_Real_Numb.pdf",
+      "source_sha256": "3d4812ac89a86db6d2da0016458539918dc4e6f5193e0d81697bc73d4747d04c",
+      "image_bbox": [
+        477.29998779296875,
+        31.699975967407227,
+        558.0260009765625,
+        55.5999755859375
+      ],
+      "catalog_index": 31
+    },
+    {
+      "digest": "c9bd4526bc1fd4bfe9c8479c685bce7a",
+      "source_id": "10th class/math/04 Quadratic Equations/839_Maths_\u27a4_Quadratic_Equations_\u27a4_Practice_RACE_&_Solutions_Qu.pdf",
+      "source_sha256": "0577d9c5e674c5206514d023428dc49678e4fa46158d4c403e2f8f1052108a9e",
+      "image_bbox": [
+        478.6499938964844,
+        30.400012969970703,
+        556.5050048828125,
+        53.45001220703125
+      ],
+      "catalog_index": 32
+    },
+    {
+      "digest": "cb1a3bb3ebe1914364d0ff2992eccaa4",
+      "source_id": "9th class/science/05 The Fundamental Unit Of Life/The Fundamental Unit Of Life_Key Points.pdf",
+      "source_sha256": "d4d4fe8310675d448750b0204cb6fdea038966c72be124eb3e91fc6cd85ad93c",
+      "image_bbox": [
+        14.187800407409668,
+        14.411869049072266,
+        108.62777709960938,
+        38.99114990234375
+      ],
+      "catalog_index": 33
+    },
+    {
+      "digest": "ef089561fc0564b11856a15d301e2f44",
+      "source_id": "7th class/science/01 Nutrition In Plants/Race _ solutions_Nutrition in Plants.pdf",
+      "source_sha256": "0f407452392148405203054f50f277a79f929e1e1c7f9efa07f690a64d09ff1e",
+      "image_bbox": [
+        476.3500061035156,
+        30.750965118408203,
+        559.2999877929688,
+        52.3399658203125
+      ],
+      "catalog_index": 34
+    },
+    {
+      "digest": "c66912559e8fbb9393b8c1878e4a2e5a",
+      "source_id": "10th class/math/01 Real Numbers/954_Maths_\u27a4_Real_Numbers_\u27a4_Practice_Test_&_Solutions_Real_Numb.pdf",
+      "source_sha256": "686840789da7f8a3de950f09185b52d95003d265c1bb3b9135bc816ca369c5ce",
+      "image_bbox": [
+        214.0800018310547,
+        38.99598693847656,
+        393.32000732421875,
+        92.04998779296875
+      ],
+      "catalog_index": 35
+    },
+    {
+      "digest": "5c9ca52569ab6294e5b06acfa22e985a",
+      "source_id": "9th class/science/06 Tissues/Race _ Solutions_ Tissues.pdf",
+      "source_sha256": "7c4a2e6b48303ef765ceb2c44bbf92ef4eab4508bf981b377852049ada0f8ee4",
+      "image_bbox": [
+        486.70001220703125,
+        30.749975204467773,
+        554.5499877929688,
+        50.8499755859375
+      ],
+      "catalog_index": 36
+    },
+    {
+      "digest": "fe33c6a8eca678ddb7e1ea16eb093e39",
+      "source_id": "9th class/science/09 Thrust And Pressure/Thrust And Pressure_Key Points.pdf",
+      "source_sha256": "26fc087e4003786a95655b754511b8c16a2db9f51e654291cfe08b2a2ebfbdc8",
+      "image_bbox": [
+        29.13920021057129,
+        26.144893646240234,
+        94.90886688232422,
+        45.31036376953125
+      ],
+      "catalog_index": 37
+    },
+    {
+      "digest": "1a519b7fcfe68f8625103449ef53ef06",
+      "source_id": "9th class/math/11 Surface Areas and Volumes/Race _ solutions_Surface Areas and Volumes.pdf",
+      "source_sha256": "4508bdacd7060a7e0f6e20fe04cf9b3bcdb7882cf8ee2870d73a8cdaed453a54",
+      "image_bbox": [
+        480.04998779296875,
+        30.400999069213867,
+        553.8499755859375,
+        52.25
+      ],
+      "catalog_index": 38
+    },
+    {
+      "digest": "b3a2bf579f78716efaa1029fcde04282",
+      "source_id": "8th class/science/01 Crop Production And Management/Exercise _ Solutions_ Crop Production And Management.pdf",
+      "source_sha256": "2ab15a28e05b780ae31efbae353f77c960bef223e30e61007b43151bc48d3db3",
+      "image_bbox": [
+        50.400001525878906,
+        57.5999755859375,
+        99.1500015258789,
+        71.8499755859375
+      ],
+      "catalog_index": 39
+    },
+    {
+      "digest": "b9194b5fee1ed53f3622c1e60b859d72",
+      "source_id": "7th class/science/03 Heat/Test _ solutions_Heat.pdf",
+      "source_sha256": "31e11e8d9c31fe6a31804aaf47c72ca0a8b09de4247f4ffb3610554fb0a4829e",
+      "image_bbox": [
+        475.04998779296875,
+        31.499963760375977,
+        558.2340087890625,
+        53.14996337890625
+      ],
+      "catalog_index": 40
+    },
+    {
+      "digest": "4fa34cd939a850ed934b812b734bc4b3",
+      "source_id": "9th class/math/10 Herons Formula/Race _ solutions_Heron_s Formula.pdf",
+      "source_sha256": "41832f6970d83a78d94f3fbeb186b5a3a26d706017ce074cdc893e270a7477af",
+      "image_bbox": [
+        478.29998779296875,
+        31.350000381469727,
+        555.75,
+        51.5
+      ],
+      "catalog_index": 41
+    },
+    {
+      "digest": "028eafd87fd2f7a55599327312e26483",
+      "source_id": "7th class/science/04 Acids Bases And Salts/NCERT Practice Exercise _ solutions_Acids _bases and salts.pdf",
+      "source_sha256": "b931ea10fdc14e464bdcb0022b05f4118efef70d08bc06251d4935fb381bf957",
+      "image_bbox": [
+        193.25,
+        35.9999885559082,
+        401.8800048828125,
+        90.29998779296875
+      ],
+      "catalog_index": 42
+    },
+    {
+      "digest": "77369de1721d589ed0d62f1da1bd4fb8",
+      "source_id": "9th class/science/09 Thrust And Pressure/Test _ Solutions_ Thrust And Pressure.pdf",
+      "source_sha256": "11b0565629ad75ef162c0adb76cbf345dbdc8cedf4bf8e18bafd0580e87c17f2",
+      "image_bbox": [
+        209.89999389648438,
+        35.39997482299805,
+        382.79998779296875,
+        86.5999755859375
+      ],
+      "catalog_index": 43
+    },
+    {
+      "digest": "35c63954c552052b0624d8be21ca4be5",
+      "source_id": "8th class/science/01 Crop Production And Management/Test _ Solutions_ Crop Production And Management.pdf",
+      "source_sha256": "4b0e008137e05556b732e33b5154d5c80045c4aa4ed9026437929ab940734c7d",
+      "image_bbox": [
+        499.1499938964844,
+        32.25,
+        559.9000244140625,
+        50.25
+      ],
+      "catalog_index": 46
+    },
+    {
+      "digest": "5854e8fe6702d9f70e4e13cf562de4d5",
+      "source_id": "7th class/science/07 Transportation In Plants And Animals/Race _ solutionsTransportation in Plants and Animals.pdf",
+      "source_sha256": "07cb791b2f98feb26ad5d2fdf4f2fc8d9f3855cd374403852881acdcf2a227eb",
+      "image_bbox": [
+        475.1499938964844,
+        29.149974822998047,
+        560.25,
+        54.3499755859375
+      ],
+      "catalog_index": 47
+    },
+    {
+      "digest": "c72477b5639028ea439ec0dc5ce84738",
+      "source_id": "7th class/science/09 Motion And Time/NCERT Practice Sheet _ solutions_ Motion and Time.pdf",
+      "source_sha256": "b1ac561366cc8797d0b18abb05b7f26398911414bb9c149aec99f946dc6870d0",
+      "image_bbox": [
+        209.4499969482422,
+        31.079967498779297,
+        399.54998779296875,
+        80.52996826171875
+      ],
+      "catalog_index": 48
+    },
+    {
+      "digest": "904e775e480715ae1918ec4be1bffb72",
+      "source_id": "7th class/science/13 Waste Water Story/Exercise _ solutions_Waste Water Story.pdf",
+      "source_sha256": "0b7bed6e05476657b37cd28f4b3e304701c24db88923c8e5b8c979f875772ffc",
+      "image_bbox": [
+        50.400001525878906,
+        57.599998474121094,
+        105.7760009765625,
+        74.0
+      ],
+      "catalog_index": 49
+    },
+    {
+      "digest": "2918604e786bbd57a8ebc2a8a6a19a32",
+      "source_id": "7th class/math/05 Simple Equations/Race _ solutions_Simple Equations.pdf",
+      "source_sha256": "8b6d3ea05a3a1314c9e6edec19c8cf90687d99c5de7f93eb06b0f3dddc09069c",
+      "image_bbox": [
+        471.75,
+        30.399974822998047,
+        564.7319946289062,
+        54.5999755859375
+      ],
+      "catalog_index": 50
+    },
+    {
+      "digest": "77aabde6d337a07afff0741dc0b18ec1",
+      "source_id": "9th class/math/04 Linear Equations in Two Variables/NCERT Practice _ solutions_Linear Equations in Two Variables.pdf",
+      "source_sha256": "c06e83bece49b685f169f5393db16377262271433e87d3a849f4c0c546fbcd17",
+      "image_bbox": [
+        205.30999755859375,
+        35.999961853027344,
+        411.45001220703125,
+        89.64996337890625
+      ],
+      "catalog_index": 52
+    },
+    {
+      "digest": "23459a26cea530fb4616308b0bc5e527",
+      "source_id": "8th class/science/01 Crop Production And Management/Crop Production And Management_Key Points.pdf",
+      "source_sha256": "7aa81f2b817c00bd671887f6775c946cf3805c4b9ed06bcd773fed0577728782",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 54
+    },
+    {
+      "digest": "8fe763b8d7cb1c0e50a1a2e9750811dd",
+      "source_id": "8th class/science/05 Conservation Of Plants And Animals/Conservation Of Plants And Animals_Key Points.pdf",
+      "source_sha256": "7c28d16068f587a35034a7bfddd770adaff0d57d38de69afb2d6981efa1f6ae9",
+      "image_bbox": [
+        14.77079963684082,
+        14.566814422607422,
+        80.85147094726562,
+        33.4595947265625
+      ],
+      "catalog_index": 59
+    },
+    {
+      "digest": "021625dd743041ff3345cba81071c034",
+      "source_id": "8th class/science/08 Force And Pressure/Test _ Solutions_ Force And Pressure.pdf",
+      "source_sha256": "dd5479dcc368ce250e3f81d1666416aee2f4fc5a21093aa6e39b6162ad0df612",
+      "image_bbox": [
+        216.1999969482422,
+        38.999000549316406,
+        382.3499755859375,
+        88.19000244140625
+      ],
+      "catalog_index": 60
+    },
+    {
+      "digest": "f249bda92f8a0eef3188ce4be6a71443",
+      "source_id": "8th class/science/10 Sound/Test _ Solutions_ Sound (1).pdf",
+      "source_sha256": "6c20d33b4a0046def89a6b341bb107ff7f11a761f374684f704d775873670971",
+      "image_bbox": [
+        483.6499938964844,
+        32.2499885559082,
+        558.9500122070312,
+        54.54998779296875
+      ],
+      "catalog_index": 61
+    },
+    {
+      "digest": "2d6a8747bb6d2d22a46604f10f413c6f",
+      "source_id": "8th class/math/03 Understanding Quadrilaterals/Race _ solutions_Understanding Quadrilaterals.pdf",
+      "source_sha256": "19abbc7c851397b1777bc1c5214200f7cd726cd41a66a2f3abc8147039a535d5",
+      "image_bbox": [
+        471.0,
+        31.050012588500977,
+        563.7899780273438,
+        55.20001220703125
+      ],
+      "catalog_index": 62
+    },
+    {
+      "digest": "cf838ef31efc435b1e02a7141e1caf1a",
+      "source_id": "8th class/math/05 Cubes and Cube Roots/Race _ solutions_Cubes and Cube Roots.pdf",
+      "source_sha256": "7f273224db8d1cb7745490442b10e3e7842edf394fe84f9adb7dfed5d81c46a1",
+      "image_bbox": [
+        471.25,
+        30.75,
+        563.4639892578125,
+        54.75
+      ],
+      "catalog_index": 63
+    },
+    {
+      "digest": "5a0c8bd53f553cb17d304a654f5d4bcd",
+      "source_id": "7th class/science/03 Heat/Exercise _ solutions_Heat.pdf",
+      "source_sha256": "819f9575c36273e449031b0e2ed188140763e2060a9b5f76a3f076cfd532ee64",
+      "image_bbox": [
+        50.400001525878906,
+        57.600013732910156,
+        108.64300537109375,
+        72.70001220703125
+      ],
+      "catalog_index": 64
+    },
+    {
+      "digest": "97ec0ce23776a78ba725d15f9ac896aa",
+      "source_id": "7th class/math/04 Rational Numbers/Test _ solutions_Rational Numbers (1).pdf",
+      "source_sha256": "73593a95f766af6b5284a53918e688e85b980c576eb6c1e14623d11f00ac3df5",
+      "image_bbox": [
+        208.07000732421875,
+        35.2499885559082,
+        387.2200012207031,
+        88.29998779296875
+      ],
+      "catalog_index": 66
+    },
+    {
+      "digest": "7572af910d217a3a2d5b56706ea09477",
+      "source_id": "6th class/math/03 Playing with Numbers/Race _ solutions_Playing with Numbers.pdf",
+      "source_sha256": "ee00e39bdd1810525f0d9c89c762552d17e55ac194c2a6d73648f1e2f2a045c3",
+      "image_bbox": [
+        470.8999938964844,
+        30.500011444091797,
+        564.843017578125,
+        54.95001220703125
+      ],
+      "catalog_index": 67
+    },
+    {
+      "digest": "6cb1987497a3a87479b23341e2fea9d0",
+      "source_id": "9th class/science/04 Structure Of The Atom/Structure Of The Atom_Key Points.pdf",
+      "source_sha256": "272c724a966066c48bb95e8e8a720d9615dc6550f24dc6276e3f32c99cbc65b8",
+      "image_bbox": [
+        16.02669906616211,
+        20.600467681884766,
+        110.4666748046875,
+        45.17974853515625
+      ],
+      "catalog_index": 68
+    },
+    {
+      "digest": "b2cc924cff4934b629b581999f2eb770",
+      "source_id": "9th class/science/08 Gravitation/Test _ Solutions_ Gravitation.pdf",
+      "source_sha256": "4d99e36762f108a2af8d2fbad24a201bd170e3da18b1eef4c0dee0c48de87e41",
+      "image_bbox": [
+        483.5,
+        32.249977111816406,
+        556.4500122070312,
+        53.8499755859375
+      ],
+      "catalog_index": 70
+    },
+    {
+      "digest": "9611ab8833ee4fc2a07dfb9e702670bb",
+      "source_id": "8th class/science/10 Sound/Test _ Solutions_ Sound (1).pdf",
+      "source_sha256": "6c20d33b4a0046def89a6b341bb107ff7f11a761f374684f704d775873670971",
+      "image_bbox": [
+        213.14999389648438,
+        38.999000549316406,
+        379.29998779296875,
+        88.19000244140625
+      ],
+      "catalog_index": 71
+    },
+    {
+      "digest": "9672c3e574f66e7f289e31af95d0390f",
+      "source_id": "7th class/science/03 Heat/Test _ solutions_Heat.pdf",
+      "source_sha256": "31e11e8d9c31fe6a31804aaf47c72ca0a8b09de4247f4ffb3610554fb0a4829e",
+      "image_bbox": [
+        209.14999389648438,
+        41.05400848388672,
+        397.2699890136719,
+        90.010009765625
+      ],
+      "catalog_index": 72
+    },
+    {
+      "digest": "7445160efd3c5c8287800ae40043cd4f",
+      "source_id": "9th class/science/03 Atoms And Molecules/Atoms And Molecules_Key Points.pdf",
+      "source_sha256": "c7c7756ba71ffb43383abb5cc9157dc3a7c254252d1aef2e1ef0ecbb33b20285",
+      "image_bbox": [
+        32.91569900512695,
+        27.384374618530273,
+        127.35551452636719,
+        51.9637451171875
+      ],
+      "catalog_index": 74
+    },
+    {
+      "digest": "4ee512e3e5c3623ae42f6ac7479af8c9",
+      "source_id": "9th class/science/11 Sound/Race _ Solutions_ Sound.pdf",
+      "source_sha256": "f873a2e1866f766b780774b9d949b8b9ab11379472def2ebb744d05e2c849640",
+      "image_bbox": [
+        478.20001220703125,
+        31.19598960876465,
+        553.5,
+        53.489990234375
+      ],
+      "catalog_index": 75
+    },
+    {
+      "digest": "874d9f77100aed75084c45c57c08467a",
+      "source_id": "9th class/science/13 Improvement In Food Resources/Improvement In Food Resources_Key Points.pdf",
+      "source_sha256": "537744d4828367e8d6ff071ff19316863d5db0e10d4476ef61797e4d45d34a3f",
+      "image_bbox": [
+        12.391304016113281,
+        10.563953399658203,
+        84.08695220947266,
+        31.06890869140625
+      ],
+      "catalog_index": 76
+    },
+    {
+      "digest": "19407a886b0785acb9e81e6bc213a1b0",
+      "source_id": "9th class/math/05 Introduction To Euclids Geometry/Race _ Solutions_ Introduction To Euclids Geometry.pdf",
+      "source_sha256": "9076bc23b35012be397f6a985c6e0fa119e6ccff173ff3495a96c72da549c89c",
+      "image_bbox": [
+        475.8999938964844,
+        30.400012969970703,
+        557.1329956054688,
+        54.45001220703125
+      ],
+      "catalog_index": 80
+    },
+    {
+      "digest": "48f3f242bed1c6fa6ce6e0b7a906d7ce",
+      "source_id": "9th class/math/07 Triangles/Triangles_Key point.pdf",
+      "source_sha256": "962a2b957e302eb6687f1314233cd2dd3470801fbb8824512c7e7bb8204413fe",
+      "image_bbox": [
+        11.008000373840332,
+        33.63396453857422,
+        111.70800018310547,
+        59.8399658203125
+      ],
+      "catalog_index": 81
+    },
+    {
+      "digest": "1592aabff66a7cd675a2dad7fa28206b",
+      "source_id": "9th class/math/08 Quadrilaterals/Race _ solutions_Quadrilaterals.pdf",
+      "source_sha256": "96a64d7734e2ac5cf6f3e3e2518c1a45eb2fd91c388be4a839ff7fd8ce86ce80",
+      "image_bbox": [
+        477.3999938964844,
+        32.25499725341797,
+        560.9500122070312,
+        54.0
+      ],
+      "catalog_index": 82
+    },
+    {
+      "digest": "34a6ff587a75270f79c0373292c3a272",
+      "source_id": "9th class/math/09 Circles/Race _ solutions_Circles.pdf",
+      "source_sha256": "71d97eb7e487ceb1bc3e5a3a0e297966206b01fc3000d9b9c29c8ab451831410",
+      "image_bbox": [
+        480.75,
+        29.99797821044922,
+        555.2000122070312,
+        52.03997802734375
+      ],
+      "catalog_index": 83
+    },
+    {
+      "digest": "b0f633db66be86eacfd4bb3ee410d738",
+      "source_id": "8th class/science/03 Coal And Petroleum/Coal And Petroleum_Key Points.pdf",
+      "source_sha256": "269a97059b613d9aac0877907079dc2ee4fc964fc3bf753a5c739aab229b1d30",
+      "image_bbox": [
+        27.965499877929688,
+        30.856603622436523,
+        122.40531921386719,
+        55.43597412109375
+      ],
+      "catalog_index": 84
+    },
+    {
+      "digest": "f3d9470a54a0b2308017005ff6bb021a",
+      "source_id": "8th class/science/08 Force And Pressure/Practice Sheet _ Solutions_ Force And Pressure.pdf",
+      "source_sha256": "bc3a4f7e4f93f82a718e951dd1629b868ebedc5817dbb71fb1f4621d3e3d8688",
+      "image_bbox": [
+        222.10000610351562,
+        36.0000114440918,
+        387.4000244140625,
+        84.95001220703125
+      ],
+      "catalog_index": 85
+    },
+    {
+      "digest": "5a2389551e345d970dd147cc4abf77b8",
+      "source_id": "8th class/science/10 Sound/Practice Sheet _ Solutions_ Sound (1).pdf",
+      "source_sha256": "077b3dd44cde6112c7474de7e848ea9d10f7e48c3110d32a7a56c1005da13f6d",
+      "image_bbox": [
+        214.10000610351562,
+        69.93000793457031,
+        381.1300048828125,
+        119.3800048828125
+      ],
+      "catalog_index": 86
+    },
+    {
+      "digest": "53d077f2a68de86a7b4e20643f583f0e",
+      "source_id": "8th class/science/11 Chemical Effects Of Electric Current/Electricity_Magnetic_and_Heating_Effects.pdf",
+      "source_sha256": "4b2b84145b5e02a0da1e732e7219fe5fa7d2bf9e079b9d3ae0481877adee2eda",
+      "image_bbox": [
+        496.08001708984375,
+        57.36000442504883,
+        545.0400390625,
+        72.24000549316406
+      ],
+      "catalog_index": 87
+    },
+    {
+      "digest": "ccf83c5b11d56f81edcf594e7f6e46fd",
+      "source_id": "8th class/math/01 Rational Numbers/Race _ solutions_Rational Numbers.pdf",
+      "source_sha256": "eb0638e209ed150ac9b4228f7bb895619a25d44c7bfa9418e8ef44c9e9f3f3b0",
+      "image_bbox": [
+        472.25,
+        31.499988555908203,
+        563.6950073242188,
+        55.29998779296875
+      ],
+      "catalog_index": 88
+    },
+    {
+      "digest": "e5f138dd9df77f254ed84fc9857959f1",
+      "source_id": "8th class/math/02 Linear Equations in One Variable/Race _ solutions_Linear equations in one variable.pdf",
+      "source_sha256": "14fd5d0bbe1bbc76cb21d6b9cc8febcb9cd8ec60c6f58ba1aa225aeddc77978e",
+      "image_bbox": [
+        471.0,
+        31.249975204467773,
+        563.5980224609375,
+        55.3499755859375
+      ],
+      "catalog_index": 89
+    },
+    {
+      "digest": "bae3cd75075a36f3929b4c5ed9062c10",
+      "source_id": "8th class/math/08 Mensuration/Mensuration_Key point.pdf",
+      "source_sha256": "004a215048d4af8a8cec6392339aff8b6d05023ff5539f4a0377399df55055f9",
+      "image_bbox": [
+        25.273799896240234,
+        29.458288192749023,
+        119.713623046875,
+        54.03765869140625
+      ],
+      "catalog_index": 91
+    },
+    {
+      "digest": "4166f3b6736eaecceab86bcf72e49c63",
+      "source_id": "8th class/math/11 Introduction to Graphs and Data Handling/Race _ solutions_ Introduction to Graphs and Data Handling.pdf",
+      "source_sha256": "4b52f7dfdcfa5c44393e24675dcd706760d25ff91db32e66ae0c757073216e70",
+      "image_bbox": [
+        470.79998779296875,
+        30.249975204467773,
+        563.010986328125,
+        52.0999755859375
+      ],
+      "catalog_index": 93
+    },
+    {
+      "digest": "54558054126d3e487fdda02dc3a4f3cc",
+      "source_id": "8th class/math/11 Introduction to Graphs and Data Handling/Test _ solutions_Introduction to Graphs and Data Handling.pdf",
+      "source_sha256": "38cdb8d1276673363a48c03751fc33ad207145be76b1eadd8ca4d4e8ee5aad2c",
+      "image_bbox": [
+        196.27000427246094,
+        34.502986907958984,
+        400.1600036621094,
+        87.54998779296875
+      ],
+      "catalog_index": 94
+    },
+    {
+      "digest": "7b53c21546aea204ec0f56e57251985d",
+      "source_id": "7th class/science/02 Nutrition In Animals/Chapter Test_Nutrition in Animals.pdf",
+      "source_sha256": "066628d684b8bbd1443bdfe108f5cf91e0efa9497f87b0c89a957a5604b4f8c7",
+      "image_bbox": [
+        214.79397583007812,
+        31.61043930053711,
+        380.819091796875,
+        74.82096862792969
+      ],
+      "catalog_index": 95
+    },
+    {
+      "digest": "e70238f7b346ddc5ef20effde8aaa625",
+      "source_id": "7th class/science/03 Heat/NCERT Practice Exercise _ solutions_Heat.pdf",
+      "source_sha256": "0dce6f17172d891d58245ccac1d1b6704464fd57a38821a3cf67ed3138dac447",
+      "image_bbox": [
+        202.0,
+        36.0000114440918,
+        390.08001708984375,
+        84.95001220703125
+      ],
+      "catalog_index": 96
+    },
+    {
+      "digest": "2a96bc093b172707b10e8fc224123afb",
+      "source_id": "7th class/science/04 Acids Bases And Salts/Acids _bases and salts_Key point.pdf",
+      "source_sha256": "c0126d9116efb56954c4b779d7bf708a31ab071744c725bac38356df8ba2b5f8",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 97
+    },
+    {
+      "digest": "89e42c5f7bd38b5029e842b1037b235e",
+      "source_id": "7th class/science/05 Physical And Chemical Changes/Physical and Chemical Changes_Key Points.pdf",
+      "source_sha256": "0d4c6543dd0ab8c185ccdc85b4e9adb2829a1c8ab7a1244883d64941bd13955b",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 98
+    },
+    {
+      "digest": "88a6e62a4e0e977dd63ba01df2d5b211",
+      "source_id": "7th class/science/06 Respiration In Organisms/NCERT_Practice_Exercise_solutions_Respiration_in_Organisms.pdf",
+      "source_sha256": "d5030f6a1e5a1ed6936f7f13bd1ec51c5ee15596f086516379243937c3c4eff4",
+      "image_bbox": [
+        214.6999969482422,
+        66.00401306152344,
+        380.5999755859375,
+        109.20001220703125
+      ],
+      "catalog_index": 99
+    },
+    {
+      "digest": "118e4d6773b69c2d5ef36366a122215d",
+      "source_id": "7th class/science/06 Respiration In Organisms/NCERT_Practice_Exercise_solutions_Respiration_in_Organisms.pdf",
+      "source_sha256": "d5030f6a1e5a1ed6936f7f13bd1ec51c5ee15596f086516379243937c3c4eff4",
+      "image_bbox": [
+        494.8999938964844,
+        32.29597854614258,
+        564.0,
+        50.28997802734375
+      ],
+      "catalog_index": 100
+    },
+    {
+      "digest": "ff1668d293a9607b03b1a7882c2d2650",
+      "source_id": "7th class/science/10 Electric Current And Its Effects/Electric Current and its Effects_Key point.pdf",
+      "source_sha256": "8a22ef152de077afada4d3e3f93ba4ac7fd2d327c5d49657a94bdee1f511fa28",
+      "image_bbox": [
+        30.14590072631836,
+        28.754674911499023,
+        124.58572387695312,
+        53.33404541015625
+      ],
+      "catalog_index": 102
+    },
+    {
+      "digest": "fdb00fd7143dc2562b5d46ad19894ce7",
+      "source_id": "7th class/science/11 Light/Test _ solutions_Light (1).pdf",
+      "source_sha256": "e648ee0db312c66a17b838eff3e605d6f59a0b4654e50210788a22409398f65e",
+      "image_bbox": [
+        206.85000610351562,
+        39.0000114440918,
+        403.54998779296875,
+        90.20001220703125
+      ],
+      "catalog_index": 103
+    },
+    {
+      "digest": "dd78776454fc26b247d699f09f2c0aec",
+      "source_id": "7th class/science/12 Forests - Our Lifeline/Forests - Our Lifeline_Key point.pdf",
+      "source_sha256": "2664db9c585fbda58b887a8e97c21ea0d77a76617df583e354d1d7d9fa465c1a",
+      "image_bbox": [
+        19.960800170898438,
+        21.395877838134766,
+        96.42304992675781,
+        43.2569580078125
+      ],
+      "catalog_index": 104
+    },
+    {
+      "digest": "db12134c0f752d07827f3650552c7b9a",
+      "source_id": "7th class/math/01 Integers/Integers_Key point.pdf",
+      "source_sha256": "56f5d590aa7b7639973aeea502a3f4a76db9b21fbb9680b8170b9e1265635e6b",
+      "image_bbox": [
+        10.296600341796875,
+        32.050331115722656,
+        104.73641967773438,
+        56.62969970703125
+      ],
+      "catalog_index": 105
+    },
+    {
+      "digest": "9063974bb219e4da37b26f99cba6f053",
+      "source_id": "7th class/math/05 Simple Equations/Simple Equations_Key point.pdf",
+      "source_sha256": "a53444dd103ecde4fc80ae55078363b16ddbfb0747a1b6234fcf25a8b1ae1df3",
+      "image_bbox": [
+        13.991999626159668,
+        14.221902847290039,
+        92.90033721923828,
+        34.75897216796875
+      ],
+      "catalog_index": 108
+    },
+    {
+      "digest": "ce1a7594f861358a976fcbe8c893d0d5",
+      "source_id": "7th class/math/08 Comparing Quantities/Comparing Quantities_Key point (1).pdf",
+      "source_sha256": "1c13215001314f7f89bd0eb431908a9de0b9d82305fece2841b2ba405af8cf3c",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 109
+    },
+    {
+      "digest": "236a925c33661c588551b6219fa9713f",
+      "source_id": "7th class/math/09 Algebraic Expressions/Algebraic Expressions_Key point.pdf",
+      "source_sha256": "751fd3469606a39996e9b87afb00f9239874e1e44c698a2ad7728dd9aadebd79",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 110
+    },
+    {
+      "digest": "baddfd00b5d95b060f4bbb370b48aff8",
+      "source_id": "6th class/science/05 Body Movements/Test _ solutions_Body Movements.pdf",
+      "source_sha256": "efd55df0c97480e568cadafc34c210fe29c2e0deca71124883b9d3356888016f",
+      "image_bbox": [
+        207.40553283691406,
+        34.66780471801758,
+        394.31109619140625,
+        90.33906555175781
+      ],
+      "catalog_index": 111
+    },
+    {
+      "digest": "cd3356f82db4e4c41296333c1999a3b2",
+      "source_id": "6th class/science/06 The Living Organisms Characteristics and Habitats/NCERT_Practice_solutions_The_Living_Organisms_Characteristics_and.pdf",
+      "source_sha256": "9ed068984adca30f8d2a2954cd9ffaa035eba662896b24cf23992d58efb5539d",
+      "image_bbox": [
+        224.38999938964844,
+        37.50297164916992,
+        381.3500061035156,
+        83.969970703125
+      ],
+      "catalog_index": 112
+    },
+    {
+      "digest": "f05a1b4c07432688eaa52fbd7e7a7f29",
+      "source_id": "6th class/science/07 Measurement and Motion/Race _ solutions_Measurement and Motion.pdf",
+      "source_sha256": "22f43c4e0201c9a4877566143d08c65f9145768ab42c9079f08ad7fa84972b19",
+      "image_bbox": [
+        478.5,
+        32.64997482299805,
+        554.1920166015625,
+        52.3499755859375
+      ],
+      "catalog_index": 113
+    },
+    {
+      "digest": "35512054eace2252744e806fb60629e2",
+      "source_id": "6th class/science/10 Fun with Magnets/Race _ solutions_Fun with Magnets.pdf",
+      "source_sha256": "328d103e3a87e0c4ad43da99d14b7fb377f704bb67d97a1b6c0e9151c8a1eb28",
+      "image_bbox": [
+        472.6499938964844,
+        30.94799041748047,
+        558.2999877929688,
+        53.239990234375
+      ],
+      "catalog_index": 114
+    },
+    {
+      "digest": "d2f75de2b9c3865f005c4793217ba064",
+      "source_id": "6th class/math/02 Whole Numbers/Whole Numbers_Key point.pdf",
+      "source_sha256": "fe5f978556039593881c9cafed8cc32f88085d7a3b4cc71105031a86d757508e",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 115
+    },
+    {
+      "digest": "31bcd41c6be2d94d0907bd9cf13c2adc",
+      "source_id": "6th class/math/06 Integers/Integers_Key Points.pdf",
+      "source_sha256": "7bcf67f82d4c7d07109746422cefa6497ad7a62e6894f55a0f71bb5dbf40187c",
+      "image_bbox": [
+        14.187800407409668,
+        14.411869049072266,
+        108.62777709960938,
+        38.99114990234375
+      ],
+      "catalog_index": 116
+    },
+    {
+      "digest": "d27da5468dd5d4bd80669ff7272864c2",
+      "source_id": "10th class/phy/01 Light - Reflection and Refraction/1170_Physics_\u27a4_Optics_Reflection_Of_Light_\u27a4_Notes_Optics_Reflec.pdf",
+      "source_sha256": "af3e237892d1bc421fccd7a37094ab0efcfcd36c214674e39bca899b8bcde452",
+      "image_bbox": [
+        25.68000030517578,
+        0.0,
+        223.79998779296875,
+        89.8800048828125
+      ],
+      "catalog_index": 117
+    },
+    {
+      "digest": "6cf9add6ff41542569da2f2733677468",
+      "source_id": "10th class/phy/03 Electricity/1127_Physics_\u27a4_Electricity_\u27a4_Practice_Test_&_Solutions_Electric.pdf",
+      "source_sha256": "8478df8495a994fa3d9f55870e18bdb72d63465904fd6f77fdf48258afcd99d4",
+      "image_bbox": [
+        213.22000122070312,
+        34.95298767089844,
+        394.260009765625,
+        88.54998779296875
+      ],
+      "catalog_index": 118
+    },
+    {
+      "digest": "65994830263e0afc9bfdc765be7e13d7",
+      "source_id": "10th class/phy/03 Electricity/1127_Physics_\u27a4_Electricity_\u27a4_Practice_Test_&_Solutions_Electric.pdf",
+      "source_sha256": "8478df8495a994fa3d9f55870e18bdb72d63465904fd6f77fdf48258afcd99d4",
+      "image_bbox": [
+        480.75,
+        32.25,
+        553.3499755859375,
+        53.75
+      ],
+      "catalog_index": 119
+    },
+    {
+      "digest": "c3f80d49936d21e23a221a93ffab3edb",
+      "source_id": "10th class/math/03 Pair of Linear Equations/809_Maths_\u27a4_Pair_Of_Linear_Equations_In_Two_Variables_\u27a4_Practic.pdf",
+      "source_sha256": "41f1a5f2499d299edb63be02195680d255d1ae07533f8749f7c24e4ce5dedf52",
+      "image_bbox": [
+        478.8999938964844,
+        30.100954055786133,
+        559.25,
+        53.88995361328125
+      ],
+      "catalog_index": 122
+    },
+    {
+      "digest": "214aecf2c72c83ba7a83f3e04d52e418",
+      "source_id": "10th class/math/10 Mensuration/765_Maths_\u27a4_Area_Related_To_Circles_\u27a4_Practice_Race_&_Solution.pdf",
+      "source_sha256": "94ff6a4462ad05197986170ee594e64e41d37aa2d1b740e97ac89d907f8a698b",
+      "image_bbox": [
+        480.25,
+        30.549962997436523,
+        554.052001953125,
+        52.39996337890625
+      ],
+      "catalog_index": 123
+    },
+    {
+      "digest": "6248a36ff1f719fe8f41720e05f18a0c",
+      "source_id": "10th class/chem/03 Metals and Non Metals/248_Chemistry_\u27a4_Metals_And_Non_Metals_\u27a4_Notes_Metals_And_Non_M.pdf",
+      "source_sha256": "b4ddcddb6f82107311a4d8f4f7588b2304b28245250623dfee644d85b8c33033",
+      "image_bbox": [
+        27.966699600219727,
+        25.930822372436523,
+        122.4065170288086,
+        50.51019287109375
+      ],
+      "catalog_index": 124
+    },
+    {
+      "digest": "b3e47733b37d5716c85426c6b85cea90",
+      "source_id": "9th class/science/01 Matter In Our Surroundings/Matter In Our Surroundings_Key Points.pdf",
+      "source_sha256": "8a5033583c111dad8fd2c4ec9dce510dc0f04eacec05b4c37aacc5c75635e6a9",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 130
+    },
+    {
+      "digest": "3233040f71592532e6b05db798d443a5",
+      "source_id": "9th class/science/01 Matter In Our Surroundings/Matter In Our Surroundings_Key Points.pdf",
+      "source_sha256": "8a5033583c111dad8fd2c4ec9dce510dc0f04eacec05b4c37aacc5c75635e6a9",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 131
+    },
+    {
+      "digest": "1cc0f7823fd52f251a564ae341c8b4c6",
+      "source_id": "9th class/science/02 Is Matter Around Us Pure/Is Matter Around Us Pure_Key Points.pdf",
+      "source_sha256": "06d06fc9693b98adc736de70eec9d07e25b7732cf686f6bbd858a7aadbb57f70",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 132
+    },
+    {
+      "digest": "a00f98a0d9490218e618e188309e61bf",
+      "source_id": "9th class/science/02 Is Matter Around Us Pure/Is Matter Around Us Pure_Key Points.pdf",
+      "source_sha256": "06d06fc9693b98adc736de70eec9d07e25b7732cf686f6bbd858a7aadbb57f70",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 133
+    },
+    {
+      "digest": "82d58dcb08bb99252391436ed6adc4fb",
+      "source_id": "9th class/science/05 The Fundamental Unit Of Life/The Fundamental Unit Of Life_Key Points.pdf",
+      "source_sha256": "d4d4fe8310675d448750b0204cb6fdea038966c72be124eb3e91fc6cd85ad93c",
+      "image_bbox": [
+        14.187800407409668,
+        14.411869049072266,
+        108.62777709960938,
+        38.99114990234375
+      ],
+      "catalog_index": 136
+    },
+    {
+      "digest": "579821c008816035b5cb33f1a9709efc",
+      "source_id": "9th class/science/06 Tissues/Tissues_Key Points.pdf",
+      "source_sha256": "6ba6672c0b25fbe145cb0ef8531689b30bd831a5b48c1b798175e6fc1b2fb3a9",
+      "image_bbox": [
+        13.99209976196289,
+        14.22201919555664,
+        89.43363952636719,
+        35.53826904296875
+      ],
+      "catalog_index": 139
+    },
+    {
+      "digest": "b1e0edad573ebfdcb8db31fcd394249c",
+      "source_id": "9th class/science/06 Tissues/Tissues_Key Points.pdf",
+      "source_sha256": "6ba6672c0b25fbe145cb0ef8531689b30bd831a5b48c1b798175e6fc1b2fb3a9",
+      "image_bbox": [
+        13.99209976196289,
+        14.22201919555664,
+        89.43363952636719,
+        35.53826904296875
+      ],
+      "catalog_index": 140
+    },
+    {
+      "digest": "2179cb6f93d35098b9a2a76943ee942f",
+      "source_id": "9th class/science/07 Motion/Motion_Key Points.pdf",
+      "source_sha256": "59f5f10a6e1b6819122458688a6fa4f7dbc65f391b7f7c28b828f8f9c281f609",
+      "image_bbox": [
+        30.858299255371094,
+        66.60318756103516,
+        125.2981185913086,
+        91.18255615234375
+      ],
+      "catalog_index": 143
+    },
+    {
+      "digest": "2de714539285b1b70dade5e82575a1da",
+      "source_id": "9th class/science/07 Motion/Motion_Key Points.pdf",
+      "source_sha256": "59f5f10a6e1b6819122458688a6fa4f7dbc65f391b7f7c28b828f8f9c281f609",
+      "image_bbox": [
+        479.081298828125,
+        18.309301376342773,
+        573.5211181640625,
+        42.888671875
+      ],
+      "catalog_index": 145
+    },
+    {
+      "digest": "70055d5c1a3491dc0253ecc1a91f3185",
+      "source_id": "9th class/science/08 Gravitation/Gravitation_Key Points.pdf",
+      "source_sha256": "e8c98ae25058ff349917541caa62ea9cf8e09fecadc1896c33679565734abf9a",
+      "image_bbox": [
+        14.187800407409668,
+        14.411869049072266,
+        108.62777709960938,
+        38.99114990234375
+      ],
+      "catalog_index": 146
+    },
+    {
+      "digest": "6a69c49949017b8e907a50269755e5d0",
+      "source_id": "9th class/science/09 Thrust And Pressure/Practice Sheet _ Solutions_ Thrust And Pressure.pdf",
+      "source_sha256": "5de7b097112d2e6e252f2661fad6255c1fb496f8befb9ddcf6adbb1372fdb63a",
+      "image_bbox": [
+        214.10000610351562,
+        36.0000114440918,
+        381.1300048828125,
+        85.45001220703125
+      ],
+      "catalog_index": 148
+    },
+    {
+      "digest": "048b6346144ad668987767f4bdd8b469",
+      "source_id": "9th class/math/01 Number System/Number System_Key point.pdf",
+      "source_sha256": "b1580014623f6b9406d062a2a83c5bc5cbf436ae80b64c1bf67f06cfa23127e8",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 157
+    },
+    {
+      "digest": "8ddf356a78f6ebe2c57101f1b8ace3e2",
+      "source_id": "9th class/math/02 Polynomials/Polynomials_Key point.pdf",
+      "source_sha256": "913c8e69addebec9fae3d5835a4579ded04b83f8ef89c795c8e17357df9f7638",
+      "image_bbox": [
+        35.59980010986328,
+        37.613502502441406,
+        130.03961181640625,
+        62.19287109375
+      ],
+      "catalog_index": 158
+    },
+    {
+      "digest": "b3f29d2c716cc4fdb7ade71c1c9739ed",
+      "source_id": "9th class/math/02 Polynomials/Polynomials_Key point.pdf",
+      "source_sha256": "913c8e69addebec9fae3d5835a4579ded04b83f8ef89c795c8e17357df9f7638",
+      "image_bbox": [
+        35.59980010986328,
+        37.613502502441406,
+        130.03961181640625,
+        62.19287109375
+      ],
+      "catalog_index": 159
+    },
+    {
+      "digest": "206bbdb3faa38488aa66cc050f0ad0bd",
+      "source_id": "9th class/math/03 Coordinate Geometry/Coordinate Geometry_Keypoint.pdf",
+      "source_sha256": "34388cc121aa5008b4bf75fd299e787c9ea2e8b07cf597fa64f3ba0416681ea7",
+      "image_bbox": [
+        16.00160026550293,
+        33.45698165893555,
+        91.89307403564453,
+        53.2088623046875
+      ],
+      "catalog_index": 160
+    },
+    {
+      "digest": "e5e9f52b923bf6e8d470cdbff6724e48",
+      "source_id": "9th class/math/03 Coordinate Geometry/Coordinate Geometry_Keypoint.pdf",
+      "source_sha256": "34388cc121aa5008b4bf75fd299e787c9ea2e8b07cf597fa64f3ba0416681ea7",
+      "image_bbox": [
+        16.00160026550293,
+        33.45698165893555,
+        91.89307403564453,
+        53.2088623046875
+      ],
+      "catalog_index": 161
+    },
+    {
+      "digest": "7d5727adb9d8c9e4ceb6d9347ff96bd8",
+      "source_id": "9th class/math/04 Linear Equations in Two Variables/Linear Equations in Two Variables_Keypoint.pdf",
+      "source_sha256": "e7bd4c30755c8aa8eabc24d2acee01671e589bf6df65210325ca072acabd779e",
+      "image_bbox": [
+        16.00160026550293,
+        15.578319549560547,
+        91.89307403564453,
+        35.3302001953125
+      ],
+      "catalog_index": 165
+    },
+    {
+      "digest": "3597fa2f69c4271fb7ae49a52d636304",
+      "source_id": "9th class/math/04 Linear Equations in Two Variables/Linear Equations in Two Variables_Keypoint.pdf",
+      "source_sha256": "e7bd4c30755c8aa8eabc24d2acee01671e589bf6df65210325ca072acabd779e",
+      "image_bbox": [
+        16.00160026550293,
+        15.578319549560547,
+        91.89307403564453,
+        35.3302001953125
+      ],
+      "catalog_index": 166
+    },
+    {
+      "digest": "76b9edbe21b970885a3ebe7d073fafb6",
+      "source_id": "9th class/math/05 Introduction To Euclids Geometry/Introduction To Euclids Geometry_Key Points.pdf",
+      "source_sha256": "f0dfdc5065ba7cf987eee552c7c4bf6ca5f877dea6493e26a8adc7731a140b9d",
+      "image_bbox": [
+        27.933399200439453,
+        26.701444625854492,
+        114.44479370117188,
+        51.28094482421875
+      ],
+      "catalog_index": 167
+    },
+    {
+      "digest": "245dfb0ee8508b0c647026a25e1eac42",
+      "source_id": "9th class/math/05 Introduction To Euclids Geometry/Introduction To Euclids Geometry_Key Points.pdf",
+      "source_sha256": "f0dfdc5065ba7cf987eee552c7c4bf6ca5f877dea6493e26a8adc7731a140b9d",
+      "image_bbox": [
+        27.933399200439453,
+        26.701444625854492,
+        114.44479370117188,
+        51.28094482421875
+      ],
+      "catalog_index": 168
+    },
+    {
+      "digest": "8c649c6dfecdd5d507a41cf26bda55cc",
+      "source_id": "9th class/math/08 Quadrilaterals/Quadrilaterals_Keypoint.pdf",
+      "source_sha256": "3bc61adcefb9a3ef1d51c54bffdb8d4f7908e597246ca752c4b76db3c9053634",
+      "image_bbox": [
+        16.00160026550293,
+        13.920604705810547,
+        91.89307403564453,
+        33.6724853515625
+      ],
+      "catalog_index": 174
+    },
+    {
+      "digest": "fc1258dc7696f8e6d2b55d68293e5782",
+      "source_id": "9th class/math/08 Quadrilaterals/Quadrilaterals_Keypoint.pdf",
+      "source_sha256": "3bc61adcefb9a3ef1d51c54bffdb8d4f7908e597246ca752c4b76db3c9053634",
+      "image_bbox": [
+        16.00160026550293,
+        13.920604705810547,
+        91.89307403564453,
+        33.6724853515625
+      ],
+      "catalog_index": 175
+    },
+    {
+      "digest": "34a66b42e56656c731a0f726aa71b973",
+      "source_id": "9th class/math/09 Circles/Circles.pdf",
+      "source_sha256": "5ded48e4f84a0413d836e6bfcea52f9f85ee27b0036d98fadee7e7657aed41fd",
+      "image_bbox": [
+        495.3599853515625,
+        57.36000442504883,
+        544.5599975585938,
+        72.24000549316406
+      ],
+      "catalog_index": 176
+    },
+    {
+      "digest": "f5cc8f213f132b13f26b0819e4ad627a",
+      "source_id": "9th class/math/09 Circles/Exercise _ solutions_Circles.pdf",
+      "source_sha256": "14fe36ee4a0ed3cd77262277225c6cffb0c79c91b8d5edf1e5120a449c40bfeb",
+      "image_bbox": [
+        50.159996032714844,
+        57.36000442504883,
+        99.1199951171875,
+        72.24000549316406
+      ],
+      "catalog_index": 177
+    },
+    {
+      "digest": "f923610f6475689396c5300369eab8b8",
+      "source_id": "9th class/math/09 Circles/Exercise _ solutions_Circles.pdf",
+      "source_sha256": "14fe36ee4a0ed3cd77262277225c6cffb0c79c91b8d5edf1e5120a449c40bfeb",
+      "image_bbox": [
+        494.1600036621094,
+        57.36000442504883,
+        543.1199951171875,
+        72.24000549316406
+      ],
+      "catalog_index": 178
+    },
+    {
+      "digest": "b12af96851124880568fd7f05085823c",
+      "source_id": "9th class/math/10 Herons Formula/Heron_s Formula_Keypoint.pdf",
+      "source_sha256": "46bec5eb63c26601383894d801adea198cce49421e47c2e05a412998f13de444",
+      "image_bbox": [
+        16.00160026550293,
+        33.45698165893555,
+        91.89307403564453,
+        53.2088623046875
+      ],
+      "catalog_index": 180
+    },
+    {
+      "digest": "b0aeb68c431141aa720c45ff4e78e63c",
+      "source_id": "9th class/math/10 Herons Formula/Heron_s Formula_Keypoint.pdf",
+      "source_sha256": "46bec5eb63c26601383894d801adea198cce49421e47c2e05a412998f13de444",
+      "image_bbox": [
+        16.00160026550293,
+        33.45698165893555,
+        91.89307403564453,
+        53.2088623046875
+      ],
+      "catalog_index": 181
+    },
+    {
+      "digest": "cc32df892891d0ae769351b2db325929",
+      "source_id": "8th class/science/01 Crop Production And Management/Crop Production And Management_Key Points.pdf",
+      "source_sha256": "7aa81f2b817c00bd671887f6775c946cf3805c4b9ed06bcd773fed0577728782",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 183
+    },
+    {
+      "digest": "a64415e89fb1afed365d42f4d9e7240b",
+      "source_id": "8th class/science/06 Reproduction In Animals/Test _ solutions_Reproduction in Animals.pdf",
+      "source_sha256": "3557270f633b4d5667b4467880c955b48f7f9bfb07229081223b39f63a2f7175",
+      "image_bbox": [
+        208.65093994140625,
+        35.88365936279297,
+        389.15118408203125,
+        89.45751953125
+      ],
+      "catalog_index": 188
+    },
+    {
+      "digest": "083a3d398932966b90e3ac367e00d16e",
+      "source_id": "8th class/science/09 Friction/Friction_Key Points.pdf",
+      "source_sha256": "03325c743764846541aa8df256718882300f9402d7914e2bc88f6a5610dd43b2",
+      "image_bbox": [
+        9.298600196838379,
+        26.507266998291016,
+        103.73857879638672,
+        51.0865478515625
+      ],
+      "catalog_index": 189
+    },
+    {
+      "digest": "a16101b34b9a052f50225f1d45b1be62",
+      "source_id": "8th class/science/11 Chemical Effects Of Electric Current/Exercise_Solutions_Electricity_Magnetic_and_Heating_Effects.pdf",
+      "source_sha256": "5987f3551c0e36c6afd50fdc0006744e2fd5a23c1b40377643ac985114c4f3f5",
+      "image_bbox": [
+        50.159996032714844,
+        57.36000442504883,
+        99.1199951171875,
+        72.24000549316406
+      ],
+      "catalog_index": 190
+    },
+    {
+      "digest": "3f898b6c2b2896a664197b884db04b80",
+      "source_id": "8th class/math/01 Rational Numbers/Rational Numbers_Key point.pdf",
+      "source_sha256": "0cbab773afe75fe6c6289559225cedbb823c2e73019c2e361ec61d0ded54658d",
+      "image_bbox": [
+        8.300999641418457,
+        8.086376190185547,
+        84.19247436523438,
+        27.8382568359375
+      ],
+      "catalog_index": 195
+    },
+    {
+      "digest": "dbd1aff28dd1744c6f28aecf3ffd2de6",
+      "source_id": "8th class/math/01 Rational Numbers/Rational Numbers_Key point.pdf",
+      "source_sha256": "0cbab773afe75fe6c6289559225cedbb823c2e73019c2e361ec61d0ded54658d",
+      "image_bbox": [
+        8.300999641418457,
+        8.086376190185547,
+        84.19247436523438,
+        27.8382568359375
+      ],
+      "catalog_index": 197
+    },
+    {
+      "digest": "e120b70001b816d538b7cfd91c8dd80a",
+      "source_id": "8th class/math/02 Linear Equations in One Variable/Linear equations in one variable_Key point.pdf",
+      "source_sha256": "dc6a1fb87fbc5d0cd41eee6d237131ef0fcc6dd890f7a1fc23c945c79571c6fe",
+      "image_bbox": [
+        13.991999626159668,
+        14.221902847290039,
+        92.90033721923828,
+        34.75897216796875
+      ],
+      "catalog_index": 198
+    },
+    {
+      "digest": "92b1e089814bddda0cf3314ff299d39d",
+      "source_id": "8th class/math/02 Linear Equations in One Variable/Linear equations in one variable_Key point.pdf",
+      "source_sha256": "dc6a1fb87fbc5d0cd41eee6d237131ef0fcc6dd890f7a1fc23c945c79571c6fe",
+      "image_bbox": [
+        13.991999626159668,
+        14.221902847290039,
+        92.90033721923828,
+        34.75897216796875
+      ],
+      "catalog_index": 199
+    },
+    {
+      "digest": "86bd3443167412ca66e840be190b329e",
+      "source_id": "8th class/math/03 Understanding Quadrilaterals/Understanding Quadrilaterals_Key point.pdf",
+      "source_sha256": "b698532b4eb6b7cf1dd30e9f48c97f629ae6a04c541bbf1ea93e462703604d44",
+      "image_bbox": [
+        29.281200408935547,
+        28.720584869384766,
+        123.72117614746094,
+        53.29986572265625
+      ],
+      "catalog_index": 200
+    },
+    {
+      "digest": "71ed4e79a561777a8c6d4f03a2930aaa",
+      "source_id": "8th class/math/04 Squares and Square Roots/Squares and Square Roots_Key point.pdf",
+      "source_sha256": "03e58481e03771273b64244ad3693bc8f847fd7304b25de0a5b2a3db13ffe01e",
+      "image_bbox": [
+        14.187800407409668,
+        14.411869049072266,
+        108.62777709960938,
+        38.99114990234375
+      ],
+      "catalog_index": 201
+    },
+    {
+      "digest": "7bbdeae6960096f4865f49fd6050d7c3",
+      "source_id": "8th class/math/04 Squares and Square Roots/Squares and Square Roots_Key point.pdf",
+      "source_sha256": "03e58481e03771273b64244ad3693bc8f847fd7304b25de0a5b2a3db13ffe01e",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 202
+    },
+    {
+      "digest": "027547447e9a1f5c9214d19513814d6e",
+      "source_id": "8th class/math/06 Comparing Quantities/Comparing Quantities_Key point.pdf",
+      "source_sha256": "88f671695bb68303824ce1668e4c8f725bb34b1f891a9590c4c0fc1eab4ea45e",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 203
+    },
+    {
+      "digest": "437ec0b1872f0d671d5bcef1174512de",
+      "source_id": "8th class/math/07 Algebraic Expressions Identities and Factorisation/Algebraic_Expressions_Identities_and_Factorisation_Key_point.pdf",
+      "source_sha256": "6e997c1d025982316a2717c8db05e8453ef35ec1aaf4609f76004d9ddd8f1240",
+      "image_bbox": [
+        28.332399368286133,
+        26.701480865478516,
+        122.77237701416016,
+        51.28076171875
+      ],
+      "catalog_index": 204
+    },
+    {
+      "digest": "04a5e7cb3410c4b238cfdafad347ef1d",
+      "source_id": "8th class/math/07 Algebraic Expressions Identities and Factorisation/Algebraic_Expressions_Identities_and_Factorisation_Key_point.pdf",
+      "source_sha256": "6e997c1d025982316a2717c8db05e8453ef35ec1aaf4609f76004d9ddd8f1240",
+      "image_bbox": [
+        28.6648006439209,
+        28.709325790405273,
+        123.10462188720703,
+        53.2886962890625
+      ],
+      "catalog_index": 205
+    },
+    {
+      "digest": "e5d283c574c130138b47b38b1bc7aa8c",
+      "source_id": "8th class/math/08 Mensuration/Mensuration_Key point.pdf",
+      "source_sha256": "004a215048d4af8a8cec6392339aff8b6d05023ff5539f4a0377399df55055f9",
+      "image_bbox": [
+        25.273799896240234,
+        29.458288192749023,
+        119.713623046875,
+        54.03765869140625
+      ],
+      "catalog_index": 206
+    },
+    {
+      "digest": "f69fc74be3df82ccfb87af91816cecac",
+      "source_id": "8th class/math/09 Exponents and Powers/Exponents and Powers_Key point.pdf",
+      "source_sha256": "e1b805883d65642432d5936960673f4bbc45ed573ae4159ba053c5dd1885ddf6",
+      "image_bbox": [
+        16.00160026550293,
+        33.45698165893555,
+        91.89307403564453,
+        53.2088623046875
+      ],
+      "catalog_index": 209
+    },
+    {
+      "digest": "ed5bba4b7fb26d3dd175f71ea2bd73df",
+      "source_id": "8th class/math/09 Exponents and Powers/Exponents and Powers_Key point.pdf",
+      "source_sha256": "e1b805883d65642432d5936960673f4bbc45ed573ae4159ba053c5dd1885ddf6",
+      "image_bbox": [
+        16.00160026550293,
+        33.45698165893555,
+        91.89307403564453,
+        53.2088623046875
+      ],
+      "catalog_index": 211
+    },
+    {
+      "digest": "51b9e63f238e15d6d21e6b1aacc14810",
+      "source_id": "8th class/math/10 Direct and Inverse Proportions/Direct and Inverse Proportions_Key point.pdf",
+      "source_sha256": "b65688484dab28d34ff541b7f55ff49cab0c6d23a89416cff7093b6aa299814d",
+      "image_bbox": [
+        27.76180076599121,
+        26.578983306884766,
+        122.2017822265625,
+        51.15826416015625
+      ],
+      "catalog_index": 213
+    },
+    {
+      "digest": "3acfd61668c3af556c3c5de7616f6257",
+      "source_id": "7th class/science/01 Nutrition In Plants/Nutrition in Plants_Key point.pdf",
+      "source_sha256": "ba251dfa27ac596f918da8fcd2b34644ac486c81e7f627343995d88c433973f2",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 214
+    },
+    {
+      "digest": "ed0711590bdb83d61e0c46d85e5c7f4b",
+      "source_id": "7th class/science/01 Nutrition In Plants/Nutrition in Plants_Key point.pdf",
+      "source_sha256": "ba251dfa27ac596f918da8fcd2b34644ac486c81e7f627343995d88c433973f2",
+      "image_bbox": [
+        14.187800407409668,
+        14.411869049072266,
+        108.62777709960938,
+        38.99114990234375
+      ],
+      "catalog_index": 215
+    },
+    {
+      "digest": "bb7b801555bc8eafe9ba877bd0db63ad",
+      "source_id": "7th class/science/02 Nutrition In Animals/Nutrition in Animals_Key point.pdf",
+      "source_sha256": "43e742924cdc8ae9b73b35d4d5fefdab1aed3d8544451de863fc2d29c254c815",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 218
+    },
+    {
+      "digest": "c567ece559b68152050c655dc93c3c3c",
+      "source_id": "7th class/science/02 Nutrition In Animals/Nutrition in Animals_Key point.pdf",
+      "source_sha256": "43e742924cdc8ae9b73b35d4d5fefdab1aed3d8544451de863fc2d29c254c815",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 220
+    },
+    {
+      "digest": "0f28ac3fa2c57d5b595c8335de7e2893",
+      "source_id": "7th class/science/03 Heat/Heat.pdf",
+      "source_sha256": "8d99e3aa2fe19e7999685d384b7bfc6f80f6f88c97f4e993a89c866ad75bd9de",
+      "image_bbox": [
+        489.3500061035156,
+        57.749961853027344,
+        544.7999877929688,
+        72.14996337890625
+      ],
+      "catalog_index": 221
+    },
+    {
+      "digest": "8742bb1cd7bdcc2e575d23e0e2436b9c",
+      "source_id": "7th class/science/03 Heat/Heat_Key point.pdf",
+      "source_sha256": "7c70553748ff81e144b931ae85f12927eccd4690b18fe8e248fad699cccba677",
+      "image_bbox": [
+        14.050000190734863,
+        13.967199325561523,
+        108.48982238769531,
+        38.54656982421875
+      ],
+      "catalog_index": 223
+    },
+    {
+      "digest": "6fefc7fff07e7d541e499a68df32e868",
+      "source_id": "7th class/science/06 Respiration In Organisms/Respiration in Organisms_Key Points.pdf",
+      "source_sha256": "174b1d18dd8e5d8016761f61d5dd4fa30855bb7cc80d954da00ecefd541996ac",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 225
+    },
+    {
+      "digest": "36795823e2c1e7d8827a8984a8a7a1cb",
+      "source_id": "7th class/science/06 Respiration In Organisms/Respiration in Organisms_Key Points.pdf",
+      "source_sha256": "174b1d18dd8e5d8016761f61d5dd4fa30855bb7cc80d954da00ecefd541996ac",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 226
+    },
+    {
+      "digest": "65911d82e854f65e8bb24386b127a206",
+      "source_id": "7th class/science/07 Transportation In Plants And Animals/Transportation in Plants and Animals_Key point.pdf",
+      "source_sha256": "d7c9276312b10094435b94a524b3be938cbd1b36051ebf8cb1bf4524d40a2fbe",
+      "image_bbox": [
+        20.214080810546875,
+        17.840564727783203,
+        103.50000762939453,
+        41.66033935546875
+      ],
+      "catalog_index": 229
+    },
+    {
+      "digest": "d39348c0735e385076205950961d13f5",
+      "source_id": "7th class/science/07 Transportation In Plants And Animals/Transportation in Plants and Animals_Key point.pdf",
+      "source_sha256": "d7c9276312b10094435b94a524b3be938cbd1b36051ebf8cb1bf4524d40a2fbe",
+      "image_bbox": [
+        20.23816680908203,
+        17.892131805419922,
+        104.4715576171875,
+        41.97479248046875
+      ],
+      "catalog_index": 230
+    },
+    {
+      "digest": "12961fa495a64f231c4371f258712981",
+      "source_id": "7th class/science/08 Reproduction In Plants/Reproduction in Plants_Key point.pdf",
+      "source_sha256": "159713d969c94f27f697a9d121f45730eac858949119795f800032bfdca1655c",
+      "image_bbox": [
+        21.360000610351562,
+        21.720001220703125,
+        97.80000305175781,
+        43.560001373291016
+      ],
+      "catalog_index": 232
+    },
+    {
+      "digest": "6d649b2ad710ab8f87af4d43ed914dd5",
+      "source_id": "7th class/science/08 Reproduction In Plants/Reproduction in Plants_Key point.pdf",
+      "source_sha256": "159713d969c94f27f697a9d121f45730eac858949119795f800032bfdca1655c",
+      "image_bbox": [
+        20.520000457763672,
+        20.520002365112305,
+        97.19999694824219,
+        42.60000228881836
+      ],
+      "catalog_index": 233
+    },
+    {
+      "digest": "6b758f0225534c6bc3cff0525502f83d",
+      "source_id": "7th class/science/09 Motion And Time/Motion and Time_Key Points.pdf",
+      "source_sha256": "76f2ae629f0b777782a9925554b1d2b199ff6f455902855248198ead9826ae93",
+      "image_bbox": [
+        14.187800407409668,
+        14.411869049072266,
+        108.62777709960938,
+        38.99114990234375
+      ],
+      "catalog_index": 234
+    },
+    {
+      "digest": "59ff741126c2df6ad03f04908f77a2fc",
+      "source_id": "7th class/science/09 Motion And Time/Motion and Time_Key Points.pdf",
+      "source_sha256": "76f2ae629f0b777782a9925554b1d2b199ff6f455902855248198ead9826ae93",
+      "image_bbox": [
+        14.187800407409668,
+        14.411869049072266,
+        108.62777709960938,
+        38.99114990234375
+      ],
+      "catalog_index": 235
+    },
+    {
+      "digest": "f9dde1e77cbbaef2eca843d433e97afb",
+      "source_id": "7th class/science/09 Motion And Time/Test _ solutions_ Motion and Time.pdf",
+      "source_sha256": "f8951fa9a81db546c32df2e6afad3b237412a10657e5bf9651d03cc4f45bb76d",
+      "image_bbox": [
+        475.6000061035156,
+        31.20201301574707,
+        558.2000122070312,
+        52.70001220703125
+      ],
+      "catalog_index": 236
+    },
+    {
+      "digest": "d0385c28fa205a76637e7cc35bcb0edf",
+      "source_id": "7th class/science/10 Electric Current And Its Effects/Electric Current and its Effects_Key point.pdf",
+      "source_sha256": "8a22ef152de077afada4d3e3f93ba4ac7fd2d327c5d49657a94bdee1f511fa28",
+      "image_bbox": [
+        30.14590072631836,
+        28.754674911499023,
+        124.58572387695312,
+        53.33404541015625
+      ],
+      "catalog_index": 238
+    },
+    {
+      "digest": "507d05b4f9b8798b4692291e3ef9f7c5",
+      "source_id": "7th class/science/11 Light/Light_Key point (1).pdf",
+      "source_sha256": "24df47d8c3a1f223631f781cc0c262e726040d510d23ca3dce60a90ab8f7fcab",
+      "image_bbox": [
+        24.790800094604492,
+        27.727909088134766,
+        119.23078155517578,
+        52.30718994140625
+      ],
+      "catalog_index": 240
+    },
+    {
+      "digest": "6b5056c7694393e350e79c6bbba450d0",
+      "source_id": "7th class/science/11 Light/Light_Key point (1).pdf",
+      "source_sha256": "24df47d8c3a1f223631f781cc0c262e726040d510d23ca3dce60a90ab8f7fcab",
+      "image_bbox": [
+        28.4507999420166,
+        29.971899032592773,
+        122.89061737060547,
+        54.55126953125
+      ],
+      "catalog_index": 241
+    },
+    {
+      "digest": "27b71c65c71ef41b049ce5e9cebb9f03",
+      "source_id": "7th class/science/11 Light/Test _ solutions_Light (1).pdf",
+      "source_sha256": "e648ee0db312c66a17b838eff3e605d6f59a0b4654e50210788a22409398f65e",
+      "image_bbox": [
+        474.54998779296875,
+        32.2499885559082,
+        560.2319946289062,
+        54.54998779296875
+      ],
+      "catalog_index": 242
+    },
+    {
+      "digest": "3bb4f019df55aeaf91294b1a720ad370",
+      "source_id": "7th class/math/01 Integers/Integers_Key point.pdf",
+      "source_sha256": "56f5d590aa7b7639973aeea502a3f4a76db9b21fbb9680b8170b9e1265635e6b",
+      "image_bbox": [
+        10.296600341796875,
+        32.050331115722656,
+        104.73641967773438,
+        56.62969970703125
+      ],
+      "catalog_index": 272
+    },
+    {
+      "digest": "2c2511913fdf9ac30153ffb53e11a4a4",
+      "source_id": "7th class/math/02 Fractions/Fractions_Key point.pdf",
+      "source_sha256": "afa74c235a891358d7115ed06b97867319e3b5682d4d6c1173077199ff3138ef",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 273
+    },
+    {
+      "digest": "4c2c903bfd18d61171de05cc852435ed",
+      "source_id": "7th class/math/02 Fractions/Fractions_Key point.pdf",
+      "source_sha256": "afa74c235a891358d7115ed06b97867319e3b5682d4d6c1173077199ff3138ef",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 274
+    },
+    {
+      "digest": "6eac7f318441b32a35c728513b80c914",
+      "source_id": "7th class/math/03 Decimals/Decimals_Key point.pdf",
+      "source_sha256": "42ed901ecf5999c747d1be2473530e92969f63e2804ff2e1f0a86984cb8d2e06",
+      "image_bbox": [
+        7.526899814605713,
+        27.955297470092773,
+        101.96672058105469,
+        52.53466796875
+      ],
+      "catalog_index": 275
+    },
+    {
+      "digest": "5476f33cc5608b8f2799a46244622ba0",
+      "source_id": "7th class/math/04 Rational Numbers/Rational Numbers_Key point (1).pdf",
+      "source_sha256": "09f0eb9c72f976c6a3e8a566b19c5072ed1d886a3e8e2b8c51b7aba628f9bbd2",
+      "image_bbox": [
+        14.187800407409668,
+        14.411869049072266,
+        108.62777709960938,
+        38.99114990234375
+      ],
+      "catalog_index": 276
+    },
+    {
+      "digest": "7ba8209a49462b2e1b61e072346298ba",
+      "source_id": "7th class/math/04 Rational Numbers/Rational Numbers_Key point (1).pdf",
+      "source_sha256": "09f0eb9c72f976c6a3e8a566b19c5072ed1d886a3e8e2b8c51b7aba628f9bbd2",
+      "image_bbox": [
+        14.187800407409668,
+        14.411869049072266,
+        108.62777709960938,
+        38.99114990234375
+      ],
+      "catalog_index": 277
+    },
+    {
+      "digest": "624056ee75b7dbcce1bfc6f74987d466",
+      "source_id": "7th class/math/05 Simple Equations/Simple Equations_Key point.pdf",
+      "source_sha256": "a53444dd103ecde4fc80ae55078363b16ddbfb0747a1b6234fcf25a8b1ae1df3",
+      "image_bbox": [
+        13.991999626159668,
+        14.221902847290039,
+        92.90033721923828,
+        34.75897216796875
+      ],
+      "catalog_index": 278
+    },
+    {
+      "digest": "61a92703eab65acda119a2069285279d",
+      "source_id": "7th class/math/06 Lines and Angles/Lines and Angles_Key point (1).pdf",
+      "source_sha256": "859f97217c38fc9814ddcfe7bc36d8363d3cf7ebf6005576056e73d8f401f26b",
+      "image_bbox": [
+        10.704400062561035,
+        25.0358943939209,
+        83.45014953613281,
+        43.96905517578125
+      ],
+      "catalog_index": 279
+    },
+    {
+      "digest": "a0cfeffd24009603d5e6e6dc4337e69c",
+      "source_id": "7th class/math/06 Lines and Angles/Lines and Angles_Key point (1).pdf",
+      "source_sha256": "859f97217c38fc9814ddcfe7bc36d8363d3cf7ebf6005576056e73d8f401f26b",
+      "image_bbox": [
+        10.704400062561035,
+        25.0358943939209,
+        83.45014953613281,
+        43.96905517578125
+      ],
+      "catalog_index": 280
+    },
+    {
+      "digest": "8016537d31c127f5ee49b5d3cf696967",
+      "source_id": "7th class/math/07 The Triangles and its Properties/The Triangles and its Properties_Key point.pdf",
+      "source_sha256": "a181223664d6e6602194eee3acdd92c82e56ba6ab0f3f092fd853f58255a521c",
+      "image_bbox": [
+        13.991999626159668,
+        14.221902847290039,
+        92.90033721923828,
+        34.75897216796875
+      ],
+      "catalog_index": 281
+    },
+    {
+      "digest": "0d62e9bb5532ea3c41fc2f9d625e5cb6",
+      "source_id": "7th class/math/07 The Triangles and its Properties/The Triangles and its Properties_Key point.pdf",
+      "source_sha256": "a181223664d6e6602194eee3acdd92c82e56ba6ab0f3f092fd853f58255a521c",
+      "image_bbox": [
+        13.991999626159668,
+        14.221902847290039,
+        92.90033721923828,
+        34.75897216796875
+      ],
+      "catalog_index": 282
+    },
+    {
+      "digest": "79dad9e647fb65b51e9fe76ffdce3977",
+      "source_id": "7th class/math/09 Algebraic Expressions/Algebraic Expressions_Key point.pdf",
+      "source_sha256": "751fd3469606a39996e9b87afb00f9239874e1e44c698a2ad7728dd9aadebd79",
+      "image_bbox": [
+        14.187800407409668,
+        14.411869049072266,
+        108.62777709960938,
+        38.99114990234375
+      ],
+      "catalog_index": 283
+    },
+    {
+      "digest": "ad484f5c8222b848d26f590a81bbfc95",
+      "source_id": "7th class/math/11 Symmetry/Symmetry_Key point.pdf",
+      "source_sha256": "ad4406e0aef4808dae83b23b6fd969c5dab6f2b1f069aa76a7c7317a8e225a09",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 285
+    },
+    {
+      "digest": "5848fd7e96dc3eadc29b8e9ab64bf6a7",
+      "source_id": "7th class/math/11 Symmetry/Symmetry_Key point.pdf",
+      "source_sha256": "ad4406e0aef4808dae83b23b6fd969c5dab6f2b1f069aa76a7c7317a8e225a09",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 286
+    },
+    {
+      "digest": "0cc340a9f19101f6fa4f44684223092b",
+      "source_id": "7th class/math/14 Visualising Solid Shapes/Visualising Solid Shapes_Key point.pdf",
+      "source_sha256": "8c737eafe29fb18eb0d72d8548f2d8030221c93a97cd06cadb008d2ce076ad29",
+      "image_bbox": [
+        28.652099609375,
+        30.605993270874023,
+        123.0919189453125,
+        55.18536376953125
+      ],
+      "catalog_index": 287
+    },
+    {
+      "digest": "fcbb520c2649bfa26e39d37053d666fd",
+      "source_id": "7th class/math/14 Visualising Solid Shapes/Visualising Solid Shapes_Key point.pdf",
+      "source_sha256": "8c737eafe29fb18eb0d72d8548f2d8030221c93a97cd06cadb008d2ce076ad29",
+      "image_bbox": [
+        28.652099609375,
+        30.605993270874023,
+        123.0919189453125,
+        55.18536376953125
+      ],
+      "catalog_index": 288
+    },
+    {
+      "digest": "b638ae4573c33ebb8875e429dcb9f217",
+      "source_id": "6th class/science/01 Components of Food/Components of Food_Key point .pdf",
+      "source_sha256": "d5feaa667bcab73ce01632c2f65129e9f3891c2db9f85ef7ddcfc30d26246450",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 291
+    },
+    {
+      "digest": "7c64e03f87cc11e49b5a5d0d3e3a1271",
+      "source_id": "6th class/science/02 Sorting Materials into Groups/Sorting materials into groups_Key point.pdf",
+      "source_sha256": "e3e7a10c16beb9c196d8b0179a9bb40187d2811cd1f79dc10f39df576a43af10",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 292
+    },
+    {
+      "digest": "490346fd18f97a9ba95fc327974bd931",
+      "source_id": "6th class/science/02 Sorting Materials into Groups/Sorting materials into groups_Key point.pdf",
+      "source_sha256": "e3e7a10c16beb9c196d8b0179a9bb40187d2811cd1f79dc10f39df576a43af10",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 293
+    },
+    {
+      "digest": "a96145f1cdcaf29a783c29a71bd1c23b",
+      "source_id": "6th class/science/05 Body Movements/Body Movements_Key point.pdf",
+      "source_sha256": "be506c814a3e7cc922d76983841fef921ea9dc4ab3be1c5fef624f5e43f318e5",
+      "image_bbox": [
+        18.74250030517578,
+        31.12270164489746,
+        106.26255798339844,
+        56.1534423828125
+      ],
+      "catalog_index": 323
+    },
+    {
+      "digest": "af5d20358db5ae8496bb0f8bd28de593",
+      "source_id": "6th class/science/05 Body Movements/Body Movements_Key point.pdf",
+      "source_sha256": "be506c814a3e7cc922d76983841fef921ea9dc4ab3be1c5fef624f5e43f318e5",
+      "image_bbox": [
+        18.74250030517578,
+        31.12270164489746,
+        106.26255798339844,
+        56.1534423828125
+      ],
+      "catalog_index": 324
+    },
+    {
+      "digest": "083863ae0bb0b0817fb3ab16b1d24688",
+      "source_id": "6th class/science/05 Body Movements/NCERT Practice _ solutions_Body Movements.pdf",
+      "source_sha256": "a4036a3478ba16b26a0ed4f9af4d0ab75a53041b6a9b1100bccaacc291bc81ea",
+      "image_bbox": [
+        224.99000549316406,
+        35.80400085449219,
+        370.9000244140625,
+        79.0
+      ],
+      "catalog_index": 325
+    },
+    {
+      "digest": "6d4874f3bcf2697baeff81fee3fc444b",
+      "source_id": "6th class/science/08 Light Shadows and Reflection/Light_ Shadows and Reflection_Key Points.pdf",
+      "source_sha256": "7aea563d05b2aa1a8c6ed5354170d623b3105df52d703f6df3be8dd7c48ded49",
+      "image_bbox": [
+        14.15999984741211,
+        14.399999618530273,
+        108.72000122070312,
+        39.119998931884766
+      ],
+      "catalog_index": 331
+    },
+    {
+      "digest": "2293b4d611d9e7802a7e4aad5c6a4ea8",
+      "source_id": "6th class/science/08 Light Shadows and Reflection/Light_ Shadows and Reflection_Key Points.pdf",
+      "source_sha256": "7aea563d05b2aa1a8c6ed5354170d623b3105df52d703f6df3be8dd7c48ded49",
+      "image_bbox": [
+        14.15999984741211,
+        14.399999618530273,
+        108.72000122070312,
+        39.119998931884766
+      ],
+      "catalog_index": 332
+    },
+    {
+      "digest": "b8e242bd769a1b5fbff88ba5a15ff572",
+      "source_id": "6th class/science/08 Light Shadows and Reflection/Test _ solutions_ Light_ Shadows and Reflection.pdf",
+      "source_sha256": "6369bcf155a4009dc92b1a6cd718f5d150650b44071a42b9da78b85498174864",
+      "image_bbox": [
+        202.7100067138672,
+        42.44599151611328,
+        392.1099853515625,
+        91.67999267578125
+      ],
+      "catalog_index": 334
+    },
+    {
+      "digest": "9674641629b7d104550c540611f75195",
+      "source_id": "6th class/science/09 Electricity and Circuits/Electricity and Circuits_Key point.pdf",
+      "source_sha256": "117aedd005f7390fd9067a24267ae5bc0383540500dfbc9c63eb984b8914f105",
+      "image_bbox": [
+        31.071500778198242,
+        34.581275939941406,
+        125.51132202148438,
+        59.16064453125
+      ],
+      "catalog_index": 335
+    },
+    {
+      "digest": "04183a3373f562b281799600fa70ab72",
+      "source_id": "6th class/science/10 Fun with Magnets/Fun with Magnets_Key point.pdf",
+      "source_sha256": "67d6e924eff5ae6fbce44fac8dd2096f99ad4f7dc2d73d8440d37b15676489e3",
+      "image_bbox": [
+        31.071500778198242,
+        34.581275939941406,
+        125.51132202148438,
+        59.16064453125
+      ],
+      "catalog_index": 336
+    },
+    {
+      "digest": "4ce17414e2f79c9bfee057394e1f40db",
+      "source_id": "6th class/science/10 Fun with Magnets/Test _ solutions_Fun with Magnets (1).pdf",
+      "source_sha256": "b903e70a0521e6fd5eb1641babaefb6d27272f47e13936cf98d35258a8d370e4",
+      "image_bbox": [
+        208.39999389648438,
+        38.64997482299805,
+        405.0999755859375,
+        89.8499755859375
+      ],
+      "catalog_index": 337
+    },
+    {
+      "digest": "94d34c87254fb8546bce561cc9e763d2",
+      "source_id": "6th class/math/01 Knowing Our Numbers/Knowing Our Numbers_Key point.pdf",
+      "source_sha256": "368a5b4f2010a9186acd2b37b04feb2c94074cfee7a4439ff537ef8e16ae03f2",
+      "image_bbox": [
+        9.406100273132324,
+        10.480777740478516,
+        103.84607696533203,
+        35.06005859375
+      ],
+      "catalog_index": 339
+    },
+    {
+      "digest": "a44d0c4710cd830b38b98c81a30d832b",
+      "source_id": "6th class/math/01 Knowing Our Numbers/Knowing Our Numbers_Key point.pdf",
+      "source_sha256": "368a5b4f2010a9186acd2b37b04feb2c94074cfee7a4439ff537ef8e16ae03f2",
+      "image_bbox": [
+        7.277500152587891,
+        24.466617584228516,
+        101.71748352050781,
+        49.0458984375
+      ],
+      "catalog_index": 342
+    },
+    {
+      "digest": "ccb4fca15e0f0e13be8ca954a70a8de0",
+      "source_id": "6th class/math/03 Playing with Numbers/Playing with Numbers_Key point.pdf",
+      "source_sha256": "ef6c5637d4b945c8c16c04cddcd02c542f58d2cd920175b82dea254fbd982665",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 346
+    },
+    {
+      "digest": "ac5dd4f37a94d30ad8d0c1aa4eaf55d4",
+      "source_id": "6th class/math/03 Playing with Numbers/Playing with Numbers_Key point.pdf",
+      "source_sha256": "ef6c5637d4b945c8c16c04cddcd02c542f58d2cd920175b82dea254fbd982665",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 347
+    },
+    {
+      "digest": "848b0f6a730e71409f0eae1a44f29eef",
+      "source_id": "6th class/math/04 Basic Geometrical Ideas/Basic Geometrical Ideas_Key point.pdf",
+      "source_sha256": "cde5095453b8fc42c651106e6241b076ca1cec96783877516f6892c03ddf2ecb",
+      "image_bbox": [
+        10.704400062561035,
+        25.0358943939209,
+        83.45014953613281,
+        43.96905517578125
+      ],
+      "catalog_index": 350
+    },
+    {
+      "digest": "ed5e4214c28fa46ad8803d725a382f3a",
+      "source_id": "6th class/math/04 Basic Geometrical Ideas/Basic Geometrical Ideas_Key point.pdf",
+      "source_sha256": "cde5095453b8fc42c651106e6241b076ca1cec96783877516f6892c03ddf2ecb",
+      "image_bbox": [
+        10.704400062561035,
+        25.0358943939209,
+        83.45014953613281,
+        43.96905517578125
+      ],
+      "catalog_index": 353
+    },
+    {
+      "digest": "9710514d6151d4f4fd513c57ef110912",
+      "source_id": "6th class/math/05 Understanding Elementary Shapes/Understanding Elementary Shapes_Key point.pdf",
+      "source_sha256": "68371b8d8f7777edd02fcb239083fa5a458c36e75cffc2f3c0ab109d34b9876b",
+      "image_bbox": [
+        13.991999626159668,
+        14.221902847290039,
+        92.90033721923828,
+        34.75897216796875
+      ],
+      "catalog_index": 355
+    },
+    {
+      "digest": "1243643ddfc921ea5aa3b6994089c22b",
+      "source_id": "6th class/math/06 Integers/Integers_Key Points.pdf",
+      "source_sha256": "7bcf67f82d4c7d07109746422cefa6497ad7a62e6894f55a0f71bb5dbf40187c",
+      "image_bbox": [
+        14.187800407409668,
+        14.411869049072266,
+        108.62777709960938,
+        38.99114990234375
+      ],
+      "catalog_index": 358
+    },
+    {
+      "digest": "3d0fd91d7ef4aa85d2bbf9d38d0694e3",
+      "source_id": "6th class/math/08 Decimals/Decimals_Key Points.pdf",
+      "source_sha256": "e1133019a2f18a20a37b22e3ca4d4e85fb609266c1396eafb70b517549253c8d",
+      "image_bbox": [
+        19.540700912475586,
+        17.112524032592773,
+        113.98052215576172,
+        41.69189453125
+      ],
+      "catalog_index": 359
+    },
+    {
+      "digest": "61c48f1cfd760976fab736c9ccebce14",
+      "source_id": "6th class/math/08 Decimals/Decimals_Key Points.pdf",
+      "source_sha256": "e1133019a2f18a20a37b22e3ca4d4e85fb609266c1396eafb70b517549253c8d",
+      "image_bbox": [
+        19.540700912475586,
+        17.112524032592773,
+        113.98052215576172,
+        41.69189453125
+      ],
+      "catalog_index": 360
+    },
+    {
+      "digest": "e4f7f0769b8ce9e3bac96ddc8eeaf5cd",
+      "source_id": "6th class/math/11 Algebra/Algebra_Key point.pdf",
+      "source_sha256": "d693e49f2d3acc8b72854504ee51e18964ec1420837e1bd153c857b7bb815063",
+      "image_bbox": [
+        28.72100067138672,
+        28.819921493530273,
+        123.16082000732422,
+        53.3992919921875
+      ],
+      "catalog_index": 361
+    },
+    {
+      "digest": "38e330009ef2dbd849d34b247d8f3133",
+      "source_id": "6th class/math/12 Ratio and Proportion/Ratio and Proportion_Key point.pdf",
+      "source_sha256": "b9f9c09228c1019ee0026dd26f6ac0ba648a1ef5759ab89388239c1757af30cb",
+      "image_bbox": [
+        15.62090015411377,
+        16.366979598999023,
+        110.06072235107422,
+        40.94635009765625
+      ],
+      "catalog_index": 363
+    },
+    {
+      "digest": "11fdf73fe8ea301af5d3a4542e821b0c",
+      "source_id": "10th class/phy/01 Light - Reflection and Refraction/1170_Physics_\u27a4_Optics_Reflection_Of_Light_\u27a4_Notes_Optics_Reflec.pdf",
+      "source_sha256": "af3e237892d1bc421fccd7a37094ab0efcfcd36c214674e39bca899b8bcde452",
+      "image_bbox": [
+        39.23999786376953,
+        13.439998626708984,
+        120.7199935913086,
+        36.720001220703125
+      ],
+      "catalog_index": 365
+    },
+    {
+      "digest": "205f57cee0aa58b63c35f9c351519bb3",
+      "source_id": "10th class/phy/01 Light - Reflection and Refraction/1170_Physics_\u27a4_Optics_Reflection_Of_Light_\u27a4_Notes_Optics_Reflec.pdf",
+      "source_sha256": "af3e237892d1bc421fccd7a37094ab0efcfcd36c214674e39bca899b8bcde452",
+      "image_bbox": [
+        39.23999786376953,
+        13.439998626708984,
+        120.84000396728516,
+        36.720001220703125
+      ],
+      "catalog_index": 368
+    },
+    {
+      "digest": "c816e722d429de99e128ec4f6690365b",
+      "source_id": "10th class/phy/01 Light - Reflection and Refraction/1192_Physics_\u27a4_Optics_Refraction_Of_Light_\u27a4_Notes_Optics_Refrac.pdf",
+      "source_sha256": "a46ab6c290b623a5d7c3c6d9bb5d6cd0c2d28ae50a7771f3f10c53edef463dbf",
+      "image_bbox": [
+        39.23999786376953,
+        13.439998626708984,
+        120.95999908447266,
+        36.720001220703125
+      ],
+      "catalog_index": 389
+    },
+    {
+      "digest": "4e06bf534dac4ca45491d335c8208bb0",
+      "source_id": "10th class/phy/02 Human Eye and Colourful World/1214_Physics_\u27a4_The_Human_Eye_And_The_Colourful_World_\u27a4_Practice.pdf",
+      "source_sha256": "53a1c3aeac2c99c52b9dda42aaba0b809c495a8a056cc98a72799c86db6694d4",
+      "image_bbox": [
+        478.3999938964844,
+        31.500965118408203,
+        551.2999877929688,
+        53.0899658203125
+      ],
+      "catalog_index": 390
+    },
+    {
+      "digest": "abbbe5bfcdbd58dc3b954043e492fbe2",
+      "source_id": "10th class/math/02 Polynomials/820_Maths_\u27a4_Polynomials_\u27a4_Notes_Polynomials_Key_Points.pdf",
+      "source_sha256": "69ca282556561e84bd460fe44b447478039114a524ed81233c9a3977bc483fa3",
+      "image_bbox": [
+        37.5088996887207,
+        43.877479553222656,
+        131.94871520996094,
+        68.45684814453125
+      ],
+      "catalog_index": 391
+    },
+    {
+      "digest": "c3a1a63616aa7ac8f2f393ae4a2b3feb",
+      "source_id": "10th class/math/02 Polynomials/820_Maths_\u27a4_Polynomials_\u27a4_Notes_Polynomials_Key_Points.pdf",
+      "source_sha256": "69ca282556561e84bd460fe44b447478039114a524ed81233c9a3977bc483fa3",
+      "image_bbox": [
+        37.5088996887207,
+        43.877479553222656,
+        131.94871520996094,
+        68.45684814453125
+      ],
+      "catalog_index": 392
+    },
+    {
+      "digest": "a34278094e0c1c0bef7d5c8c548bd23c",
+      "source_id": "10th class/math/03 Pair of Linear Equations/805_Maths_\u27a4_Pair_Of_Linear_Equations_In_Two_Variables_\u27a4_Notes_.pdf",
+      "source_sha256": "1bdfda72a021bd78f7eb7c81c644acca1d981938c430a6c160e7c486209d8f24",
+      "image_bbox": [
+        14.187800407409668,
+        14.411869049072266,
+        108.62777709960938,
+        38.99114990234375
+      ],
+      "catalog_index": 394
+    },
+    {
+      "digest": "2d9048c74abb2b40d6cc61f7d16f9689",
+      "source_id": "10th class/math/03 Pair of Linear Equations/805_Maths_\u27a4_Pair_Of_Linear_Equations_In_Two_Variables_\u27a4_Notes_.pdf",
+      "source_sha256": "1bdfda72a021bd78f7eb7c81c644acca1d981938c430a6c160e7c486209d8f24",
+      "image_bbox": [
+        14.187800407409668,
+        14.411869049072266,
+        108.62777709960938,
+        38.99114990234375
+      ],
+      "catalog_index": 395
+    },
+    {
+      "digest": "2fde7694adb1e90e885cfa73e9ef00c2",
+      "source_id": "10th class/math/06 Coordinate Geometry/880_Maths_\u27a4_Coordinate_Geometry_\u27a4_Notes_Coordinate_Geometry_Ke.pdf",
+      "source_sha256": "58afda213bf0abe80b79de29dd7692bb3c3952cc9786e58d6b94cce07cab2cb6",
+      "image_bbox": [
+        14.187700271606445,
+        14.411869049072266,
+        101.09320831298828,
+        38.99114990234375
+      ],
+      "catalog_index": 397
+    },
+    {
+      "digest": "b8a4c5b83d89eba976e1b03d1f96f8fd",
+      "source_id": "10th class/math/07 Triangles/862_Maths_\u27a4_Similar_Triangles_Triangle_\u27a4_Notes_Similar_Triang.pdf",
+      "source_sha256": "08f0d178bde76be28fdc717bb4e861438d163c887c9ba3b2d6513f96b500b8a2",
+      "image_bbox": [
+        28.043699264526367,
+        27.566068649291992,
+        114.68720245361328,
+        52.14556884765625
+      ],
+      "catalog_index": 399
+    },
+    {
+      "digest": "9049a0b1c91884ce413fae410619cf37",
+      "source_id": "10th class/math/07 Triangles/862_Maths_\u27a4_Similar_Triangles_Triangle_\u27a4_Notes_Similar_Triang.pdf",
+      "source_sha256": "08f0d178bde76be28fdc717bb4e861438d163c887c9ba3b2d6513f96b500b8a2",
+      "image_bbox": [
+        28.043699264526367,
+        27.566068649291992,
+        114.2872314453125,
+        52.14556884765625
+      ],
+      "catalog_index": 400
+    },
+    {
+      "digest": "484dca009ea3a7d50804213e7409bcd4",
+      "source_id": "10th class/math/09 Trigonometry/905_Maths_\u27a4_Introduction_To_Trigonometry_\u27a4_Notes_Introduction_.pdf",
+      "source_sha256": "b9a5667267b7e54dec9f91b45c74111d380f583fff4e1e630e7efe4ea4e2ad7a",
+      "image_bbox": [
+        10.296600341796875,
+        32.050201416015625,
+        97.28166961669922,
+        56.62969970703125
+      ],
+      "catalog_index": 401
+    },
+    {
+      "digest": "712da5728f89ec09e1fc8a3fd4796d59",
+      "source_id": "10th class/math/09 Trigonometry/905_Maths_\u27a4_Introduction_To_Trigonometry_\u27a4_Notes_Introduction_.pdf",
+      "source_sha256": "b9a5667267b7e54dec9f91b45c74111d380f583fff4e1e630e7efe4ea4e2ad7a",
+      "image_bbox": [
+        10.296600341796875,
+        32.050201416015625,
+        96.97325897216797,
+        56.62969970703125
+      ],
+      "catalog_index": 402
+    },
+    {
+      "digest": "2685c274309d4b60c97704b3879e6c8e",
+      "source_id": "10th class/chem/01 Chemical Reactions and Equations/200_Chemistry_\u27a4_Chemical_Reactions_And_Equations_\u27a4_Notes_Chemi.pdf",
+      "source_sha256": "7c9d5e2c4874e30b1fa713cc376d96ef6c58d0af9677b621a32e1cc11c4160ff",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 406
+    },
+    {
+      "digest": "bd34aa29186804901a1976d88ad8bec4",
+      "source_id": "10th class/chem/01 Chemical Reactions and Equations/200_Chemistry_\u27a4_Chemical_Reactions_And_Equations_\u27a4_Notes_Chemi.pdf",
+      "source_sha256": "7c9d5e2c4874e30b1fa713cc376d96ef6c58d0af9677b621a32e1cc11c4160ff",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 407
+    },
+    {
+      "digest": "a4db42574ade157258f824648d0e2ff8",
+      "source_id": "10th class/chem/02 Acids Bases and Salts/181_Chemistry_\u27a4_Acids,_Bases_And_Salts_\u27a4_Notes_Acids,_Bases_An.pdf",
+      "source_sha256": "ca02ace302fb65281fdc025ff40b50e1cd435ec72923934ec8fadbd9faed2f2f",
+      "image_bbox": [
+        39.36000061035156,
+        13.439998626708984,
+        120.83999633789062,
+        36.720001220703125
+      ],
+      "catalog_index": 410
+    },
+    {
+      "digest": "1623640c6ed10cd64fe5bf461d5b3c58",
+      "source_id": "10th class/chem/02 Acids Bases and Salts/181_Chemistry_\u27a4_Acids,_Bases_And_Salts_\u27a4_Notes_Acids,_Bases_An.pdf",
+      "source_sha256": "ca02ace302fb65281fdc025ff40b50e1cd435ec72923934ec8fadbd9faed2f2f",
+      "image_bbox": [
+        39.36000061035156,
+        13.439998626708984,
+        120.72000885009766,
+        36.720001220703125
+      ],
+      "catalog_index": 411
+    },
+    {
+      "digest": "1c98f5b530da259f6a310642bb57ee70",
+      "source_id": "10th class/chem/04 Carbon and Its Compounds/224_Chemistry_\u27a4_Carbon_And_Its_Compounds_\u27a4_Notes_Carbon_And_It.pdf",
+      "source_sha256": "f80ad840fcb0370e0ef360fed6948f97fd993c6c386190279f697f55e89bebaf",
+      "image_bbox": [
+        28.079998016357422,
+        29.639997482299805,
+        114.72000122070312,
+        54.3599967956543
+      ],
+      "catalog_index": 412
+    },
+    {
+      "digest": "f12dbc2ebc73fe1654b0e1fb2088d1fb",
+      "source_id": "10th class/chem/04 Carbon and Its Compounds/224_Chemistry_\u27a4_Carbon_And_Its_Compounds_\u27a4_Notes_Carbon_And_It.pdf",
+      "source_sha256": "f80ad840fcb0370e0ef360fed6948f97fd993c6c386190279f697f55e89bebaf",
+      "image_bbox": [
+        28.079998016357422,
+        29.639997482299805,
+        114.72000122070312,
+        54.3599967956543
+      ],
+      "catalog_index": 421
+    },
+    {
+      "digest": "d057f1b5854bfb2ffd3cebc3b8dbfa44",
+      "source_id": "10th class/bio/02 Respiration/070_Biology_\u27a4_Respiration_\u27a4_Notes_Respiration_Key_Points.pdf",
+      "source_sha256": "0d3d8922b5a6fe09895789c68ffa312020a2a0097ac069995c375a80ba0daa0f",
+      "image_bbox": [
+        14.187800407409668,
+        14.411869049072266,
+        108.62777709960938,
+        38.99114990234375
+      ],
+      "catalog_index": 423
+    },
+    {
+      "digest": "8c479c46878586f019ec3277ba017c27",
+      "source_id": "10th class/bio/03 Transportation/090_Biology_\u27a4_Transportation_\u27a4_Notes_Transportation_Key_Points.pdf",
+      "source_sha256": "fd7b35f3edda59b82531344ecee6cf263fe00b45bac19f462dabda800db3479f",
+      "image_bbox": [
+        27.40239906311035,
+        29.890689849853516,
+        121.84237670898438,
+        54.469970703125
+      ],
+      "catalog_index": 425
+    },
+    {
+      "digest": "4d4f1f120dbe52586b6aab7a97f7ac6e",
+      "source_id": "10th class/bio/03 Transportation/090_Biology_\u27a4_Transportation_\u27a4_Notes_Transportation_Key_Points.pdf",
+      "source_sha256": "fd7b35f3edda59b82531344ecee6cf263fe00b45bac19f462dabda800db3479f",
+      "image_bbox": [
+        28.202199935913086,
+        26.701574325561523,
+        122.64202117919922,
+        51.28094482421875
+      ],
+      "catalog_index": 426
+    },
+    {
+      "digest": "51b5b362d66ecd06a05214f2267d54ac",
+      "source_id": "10th class/bio/04 Excretion/030) (Biology \u27a4 Excretion \u27a4 Notes) Excretion_Key Points.pdf",
+      "source_sha256": "9c049b8bf8dff3a942289c4cd5def4cd66534fbe4e51f49f796453812021ce57",
+      "image_bbox": [
+        13.991999626159668,
+        14.221927642822266,
+        95.8940200805664,
+        35.53814697265625
+      ],
+      "catalog_index": 428
+    },
+    {
+      "digest": "4127f5da2f5c4e832d638f35e6d0e363",
+      "source_id": "10th class/bio/05 Control and Coordination/016_Biology_\u27a4_Control_And_Coordination_\u27a4_Notes_Control_And_Coo.pdf",
+      "source_sha256": "20be37fd01e2203910de6c8bd44066c06909c486df9f9ec3ac5a07213e0a0d77",
+      "image_bbox": [
+        14.187700271606445,
+        14.412023544311523,
+        108.62751770019531,
+        38.99139404296875
+      ],
+      "catalog_index": 431
+    },
+    {
+      "digest": "cc50b3a88167b654d30d0b922ebfcdbd",
+      "source_id": "10th class/bio/05 Control and Coordination/016_Biology_\u27a4_Control_And_Coordination_\u27a4_Notes_Control_And_Coo.pdf",
+      "source_sha256": "20be37fd01e2203910de6c8bd44066c06909c486df9f9ec3ac5a07213e0a0d77",
+      "image_bbox": [
+        13.991999626159668,
+        14.221927642822266,
+        95.8940200805664,
+        35.53814697265625
+      ],
+      "catalog_index": 432
+    },
+    {
+      "digest": "948e81f85fa42cfced7644ebad92e35c",
+      "source_id": "10th class/bio/07 Heredity/103) (Biology \u27a4 Heredity \u27a4 Notes) Heredity_Key Points.pdf",
+      "source_sha256": "73097eeac08407fa60fe40eacda5f67710bcde6dd2b12bee743c29484ab80b4f",
+      "image_bbox": [
+        10.114800453186035,
+        9.971569061279297,
+        86.94950103759766,
+        31.9462890625
+      ],
+      "catalog_index": 433
+    },
+    {
+      "digest": "81504e2bd3601eaee574e561a8cf94c1",
+      "source_id": "10th class/bio/07 Heredity/103) (Biology \u27a4 Heredity \u27a4 Notes) Heredity_Key Points.pdf",
+      "source_sha256": "73097eeac08407fa60fe40eacda5f67710bcde6dd2b12bee743c29484ab80b4f",
+      "image_bbox": [
+        20.11680030822754,
+        19.971569061279297,
+        96.95149993896484,
+        41.9462890625
+      ],
+      "catalog_index": 434
+    }
+  ]
+}

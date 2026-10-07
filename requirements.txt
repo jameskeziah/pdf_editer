@@ -1,3 +1,5 @@
 pymupdf>=1.26,<2
 pillow>=10,<13
 pytest>=8,<10
+psutil>=7,<8
+pikepdf>=10,<11

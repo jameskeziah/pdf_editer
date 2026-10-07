@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import pymupdf as fitz
+
 from .config import BrandingProfile
 from .models import (
     DocumentPlan,
@@ -162,6 +164,17 @@ def make_document_plan(
     gap = float(brand.layout("safety_gap", 7))
 
     for a in analyses:
+        geometry = dict(
+            protected_text_rects=a.protected_text_rects,
+            protected_visual_rects=a.protected_visual_rects,
+            text_extraction_ok=a.text_extraction_ok,
+            image_only=a.image_only,
+            legacy_logo_rects=a.legacy_logo_rects,
+            legacy_image_digests=a.legacy_image_digests,
+            raster_ocr_checked=a.raster_ocr_checked,
+            raster_ocr_error=a.raster_ocr_error,
+            raster_ocr_unsafe=a.raster_ocr_unsafe,
+        )
         if a.page_type == PageType.BLANK:
             pages.append(PagePlan(
                 page_number=a.page_number,
@@ -171,6 +184,7 @@ def make_document_plan(
                 header_template=HeaderTemplate.NONE,
                 confidence=1.0,
                 reasons=["blank page remains untouched"],
+                **geometry,
             ))
             continue
 
@@ -206,6 +220,7 @@ def make_document_plan(
                 logo_replace_rect=logo_rect,
                 logo_background=a.local_logo_background,
                 reasons=a.reasons + [detail] + f_reasons,
+                **geometry,
             ))
             continue
 
@@ -214,12 +229,18 @@ def make_document_plan(
             a, meta, brand, cleanup_bottom, visible_header_height, header_safe, h_reasons
         )
         footer_rect, f_reasons = _safe_footer_rect(a, repeated, brand)
+        if not a.text_extraction_ok:
+            header_safe, footer_rect = False, None
+            h_reasons.append("text extraction failed: preserve content; QA requires explicit failure")
         cleanup_rects: list[RectData] = []
         header_rect: RectData | None = None
         reasons = list(a.reasons) + h_reasons + f_reasons
 
         if header_safe:
             cleanup_rects.append(RectData(0, 0, a.width, cleanup_bottom))
+            # A corner logo can extend below the compact replacement header.
+            # Its independently verified rectangle still needs full cleanup.
+            cleanup_rects.extend(a.legacy_rects)
             header_rect = RectData(0, 0, a.width, visible_header_height)
             template_for_page = template
             render_strategy = RenderStrategy.OVERLAY
@@ -232,9 +253,11 @@ def make_document_plan(
                 f"replace legacy top band in-place through y={cleanup_bottom:.1f}; body coordinates unchanged"
             )
         elif a.legacy_rects or a.vertical_text_rects:
-            cleanup_rects.extend(a.legacy_rects)
+            if a.legacy_rects:
+                render_strategy = RenderStrategy.REPLACE_LOGO_ONLY
+            else:
+                render_strategy = RenderStrategy.OVERLAY
             template_for_page = HeaderTemplate.NONE
-            render_strategy = RenderStrategy.OVERLAY
             page_strategy = PageStrategy.LEGACY_ONLY_CLEANUP
             reasons.append("dynamic header unsafe; remove only verified legacy regions")
         else:
@@ -247,11 +270,18 @@ def make_document_plan(
         if a.first_content_y is not None:
             crop_top = min(crop_top, max(0.0, a.first_content_y - gap))
         crop_bottom = max(0.0, a.height - repeated.footer_top) if repeated.footer_top is not None else 0.0
+        if a.last_content_y is not None:
+            crop_bottom = min(crop_bottom, max(0.0, a.height - a.last_content_y - gap))
         crop_safe = (
-            repeated.header_confidence >= 0.72
+            a.text_extraction_ok
+            and not a.image_only
+            and header_safe
+            and repeated.header_confidence >= 0.72
             and crop_top > 0
+            and crop_top + .1 >= max(repeated.header_bottom, _max_legacy_bottom(a))
             and (a.first_content_y is None or crop_top <= a.first_content_y - gap + 0.1)
             and (repeated.footer_top is None or repeated.footer_confidence >= 0.65)
+            and (repeated.footer_top is None or a.last_content_y is None or a.last_content_y + gap <= repeated.footer_top)
         )
         if allow_crop and crop_safe and render_strategy == RenderStrategy.OVERLAY:
             render_strategy = RenderStrategy.REBUILD_CROP
@@ -275,11 +305,25 @@ def make_document_plan(
             header_rect=header_rect,
             footer_rect=footer_rect,
             cleanup_rects=cleanup_rects,
+            logo_replace_rect=a.legacy_rects[0] if render_strategy == RenderStrategy.REPLACE_LOGO_ONLY else None,
+            logo_background=a.local_logo_background,
             vertical_text_rects=a.vertical_text_rects,
             recommended_crop_top=crop_top,
             recommended_crop_bottom=crop_bottom,
             crop_is_safe=crop_safe,
             reasons=reasons,
+            **geometry,
         ))
+        if render_strategy == RenderStrategy.REBUILD_CROP:
+            pages[-1].prepare_crop_geometry(a.width, a.height)
 
+    # Every independently verified mark needs an explicit operation, including
+    # footer marks and secondary logos outside the main header cleanup band.
+    for page in pages:
+        covered = page.cleanup_rects + ([page.footer_rect] if page.footer_rect else [])
+        if page.logo_replace_rect:
+            covered.append(page.logo_replace_rect)
+        page.additional_logo_rects = [region for region in page.legacy_logo_rects
+                                      if not any(fitz.Rect(*existing.as_tuple()).contains(fitz.Rect(*region.as_tuple()))
+                                                 for existing in covered)]
     return DocumentPlan(source=source, meta=meta, profile=doc_profile, repeated_bands=repeated, pages=pages)

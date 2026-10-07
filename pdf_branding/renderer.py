@@ -5,10 +5,13 @@ from io import BytesIO
 import math
 
 import pymupdf as fitz
+
+from .image_info import image_info as page_image_info
 from PIL import Image, ImageFilter
 
 from .config import BrandingProfile
 from .models import DocumentMeta, DocumentPlan, HeaderTemplate, PagePlan, RectData, RenderStrategy
+from .native_cleanup import remove_region_text, make_image_transparent
 
 
 def _rect(r: RectData) -> fitz.Rect:
@@ -115,6 +118,11 @@ def draw_footer(page: fitz.Page, plan: PagePlan, meta: DocumentMeta, brand: Bran
 def _apply_redactions(page: fitz.Page, rects: list[RectData], fill: tuple[float, float, float]) -> None:
     if not rects:
         return
+    regions = [_rect(item) for item in rects if item.x1 > item.x0 and item.y1 > item.y0]
+    if remove_region_text(page, regions):
+        for region in regions:
+            page.draw_rect(region, fill=fill, color=None, overlay=True)
+        return
     for item in rects:
         r = _rect(item)
         if r.width > 0 and r.height > 0:
@@ -159,7 +167,7 @@ def _flat_logo_background_patch(page: fitz.Page, r: fitz.Rect, bg: tuple[float, 
 
     bg8 = tuple(max(0, min(255, int(round(c * 255)))) for c in bg)
     distances: list[float] = []
-    for rr, gg, bb in src.getdata():
+    for rr, gg, bb in src.get_flattened_data() if hasattr(src, "get_flattened_data") else src.getdata():
         distances.append(((rr - bg8[0]) ** 2 + (gg - bg8[1]) ** 2 + (bb - bg8[2]) ** 2) ** 0.5)
     if not distances:
         return None
@@ -320,15 +328,19 @@ def _uniform_background_clip(page: fitz.Page, r: fitz.Rect, bg: tuple[float, flo
         strip = probe & page.rect
         if strip.is_empty or strip.width < size or strip.height < size:
             continue
+        # Render each search strip once. Re-rendering this complex PDF for
+        # every 6pt probe made illustrated pages hundreds of times slower.
+        pix = page.get_pixmap(matrix=fitz.Matrix(3, 3), clip=strip, alpha=False)
+        if pix.n != 3:
+            continue
+        strip_image = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
         for y in range(math.ceil(strip.y0), math.floor(strip.y1 - size) + 1, 3):
             for x in range(math.ceil(strip.x0), math.floor(strip.x1 - size) + 1, 3):
                 clip = fitz.Rect(x, y, x + size, y + size)
                 if any(clip.intersects(obstacle) for obstacle in obstacles):
                     continue
-                pix = page.get_pixmap(matrix=fitz.Matrix(3, 3), clip=clip, alpha=False)
-                if pix.n != 3:
-                    continue
-                data = pix.samples
+                left, top = x * 3 - pix.x, y * 3 - pix.y
+                data = strip_image.crop((left, top, left + int(size * 3), top + int(size * 3))).tobytes()
                 if all(
                     max(abs(data[i + channel] - bg8[channel]) for channel in range(3)) <= 4
                     for i in range(0, len(data), pix.n)
@@ -351,11 +363,16 @@ def _repair_native_flat_background(
     src_page = src_doc[index]
     if _flat_logo_background_patch(src_page, r, bg) is None:
         return False
+    inset = 2.6
+    interior = fitz.Rect(r.x0 + inset, r.y0 + inset, r.x1 - inset, r.y1 - inset)
+    if min(bg) >= .995:
+        # An unpainted white PDF field is transparent when imported as a form;
+        # copying it cannot cover old ink. White requires an opaque repair.
+        page.draw_rect(interior, fill=(1, 1, 1), color=None, overlay=True)
+        return True
     clip = _uniform_background_clip(src_page, r, bg)
     if clip is None:
         return False
-    inset = 2.6
-    interior = fitz.Rect(r.x0 + inset, r.y0 + inset, r.x1 - inset, r.y1 - inset)
     page.show_pdf_page(interior, src_doc, index, clip=clip, keep_proportion=False, overlay=True)
     return True
 
@@ -363,11 +380,25 @@ def _repair_native_flat_background(
 def _replace_logo_only(
     page: fitz.Page, plan: PagePlan, brand: BrandingProfile,
     color_logo: Path, color_ratio: float, src_doc: fitz.Document, index: int,
+    authorized_image_regions: dict[int, list[fitz.Rect]] | None = None,
 ) -> None:
     if plan.logo_replace_rect is None:
         return
     r = _rect(plan.logo_replace_rect)
     bg = plan.logo_background or (1, 1, 1)
+    image_repaired = False
+    known = {bytes.fromhex(value) for value in brand.raw.get("legacy", {}).get("raster_logo_digests", [])}
+    known |= {bytes.fromhex(value) for value in plan.legacy_image_digests}
+    for image in page_image_info(page):
+        if image.get("digest") in known and image.get("xref") and r.contains(fitz.Rect(image["bbox"])):
+            # A verified standalone raster logo can be made transparent in its
+            # native image object. This retains the original gradient/artwork
+            # beneath it instead of painting a sampled-colour patch.
+            if not make_image_transparent(page.parent, image["xref"], authorized_image_regions):
+                plan.unsafe_image_cleanup = True
+                plan.reasons.append(f"UNSAFE_SHARED_IMAGE_XREF: image {image['xref']} has an unverified placement or dependency; raster logo preserved for QA")
+                return
+            image_repaired = True
 
     # Remove searchable legacy text only at its exact hit rectangle.  Do not wipe
     # the whole logo zone: that was the source of the visible dark square in v3.4.3.
@@ -387,13 +418,7 @@ def _replace_logo_only(
                 min(r.x1, hit.x1 + pad), min(r.y1, hit.y1 + pad),
             ))
     if tight_hits:
-        for hit in tight_hits:
-            page.add_redact_annot(hit, fill=bg)
-        page.apply_redactions(
-            images=fitz.PDF_REDACT_IMAGE_NONE,
-            graphics=fitz.PDF_REDACT_LINE_ART_NONE,
-            text=fitz.PDF_REDACT_TEXT_REMOVE,
-        )
+        _apply_redactions(page, [RectData.from_rect(hit) for hit in tight_hits], bg)
 
     # For raster/vector logos that are not searchable, cover only the actual legacy
     # foreground pixels. This preserves gradients, textures and illustrations around
@@ -401,7 +426,11 @@ def _replace_logo_only(
     # If the source logo sits on a genuinely flat field, rebuild the protected
     # interior completely.  This removes the low-contrast ALLEN shadow that can
     # survive pixel-threshold cleanup.  Textured regions still use selective repair.
-    if not _repair_native_flat_background(page, src_doc, index, r, bg):
+    # A standalone logo may include an opaque background different from the
+    # underlying artwork. Restore a verified matching source field even after
+    # neutralizing its image; otherwise transparency can reveal a foreign color.
+    native_field_repaired = _repair_native_flat_background(page, src_doc, index, r, bg)
+    if not image_repaired and not native_field_repaired:
         patch = _flat_logo_background_patch(page, r, bg)
         if patch is None:
             patch = _selective_logo_cleanup_patch(page, r, bg)
@@ -425,7 +454,6 @@ def _replace_logo_only(
 
 def _render_overlay_page(dst: fitz.Page, src_doc: fitz.Document, index: int, plan: PagePlan, meta: DocumentMeta, brand: BrandingProfile, logo: Path, ratio: float, total: int) -> None:
     # 1:1 placement: body coordinates never move in the safe default strategy.
-    dst.show_pdf_page(dst.rect, src_doc, index)
     _apply_redactions(dst, plan.cleanup_rects + plan.vertical_text_rects, brand.color("white"))
     if plan.footer_rect is not None:
         _apply_redactions(dst, [plan.footer_rect], brand.color("white"))
@@ -436,13 +464,19 @@ def _render_overlay_page(dst: fitz.Page, src_doc: fitz.Document, index: int, pla
 def _render_crop_page(dst: fitz.Page, src_doc: fitz.Document, index: int, plan: PagePlan, meta: DocumentMeta, brand: BrandingProfile, logo: Path, ratio: float, total: int) -> None:
     # Explicit opt-in only. Never used by the default SSKEMS profile.
     src_page = src_doc[index]
-    top, bottom = plan.recommended_crop_top, plan.recommended_crop_bottom
-    clip = fitz.Rect(0, top, src_page.rect.width, max(top + 1, src_page.rect.height - bottom))
-    header_h = plan.header_rect.y1 if plan.header_rect else 0
-    footer_h = (src_page.rect.height - plan.footer_rect.y0) if plan.footer_rect else 0
-    content = fitz.Rect(0, header_h, dst.rect.width, dst.rect.height - footer_h)
-    dst.show_pdf_page(content, src_doc, index, clip=clip, keep_proportion=True)
-    _apply_redactions(dst, plan.vertical_text_rects, brand.color("white"))
+    plan.prepare_crop_geometry(src_page.rect.width, src_page.rect.height)
+    clip = _rect(plan.source_clip_rect)
+    content = _rect(plan.map_source_rect(plan.source_clip_rect))
+    dst.show_pdf_page(content, src_doc, index, clip=clip, keep_proportion=False)
+    mapped_cleanup = []
+    for source_rect in plan.vertical_text_rects:
+        clipped = _rect(source_rect) & clip
+        if not clipped.is_empty:
+            mapped_cleanup.append(plan.map_source_rect(RectData.from_rect(clipped)))
+    # PDF form clipping hides ink but may leave off-clip source text searchable.
+    # Remove the destination bands before inserting new searchable branding.
+    mapped_cleanup.extend(r for r in (plan.header_rect, plan.footer_rect) if r is not None)
+    _apply_redactions(dst, mapped_cleanup, brand.color("white"))
     draw_header(dst, plan, meta, brand, logo, ratio)
     draw_footer(dst, plan, meta, brand, total)
 
@@ -450,13 +484,27 @@ def _render_crop_page(dst: fitz.Page, src_doc: fitz.Document, index: int, plan: 
 def render_document(src_doc: fitz.Document, plan: DocumentPlan, brand: BrandingProfile) -> fitz.Document:
     logo = brand.logo_path
     ratio = _logo_ratio(logo)
-    out = fitz.open()
+    # Clone the complete document, including catalog color state, page groups,
+    # annotations and metadata. Page-only imports can change CMYK/ICC artwork.
+    out = fitz.open(stream=src_doc.tobytes(), filetype="pdf")
     total = len(src_doc)
+    authorized_image_regions: dict[int, list[fitz.Rect]] = {}
+    for index, page_plan in enumerate(plan.pages):
+        if page_plan.strategy == RenderStrategy.REPLACE_LOGO_ONLY and page_plan.logo_replace_rect:
+            authorized_image_regions[index] = [_rect(page_plan.logo_replace_rect)]
+        elif page_plan.strategy == RenderStrategy.OVERLAY:
+            authorized_image_regions[index] = [
+                _rect(legacy) for legacy in page_plan.legacy_logo_rects
+                if any(_rect(cleanup).contains(_rect(legacy)) for cleanup in page_plan.cleanup_rects)
+            ]
+        authorized_image_regions.setdefault(index, []).extend(
+            _rect(page_plan.map_source_rect(region)) for region in page_plan.additional_logo_rects)
     for index, page_plan in enumerate(plan.pages):
         src_page = src_doc[index]
-        dst = out.new_page(width=src_page.rect.width, height=src_page.rect.height)
+        dst = out[index]
+        if page_plan.page_type.value == "blank" and not src_page.get_contents():
+            continue
         if page_plan.strategy == RenderStrategy.PRESERVE:
-            dst.show_pdf_page(dst.rect, src_doc, index)
             # Preserve designed artwork 1:1, but verified legacy margin/footer
             # elements may still be replaced in-place.
             _apply_redactions(dst, page_plan.vertical_text_rects, brand.color("white"))
@@ -464,14 +512,29 @@ def render_document(src_doc: fitz.Document, plan: DocumentPlan, brand: BrandingP
                 _apply_redactions(dst, [page_plan.footer_rect], brand.color("white"))
             draw_footer(dst, page_plan, plan.meta, brand, total)
         elif page_plan.strategy == RenderStrategy.REPLACE_LOGO_ONLY:
-            dst.show_pdf_page(dst.rect, src_doc, index)
             _apply_redactions(dst, page_plan.vertical_text_rects, page_plan.logo_background or brand.color("white"))
-            _replace_logo_only(dst, page_plan, brand, logo, ratio, src_doc, index)
+            _replace_logo_only(dst, page_plan, brand, logo, ratio, src_doc, index, authorized_image_regions)
             if page_plan.footer_rect is not None:
                 _apply_redactions(dst, [page_plan.footer_rect], brand.color("white"))
             draw_footer(dst, page_plan, plan.meta, brand, total)
         elif page_plan.strategy == RenderStrategy.REBUILD_CROP:
+            empty = out.get_new_xref()
+            out.update_object(empty, "<< >>")
+            out.update_stream(empty, b"")
+            dst.set_contents(empty)
             _render_crop_page(dst, src_doc, index, page_plan, plan.meta, brand, logo, ratio, total)
         else:
             _render_overlay_page(dst, src_doc, index, page_plan, plan.meta, brand, logo, ratio, total)
+        if page_plan.additional_logo_rects:
+            from .analysis import sample_local_background
+            main_region, main_background = page_plan.logo_replace_rect, page_plan.logo_background
+            try:
+                for region in page_plan.additional_logo_rects:
+                    if page_plan.source_clip_rect and not _rect(page_plan.source_clip_rect).contains(_rect(region)):
+                        continue  # The declared crop already removes this margin.
+                    page_plan.logo_replace_rect = page_plan.map_source_rect(region)
+                    page_plan.logo_background = sample_local_background(src_page, _rect(region))
+                    _replace_logo_only(dst, page_plan, brand, logo, ratio, src_doc, index, authorized_image_regions)
+            finally:
+                page_plan.logo_replace_rect, page_plan.logo_background = main_region, main_background
     return out

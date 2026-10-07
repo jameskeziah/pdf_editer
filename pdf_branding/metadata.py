@@ -16,7 +16,8 @@ SUBJECT_ALIASES = {
 
 CLASS_PATTERNS = (
     re.compile(r"(?:class|std|standard|grade)[ _-]*(6|7|8|9|10)\b", re.I),
-    re.compile(r"\b(6|7|8|9|10)(?:th|st|nd|rd)?\b", re.I),
+    re.compile(r"\b(6|7|8|9|10)(?:th|st|nd|rd)?[ _-]+(?:class|std|standard|grade)\b", re.I),
+    re.compile(r"^(6|7|8|9|10)(?:th|st|nd|rd)?$", re.I),
 )
 
 SCIENCE_CHAPTER_SUBJECTS: dict[str, dict[str, str]] = {
@@ -66,31 +67,35 @@ def norm(text: str) -> str:
 
 
 def candidate_parts(path: Path, root: Path) -> list[str]:
+    """Use the input hierarchy; unrelated dated/numbered ancestors are not metadata."""
     try:
-        rel_parts = list(path.relative_to(root).parts)
+        parts = list(path.resolve().relative_to(root.resolve()).parts)
+        # A chapter or subject may itself be used as input_root. Recover only
+        # the adjacent class/subject hierarchy, not arbitrary outer ancestors.
+        markers = {alias for aliases in SUBJECT_ALIASES.values() for alias in aliases} | {"science"}
+        contextual_class = None
+        if any(pattern.search(norm(root.name)) for pattern in CLASS_PATTERNS[:2]):
+            contextual_class = root
+        elif norm(root.name) in markers:
+            contextual_class = root.parent
+        elif norm(root.parent.name) in markers:
+            contextual_class = root.parent.parent
+        if contextual_class and any(pattern.search(norm(contextual_class.name)) for pattern in CLASS_PATTERNS[:2]):
+            return [contextual_class.name] + list(path.resolve().relative_to(contextual_class.resolve()).parts)
+        return parts
     except ValueError:
-        rel_parts = []
-    full_parts = list(path.parts)
-    out, seen = [], set()
-    for part in rel_parts + full_parts:
-        if part not in seen:
-            seen.add(part)
-            out.append(part)
-    return out
+        return list(path.parts)
 
 
 def infer_class(path: Path, root: Path) -> str | None:
-    # Class information belongs to the document's nearby folder hierarchy.  Scan
-    # from the file upward so unrelated ancestors (for example a temp directory
-    # named ``pytest-9`` or a dated batch folder) cannot override ``6th class``.
-    parts = list(reversed(path.parts))
-    # Prefer explicit labels such as Class 6 / 6th class before accepting a bare
-    # grade-like number.
+    # Explicit class labels outrank chapter numbers and filename numbers. Bare
+    # grades are accepted only as complete folder names, never ``10 Sound``.
+    parts = list(reversed(candidate_parts(path, root)[:-1]))
     for pat in CLASS_PATTERNS:
         for part in parts:
-            m = pat.search(norm(part))
-            if m:
-                return m.group(1)
+            match = pat.search(norm(part))
+            if match:
+                return match.group(1)
     return None
 
 
@@ -145,12 +150,12 @@ def infer_chapter(path: Path, root: Path) -> tuple[str, str | None]:
 def infer_material_type(path: Path) -> str:
     n = f" {norm(path.stem)} "
     rules = [
-        ("KEY POINTS", ("key point", "key points")),
+        ("KEY POINTS", ("key point", "key points", "keypoint", "keypoints")),
         ("CHAPTER TEST", ("chapter test",)),
         ("PRACTICE TEST", ("practice test",)),
         ("PRACTICE SHEET", ("practice sheet", "practice practice sheet")),
         ("NCERT PRACTICE", ("ncert practice",)),
-        ("NCERT SOLUTIONS", ("ncert solutions", "ncert solution", "ncert exercise solutions", "ncert questions solutions")),
+        ("NCERT SOLUTIONS", ("ncert solutions", "ncert solution", "ncert exercise solutions", "ncert questions solutions", "ncert question solutions", "ncert question exercise solution")),
         ("PRACTICE EXERCISE", ("practice exercise",)),
         ("EXERCISE", ("exercise solutions", "exercise solution", "exercise")),
         ("DPP", ("practice race", "race solutions", "race solution", " race ")),
@@ -172,23 +177,81 @@ def detect_duration_marks(doc: fitz.Document) -> tuple[str | None, str | None]:
     return (dm.group(1).strip() if dm else None, mm.group(1).strip() if mm else None)
 
 
-def build_meta(path: Path, root: Path, doc: fitz.Document) -> DocumentMeta | None:
+# These exceptional paths were reviewed against their actual first-page
+# provenance/academic content. They remain in their original Unsorted folders.
+# Required content anchors prevent a similarly named replacement being silently
+# accepted. Chapter numbers follow the library hierarchy, not publisher modules.
+CONTENT_METADATA = {
+    "6th class/science/Unsorted/NCERT_Exercise_solutions_The_Living_Organisms_Characteristics_and.pdf":
+        ("6", "biology", "The Living Organisms Characteristics and Habitats", "06", "EXERCISE", ("biology", "the living organisms")),
+    "6th class/science/Unsorted/NCERT_Practice_solutions_The_Living_Organisms_Characteristics_and.pdf":
+        ("6", "biology", "The Living Organisms Characteristics and Habitats", "06", "NCERT PRACTICE", ("biology", "characteristics and habitats")),
+    "6th class/science/Unsorted/NCERT_Question_solutions_The_Living_Organisms_Characteristics_and.pdf":
+        ("6", "biology", "The Living Organisms Characteristics and Habitats", "06", "NCERT SOLUTIONS", ("biology", "characteristics and habitats")),
+    "9th class/science/Unsorted/original (1).pdf":
+        ("9", "biology", "Tissues", "02", "PRACTICE SHEET", ("biology", "tissues", "practice sheet")),
+    "8th class/math/Unsorted/NCERT_Practice_Exercise_Solution_Introduction_to_Graphs_and_Data.pdf":
+        ("8", "mathematics", "Introduction to Graphs and Data Handling", "11", "NCERT SOLUTIONS", ("mathematics", "histogram", "tally marks")),
+}
+
+
+def _content_override(path: Path, root: Path, doc: fitz.Document) -> tuple | None:
+    rel = "/".join(candidate_parts(path, root))
+    record = CONTENT_METADATA.get(rel)
+    if record is None or not len(doc):
+        return None
+    text = norm(doc[0].get_text("text"))
+    if all(anchor in text for anchor in record[5]) and infer_class(path, root) == record[0]:
+        return record
+    return None
+
+
+def classification_evidence(path: Path, root: Path, doc: fitz.Document | None = None) -> dict:
+    """Record how classification was obtained for inventory and review reports."""
+    rel = "/".join(candidate_parts(path, root))
+    if rel in CONTENT_METADATA:
+        record = _content_override(path, root, doc) if doc is not None else None
+        return {"method": "reviewed_content_record", "validated": record is not None,
+                "required_content_anchors": list(CONTENT_METADATA[rel][5]),
+                "recorded_metadata": dict(zip(("class_name", "subject", "chapter", "chapter_number", "material_type"), CONTENT_METADATA[rel][:5])),
+                "reason": "Reviewed publisher provenance and academic content; source path preserved"}
+    cls = infer_class(path, root)
+    return {"method": "folder_hierarchy", "validated": bool(cls and infer_subject(path, root, cls)),
+            "reason": "Explicit class folder and subject/chapter hierarchy"}
+
+
+def quick_meta(path: Path, root: Path) -> DocumentMeta | None:
+    """Fast filter metadata; ambiguous/Unsorted PDFs need content validation."""
+    if any(norm(part) == "unsorted" for part in candidate_parts(path, root)[:-1]):
+        with fitz.open(path) as doc:
+            return build_meta(path, root, doc)
     cls = infer_class(path, root)
     subject = infer_subject(path, root, cls)
     if not cls or not subject:
+        with fitz.open(path) as doc:
+            return build_meta(path, root, doc)
+    chapter, number = infer_chapter(path, root)
+    return DocumentMeta(cls, subject, chapter, number, infer_material_type(path), 0)
+
+
+def build_meta(path: Path, root: Path, doc: fitz.Document) -> DocumentMeta | None:
+    override = _content_override(path, root, doc)
+    if override:
+        cls, subject, chapter, chapter_no, material = override[:5]
+    else:
+        # Unsorted is not a valid chapter: require a reviewed content record.
+        if any(norm(part) == "unsorted" for part in candidate_parts(path, root)[:-1]):
+            return None
+        cls = infer_class(path, root)
+        subject = infer_subject(path, root, cls)
+        chapter, chapter_no = infer_chapter(path, root)
+        material = infer_material_type(path)
+    if not cls or not subject:
         return None
-    chapter, chapter_no = infer_chapter(path, root)
     duration, marks = detect_duration_marks(doc)
-    return DocumentMeta(
-        class_name=cls,
-        subject=subject,
-        chapter=chapter,
-        chapter_number=chapter_no,
-        material_type=infer_material_type(path),
-        page_count=len(doc),
-        duration=duration,
-        max_marks=marks,
-    )
+    return DocumentMeta(class_name=cls, subject=subject, chapter=chapter,
+                        chapter_number=chapter_no, material_type=material,
+                        page_count=len(doc), duration=duration, max_marks=marks)
 
 
 def detect_document_profile(path: Path, doc: fitz.Document, meta: DocumentMeta) -> DocumentProfile:

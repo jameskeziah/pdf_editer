@@ -12,6 +12,7 @@ foundation_notes/
 # Generated outputs
 v3_output/
 v3_output_346/
+v3_output_350/
 output/
 outputs/
 preview/
@@ -19,6 +20,7 @@ previews/
 
 # Temporary QA / rendered images
 tmp/
+_backups/
 
 # Logs / caches
 *.log

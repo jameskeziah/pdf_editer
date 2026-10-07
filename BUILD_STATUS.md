@@ -1,79 +1,59 @@
-# PDF Branding V3.4.6 Build Status
+# PDF Branding v3.5.0 Build Status
 
-V3.4.6 adds background-matched transparent logo replacement on top of the strategy-driven V3 architecture.
+Updated: 2026-10-07. Engine version and default profile are v3.5.0.
 
-## New in V3.4.6
+## Implemented roadmap
 
-- Explicit `PageStrategy` contract:
-  - `STANDARD_HEADER_FOOTER_REPLACEMENT`
-  - `FIRST_PAGE_LARGE_LOGO_REPLACEMENT`
-  - `DESIGNED_PAGE_PRESERVE`
-  - `DESIGNED_PAGE_LOGO_ONLY`
-  - `LEGACY_ONLY_CLEANUP`
-  - `LEAVE_UNTOUCHED`
-- Designed chapter-opening detection: an illustrated Notes first page with the chapter title and no verified legacy top logo is preserved 1:1 and cannot receive the generic dynamic header.
-- Repeated footer detection now includes raster analysis, so flattened/light-blue page-number strips can be detected even when `get_drawings()` exposes no useful rectangle.
-- Verified old footer regions are truly redacted before the SSKEMS footer is drawn; they are not merely covered visually.
-- Dynamic header footprint can adapt from the normal 54 pt up to a capped 76 pt when a deeper verified legacy region is available.
-- Designed pages can still receive verified side-text cleanup and in-place footer replacement without disturbing the main artwork.
-- QA fails if a designed page is assigned a generic header or if a high-confidence repeated footer exists but no replacement plan was generated.
+| Area | Implementation |
+| --- | --- |
+| Classification and fixtures | Class/subject/chapter/material inference and filters; hashed inventory; deterministic representative selection |
+| Whole-document planning | Repeated text/vector/raster detection; explicit PageStrategy and protected content geometry |
+| Safe rendering | 1:1 default body placement; designed-page preservation; transparent emblems; native flat-background repair; selective textured cleanup |
+| Raster branding | Rendered header/footer English OCR, standalone image boundary verification, unsafe-geometry review gate |
+| Opt-in cropping | Profile-controlled rebuild, recorded source clip/matrix, transformed QA checks |
+| Strong QA | Word retention/position; protected text/visual regions; image-only render comparisons; legacy text/raster checks |
+| Publication | Unique same-directory stages/backups; OS lock; PDF/plan/QA transaction; rollback and journal recovery |
+| Cache | Full source/output SHA-256; settings/asset-content/engine fingerprint; malformed-record miss; recovery before cached skip |
+| Resumable batches | SQLite transitions, attempts, JSON manifest, bounded workers, safe cancellation, explicit failed-job retry |
+| Review | Source/plan/final images, contact sheets, relative-link HTML, mandatory issue and low-confidence pages |
+| GUI | Persistent settings; filters; live rows/progress/issues; review navigation; cancel/resume/retry; worker generation isolation |
+| Performance | Worker benchmark, process-tree RSS samples, throughput, rendered-output equality and source hashes |
+| Regression coverage | Synthetic safety/failure tests, real-source references, actual multiprocessing and withdrawn Tk workflow tests |
 
-## Roadmap status
+## Publication and source preservation
 
-| Roadmap item | Status |
-|---|---|
-| DocumentProfile + PagePlan | Implemented |
-| Separate analysis / rendering | Implemented |
-| Whole-document repeated header/footer detection | Implemented: text + vector rules + raster footer bands |
-| Automatic crop calculation | Implemented as recommendation; disabled by default |
-| Output QA + legacy detection | Implemented |
-| Atomic saves + exception-safe cleanup | Implemented |
-| Batch caching + performance | Implemented |
-| External JSON branding profiles | Implemented |
-| Regression-test suite | **48 tests passing** |
-| GUI | Implemented |
+- Source PDFs are read without saving changes to them.
+- Passed candidates replace production only after PDF, plan, and QA artifacts are ready for commit.
+- QA-failed candidates use a separate filename and preserve existing production.
+- Report-write/replacement errors restore prior artifacts; failed rollback retains its journal and verified backups.
+- Recovery refuses to overwrite a target edited outside the interrupted transaction.
+- Image-only/scanned pages receive visual checks and no unsupported 100% text-retention claim. OCR failure or unsafe recognized geometry is a QA error.
+- Full source/output hashes and asset-content fingerprints govern cached skips; pending publication recovery cannot be skipped.
 
-## Release gate
+## Final validation evidence
 
-**Architecture:** READY  
-**Synthetic regression suite:** PASS (48/48)  
-**Representative chapter:** VERIFIED — Measurement and Motion, Class 6 Physics: 7/7 outputs pass QA; all 70 pages reviewed.  
-**Mass library render:** NOT RUN — the remaining library has not been regenerated with this correction.
+All eight implementation stages are built. The validation scope below is the release evidence; full-library rendering remains a separate rollout.
 
+| Gate | Current release evidence |
+| --- | --- |
+| Full test suite | `PDF_BRANDING_REAL_TESTS=1 python -m pytest -q`: **225 passed, 0 failed, 0 skipped**, 233.08 seconds. [JUnit](tmp/roadmap_validation/tests.xml) |
+| Full-library inventory | **803 PDFs / 10,876 pages**; 801 teaching PDFs classified, 2 administrative exclusions, 0 unclassified, 0 unreadable. [Inventory](tmp/regression_inventory/inventory.md) |
+| Representative real-PDF matrix | **21 PDFs / 70 pages passed**, covering all 20 class/subject pairs, 7 document families, and observed layout candidates. Source hashes unchanged; all review bundles generated. [Matrix](tmp/roadmap_validation/representatives/matrix.md) |
+| Measurement and Motion v3.5.0 | **7 completed / 70 pages**, including the previously failing 20-page Race PDF. Published to `v3_output_350`; all 7 output hashes/cache records and review links verified. [Manifest](v3_output_350/batch_manifest.json) |
+| Visual review | Sampled current contact sheets for designed/scanned artwork, notes, NCERT, framed worksheets, dense maths, diagrams and tables. Optics page 3 logo and background corrected. Independent Poppler Key Points page 1 comparison: **0 changed body pixels outside approved regions**. [Evidence](tmp/roadmap_validation/poppler/verification.json) |
+| Worker benchmark | Same 21 PDFs / 70 pages: 1 worker **154.553 s / 422.59 MB RSS**; 2 workers **106.844 s / 820.35 MB**; 4 workers **101.684 s / 1148.96 MB**. All output page pixels/dimensions identical; source hashes unchanged. Recommend **1 worker** with the measured 1049.68 MB available-memory reserve. [Benchmark](tmp/roadmap_validation/benchmark/benchmark.md) |
+| Cancellation/resume and transaction faults | Included in the passing full suite: real parallel failure isolation, cancellation/resume, cached resume, journal recovery, report/PDF rollback and injected lock/write failures. |
+| GUI validation | **11 GUI tests pass**, including real withdrawn Tk -> actual batch -> embedded contact review -> cached resume with unchanged hashes. Visible desktop/manual interaction was not inspected; this is widget/pipeline validation. |
+| Full-library branded regeneration | **Not run.** Only the seven reported chapter PDFs were published. All **803 original source SHA-256 hashes remain unchanged**. Full-library rendering and review of its flagged pages remain rollout work. |
 
-### V3.4.6 refinement
-- Prominent chapter-title detection added.
-- Designed opener decision is page-local, not defeated by repeated headers found only on later pages.
-- Designed pages suppress generic header and footer.
-- QA exempts intentionally preserved designed pages from the repeated-footer replacement requirement.
+## Acceptance limits
 
-### Transparent-logo repair
-- Both school emblem PNG assets are verified RGBA with fully transparent corners.
-- The old visible box was caused by an inaccurate legacy-logo cleanup fill, not by missing PNG transparency.
-- V3.4.6 no longer clears the whole designed-page logo rectangle. It performs selective foreground-pixel cleanup, leaving the surrounding artwork/gradient untouched.
-- Searchable legacy text is redacted only at its tight hit box; raster/vector legacy marks are masked selectively.
-- Regression tests verify alpha transparency, flat-background matching, and non-flattening on textured/gradient backgrounds.
+QA checks configured academic content, geometry, rendering, and legacy branding; it does not prove educational answers correct. Header/footer OCR recognizes configured words in limited rendered bands. Diagram/table inventory flags identify review candidates. Contact sheets select representative pages plus every issue/low-confidence page; they do not claim every library page received manual review.
 
-### V3.4.6 faint legacy-logo ghost repair
-- Designed-page cleanup is now bidirectional: it removes legacy foreground that is either lighter **or darker** than the sampled local background.
-- The pixel threshold adapts to local edge noise/gradient but is capped so dark-blue/black ALLEN antialiasing cannot survive as a faint ghost.
-- A wider protected outer frame preserves page borders and lane separators touching the fallback logo rectangle.
-- The cleanup mask grows slightly after detection to remove antialiased outlines before the transparent school emblem is placed.
+Cropping stays opt-in. Some original footers are intentionally preserved where their replacement would overlap protected content; those pages are highlighted for review. Native OCR emitted tiny clipped-glyph messages during some runs; the completed jobs had no QA errors. The automated checks and sampled visual review do not claim manual inspection of every library page.
 
+[Machine-readable validation summary](tmp/roadmap_validation/validation_summary.json) records source integrity, tests, benchmark, representative scope and published chapter hashes. Historical v3.4.6.post1 chapter evidence remains separate; it is not v3.5.0 whole-library certification.
 
-### V3.4.6 complete legacy-logo cleanup
-- Real-file inspection confirmed a low-contrast ALLEN shadow could remain behind the transparent school emblem.
-- Flat designed logo zones now use a protected, feathered full-background rebuild instead of relying only on foreground thresholding.
-- Textured / non-uniform artwork still uses selective cleanup.
-- Added a regression fixture using the sampled residual shadow colour `(66, 53, 42)` on the brown Key Points background `(71, 51, 26)`.
-- Regression suite: **48 passed**.
+## Reproducible commands
 
-### V3.4.6.post1 real-library correction (2026-10-07)
-
-- Race pages 19-20 failed because QA tokenized superscript ordinals differently between source and output. Shared word extraction fixes this without lowering the 98.5% threshold.
-- Word-level region checks retain academic words in mixed header/body blocks and prevent inserted branding from hiding true body-text loss.
-- QA-failed batches now exit with code `2`.
-- Flat Key Points logo repairs reuse verified blank native PDF artwork, preserving the source color space/transparency instead of baking a viewer-dependent RGB patch. Textured regions keep the selective fallback.
-- Regenerated the seven selected outputs: **7 completed, 0 QA failures**, with **100% checked body-word retention** and unchanged source SHA-256 hashes.
-- Rendering comparison: 64 pages match their previous render exactly; six Key Points pages change only within their logo regions. Poppler and MuPDF both show matching page-one repair/background colors.
-- Original outputs, reports, and changed source files are retained in `_backups/measurement-motion-20261007-qa-fix/`. The machine-readable audit is `v3_output_346/_reports/measurement_motion_validation.json`.
+See [README.md](README.md) for installation, GUI, batch, inventory, matrix, cancellation/resume, and benchmark commands. Use dedicated validation output folders for worker comparisons and fault recovery. Retain fixture hashes and machine-readable reports with final evidence.

@@ -13,6 +13,8 @@ from pdf_branding import batch
 @pytest.mark.parametrize("status, expected_exit", [("completed", 0), ("qa_failed", 2), ("failed", 2)])
 def test_batch_exit_reports_processing_failure(tmp_path: Path, monkeypatch, status: str, expected_exit: int):
     source = tmp_path / "source" / "Race.pdf"
+    source.parent.mkdir()
+    source.write_bytes(b"source fixture")
     output_root = tmp_path / "output"
     failed_output = output_root / "Race.qa_failed.pdf"
     meta = SimpleNamespace(class_name="6", subject="physics", chapter="Measurement and Motion", material_type="DPP")

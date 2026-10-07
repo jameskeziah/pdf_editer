@@ -1,218 +1,145 @@
-# PDF Branding V3.4.6 — Strategy-Driven Safe Renderer
+# PDF Branding v3.5.0
 
-V3.4.6 uses a strict pipeline:
+PDF Branding processes school PDFs through a planned pipeline:
 
-**discover → metadata → whole-document analysis → PagePlan → render → QA → atomic publish**
+**discover -> classify -> analyze -> PagePlan -> render -> QA -> publish**
 
-The renderer does not guess what to erase. Every destructive action must be declared by the analyzer in the page's plan first.
+Source PDFs stay unchanged. Each page plan declares permitted cleanup, protected academic text and artwork, page strategy, and any source-to-output transform. Outputs that fail QA use `*.qa_failed.pdf`; they do not replace an existing production PDF.
 
-## What V3.4.6 adds
+## Implemented features
 
-### Transparent logo replacement without a visible box
+- Class, subject, chapter, and material filters, plus a hashed real-library inventory and representative regression matrix.
+- Whole-document header/footer detection using text, vector rules, and raster footer bands.
+- Protected text, diagrams, tables, and images. Illustrated chapter openers and Key Points pages retain their designed layout and suppress generic headers/footers.
+- Transparent school emblems, selective textured-background cleanup, and native PDF background repair for verified flat logo fields, preserving color space and transparency.
+- Header/footer OCR with the bundled English model for configured legacy words in raster branding bands. Unsafe recognized boundaries or OCR failures are held for QA review.
+- QA for page count/size, body words and positions, protected geometry, rendered body/visual changes, and legacy text/raster remnants. Image-only pages receive rendered-content checks rather than an automatic text-retention pass.
+- Recoverable PDF/plan/QA publication, full-content cache checks, SQLite checkpoints, bounded worker scheduling, cancellation, and processing-error retries.
+- A persistent Tkinter GUI with filters, live status, contact-sheet review, cancel, resume, and retry controls.
+- A benchmark measuring serial/parallel throughput, process-tree memory, output pixel equality, and source hashes.
 
-The PNG assets already contain a true alpha channel. The visible rectangle seen on dark Key Points pages came from the *legacy-logo cleanup fill*, not from the logo PNG itself. V3.4.6 fixes that by:
+The default renderer preserves body coordinates. Crop rebuilding is opt-in through `layout.allow_rebuild_crop` in a JSON profile; a safe plan and explicit transform are required, and QA checks the mapped result.
 
-- estimating the dominant local background colour around the old logo;
-- **not** redacting the entire designed-page logo rectangle;
-- selectively masking only the bright/dark legacy-logo foreground pixels, preserving gradients and textures underneath;
-- tightly redacting searchable legacy text only where it actually occurs;
-- then placing the transparent school emblem over the preserved artwork.
+## Install and start
 
-This keeps the old ALLEN artwork removed while avoiding the grey/brown boxed-sticker effect.
-
-### Explicit page strategies
-
-Every page now receives one semantic strategy:
-
-```text
-STANDARD_HEADER_FOOTER_REPLACEMENT
-FIRST_PAGE_LARGE_LOGO_REPLACEMENT
-DESIGNED_PAGE_PRESERVE
-DESIGNED_PAGE_LOGO_ONLY
-LEGACY_ONLY_CLEANUP
-LEAVE_UNTOUCHED
-```
-
-This is separate from the low-level render method (`overlay`, `preserve`, etc.). It makes the plan report explain *why* a page is being modified.
-
-### Designed chapter pages are protected
-
-An illustrated chapter-opening Notes page is classified as a designed page when it contains the chapter title, has substantial imagery, and has no verified legacy top logo. V3.4.6 then forbids the normal SSKEMS header on that page.
-
-Designed pages may still receive:
-
-- verified ALLEN logo-only replacement,
-- vertical publisher/module-text cleanup,
-- verified in-place footer replacement.
-
-The academic artwork remains at 1:1 coordinates.
-
-### Stronger footer detection
-
-Repeated footer analysis combines:
-
-- repeated text signatures,
-- vector horizontal rules / filled bands,
-- low-resolution raster band analysis.
-
-The raster detector is specifically for flattened/light-blue source page-number bands that are not exposed as simple PDF drawing rectangles.
-
-When a repeated old footer is verified, V3.4.6 redacts the complete old footer region and then draws the SSKEMS footer inside the same area. It does not append a second footer below it.
-
-### Adaptive header footprint
-
-Normal dynamic header target: `54 pt`  
-Maximum adaptive header footprint: `76 pt`
-
-The old-brand cleanup band and the visible header are still independent. A large first-page ALLEN logo can require a deeper cleanup than the visible SSKEMS header, while the cleanup remains hard-bounded before the first verified academic body content.
-
-### QA gates
-
-QA checks include:
-
-- page count,
-- page dimensions,
-- body-text retention,
-- body-coordinate shift,
-- searchable ALLEN remnants,
-- remaining vertical legacy text,
-- generic header accidentally assigned to a designed page,
-- high-confidence repeated footer without an in-place replacement plan.
-
-A failed file is saved as `*.qa_failed.pdf`; it never silently becomes the production output.
-
-## Local correction: V3.4.6.post1
-
-- QA compares individual PDF words using the same extraction on both sides. Superscripts such as `10th` and `19th`, and words spanning font changes, no longer produce false text-loss errors.
-- Header, footer, logo, and approved cleanup regions are excluded from both sides, so new branding cannot hide missing academic text. Body words in a block that also contains a header are still checked individually. The 98.5% retention threshold is unchanged.
-- A batch containing `qa_failed` now exits with code `2`, matching processing failures.
-- Flat designed-page logo repairs reuse a verified blank portion of the source PDF background, preserving its color space and transparency across PDF viewers. Textured backgrounds retain the selective repair path.
-- The engine cache version changes to `3.4.6.post1`; old cached QA results must be verified again.
-
-## Install on Windows
-
-Open PowerShell inside the extracted `pdf_branding_v3_4_6` folder:
+From PowerShell in this project folder:
 
 ```powershell
 py -m venv .venv
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-```
-
-Verify:
-
-```powershell
+python -m pip install -r requirements.txt
 python -m pytest -q
 ```
 
-Expected:
+If PowerShell blocks activation, use `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` in that terminal, then activate again. Tkinter must be available in the Python installation for the GUI.
 
-```text
-48 passed
-```
-
-## Recommended next step: plans only
-
-Place or copy your existing `foundation_notes` folder into this project, then run:
+Start the GUI with:
 
 ```powershell
-python -m pdf_branding.batch `
-".\foundation_notes" `
-".\v3_output" `
---class-filter 6 `
---subject-filter physics `
---chapter-filter "Measurement and Motion" `
---analyze-only `
---preview-plans
+python -m pdf_branding.gui
 ```
 
-Nothing is modified in analyze-only mode.
+`Start_GUI.bat` launches the same application. GUI settings persist under `%LOCALAPPDATA%\PDFBranding\gui_settings.json`.
 
-Inspect:
+Choose the source folder, output folder, and profile, then use **Classify**, **Analyze + review**, or **Process + QA**. The results table shows status, family, attempts, and elapsed time. Select a row to inspect its contact sheets or open its PDF/review. **Cancel** stops new jobs while active documents finish safely; **Resume** processes remaining jobs and verifies completed outputs before skipping them.
 
-```text
-v3_output\_reports\...\*.plan.json
-v3_output\_plan_previews\...\page_###_plan.png
-```
+## CLI workflow
 
-Preview colours:
-
-- **Red** = verified legacy cleanup
-- **Green** = new dynamic header footprint
-- **Blue** = in-place footer replacement
-- **Purple** = logo-only replacement on designed pages
-- **Orange** = vertical publisher/module-text cleanup
-
-The bottom preview label also shows the semantic V3.4.6 page strategy.
-
-## What to approve before rendering
-
-For Measurement and Motion, check at least:
-
-- illustrated chapter-opening Notes page → `DESIGNED_PAGE_PRESERVE`, no green generic header;
-- Key Points / dark designed page → `DESIGNED_PAGE_LOGO_ONLY` when a logo is verified;
-- Test first page → `FIRST_PAGE_LARGE_LOGO_REPLACEMENT`;
-- Test later pages → standard top-strip replacement;
-- NCERT / Exercise / DPP pages → repeated source header replaced without touching the first question;
-- old blue page-number strips → blue footer replacement rectangle should cover the source strip;
-- vertical publisher text → orange rectangle should cover it without touching body content.
-
-Only after those previews look correct should you run the renderer:
+Classify a selected chapter without producing branded PDFs:
 
 ```powershell
-python -m pdf_branding.batch `
-".\foundation_notes" `
-".\v3_output" `
---class-filter 6 `
---subject-filter physics `
---chapter-filter "Measurement and Motion" `
---overwrite
+python -m pdf_branding.batch ".\foundation_notes" ".\v3_output_350" `
+  --class-filter 6 --subject-filter physics `
+  --chapter-filter "Measurement and Motion" --dry-run
 ```
 
-## Architecture status
+Generate plans and source/plan review images:
 
-1. DocumentProfile + PagePlan — implemented
-2. analysis separated from rendering — implemented
-3. whole-document repeated header/footer detection — implemented
-4. automatic crop recommendation — implemented, disabled by default
-5. output QA + legacy detection — implemented
-6. atomic saves + cleanup — implemented
-7. caching/performance + optional workers — implemented
-8. JSON branding profiles — implemented
-9. regression suite — **48 passing tests**
-10. GUI — implemented
+```powershell
+python -m pdf_branding.batch ".\foundation_notes" ".\v3_output_350" `
+  --class-filter 6 --subject-filter physics `
+  --chapter-filter "Measurement and Motion" `
+  --analyze-only --preview-plans --contact-sheets
+```
 
-The remaining gate is real-library visual approval, not more blind redaction rules.
+Analyze-only writes reports and previews; it leaves source and branded output PDFs unchanged. Review colors are red for cleanup, green for a header, blue for a footer, purple for a logo, and orange for side text. Reviews include all QA-issue and low-confidence pages, even when these exceed the representative-page budget.
 
+Process the same chapter:
 
-## V3.4.6 designed-page refinement
+```powershell
+python -m pdf_branding.batch ".\foundation_notes" ".\v3_output_350" `
+  --class-filter 6 --subject-filter physics `
+  --chapter-filter "Measurement and Motion" --workers 2 --contact-sheets
+```
 
-V3.4.6 strengthens first-page chapter-opener recognition. A Notes page is treated as a designed opener when it has a prominent chapter title near the top, visual/layout signals, and does not itself carry the recurring structural source header used on later pages. This works even when the document as a whole has repeated NCERT/ALLEN headers.
+Use `--overwrite` to regenerate existing outputs and `--profile ".\profiles\custom.json"` for another validated profile. `--material-filter`, `--limit`, and `--show-skipped` narrow or explain a run.
 
-Designed pages now:
-- never receive the generic SSKEMS header;
-- never receive the generic dynamic footer;
-- remain at 1:1 geometry;
-- can still remove verified vertical publisher text;
-- use logo-only replacement when a verified legacy logo is present.
+Resume or explicitly retry unsuccessful jobs:
 
-## V3.4.6 designed-page margin cleanup
+```powershell
+python -m pdf_branding.batch ".\foundation_notes" ".\v3_output_350" --resume --workers 2
+python -m pdf_branding.batch ".\foundation_notes" ".\v3_output_350" --retry-failed --workers 2
+```
 
-V3.4.6 keeps the designed-page preserve/logo-only strategies from V3.4.1 and strengthens verified side-margin cleanup. Some source PDFs expose the vertical PNCF/LIVE Module publisher strip as a tall narrow text block without reliable rotation metadata. V3.4.6 now detects that case conservatively only when the block is in a side margin, has strongly vertical geometry, and matches configured legacy side-text terms. The designed artwork, chapter title, and body remain 1:1; no generic header or footer is inserted on designed pages.
+`--retries 2` retries processing errors up to twice; QA failures are not retried automatically. `--retry-failed` explicitly selects failed, QA-failed, interrupted, and cancelled jobs. `--no-cache` forces processing. With `--resume`, verified completed outputs may be skipped even when `--overwrite` is also present.
 
-## V3.4.6: faint ALLEN ghost removal
+For cancellation from another terminal, pass `--cancel-file ".\stop-branding.txt"`; creating that file stops scheduling. Remove it before resuming. Workers range from 1 to 8, capped by CPU count. Active work is bounded by the worker count.
 
-V3.4.4 removed bright legacy pixels correctly but could leave a faint dark-blue/black ALLEN outline on a dark designed background. V3.4.6 no longer assumes the old logo is brighter than the page. It uses adaptive bidirectional colour-distance cleanup, then expands the detected mask slightly to remove antialiased fringes. This applies to designed Key Points pages without flattening the complete replacement rectangle.
+Batch exit codes are `0` for success, `2` when a job failed processing or QA, and `130` for requested cancellation.
 
+## Reports, cache, and recovery
 
-## V3.4.6: complete ALLEN shadow removal on flat designed backgrounds
+| Output artifact | Purpose |
+| --- | --- |
+| Original relative path and PDF filename | QA-passed production output |
+| `*.qa_failed.pdf` | Candidate held for inspection after QA failure |
+| `_reports/<relative folder>/<stem>.plan.json` | Declared strategy, geometry, and cleanup |
+| `_reports/<relative folder>/<stem>.qa.json` | QA metrics, issue codes, and page numbers |
+| `_reviews/<relative folder>/<stem>/index.html` | Source/plan/final contact-sheet review |
+| `_plan_previews/.../page_###_plan.png` | Annotated plans when requested |
+| `batch_report.json` | Records from the current invocation |
+| `batch_manifest.json` | Durable job history exported for review and GUI reload |
+| `.batch_jobs.sqlite3` | SQLite job transitions and attempts |
+| `.pdf_branding_cache.json` | Source/output hashes and passed-QA cache records |
 
-V3.4.5 could still leave a faint low-contrast ALLEN shadow after the bright logo pixels were removed. V3.4.6 adds a two-stage repair:
+PDFs and their plan/QA reports publish through a journaled transaction. Files are staged beside their final destinations before replacement; reports publish before the PDF. Write/replacement errors restore prior final files. An interrupted prepared transaction rolls back when that document is processed again. Transaction backups are removed after a successful commit.
 
-- if the legacy logo sits on a locally flat/background-dominated field, rebuild the protected interior of the logo zone from the sampled local background and then place the transparent school emblem;
-- protect an outer ~2.6 pt frame so nearby page rules / lane separators survive;
-- feather the repair edge to avoid a visible rectangular seam;
-- if the region is genuinely textured, fall back to the selective pixel-mask cleanup instead of flattening artwork.
+Keep the output database and any `*.publication.json` recovery journals when resuming. OS locks release after a process exits; persistent lock-file names alone do not indicate active work. A pending publication journal prevents a cached skip.
 
-This removes both the bright ALLEN letters and the faint dark shadow/antialiasing visible on the Key Points pages.
+A cache hit requires matching source/output SHA-256, profile settings and configured asset bytes, engine version, and a prior passed-QA record. Same-size corruption, changed logos, and stale engine versions trigger processing again. Profiles validate structure, numeric ranges, colors, and assets before processing.
+
+## Inventory, regression matrix, and benchmark
+
+Build a read-only library inventory with classification, layout flags, hashes, and representative selection:
+
+```powershell
+python -m pdf_branding.regression inventory ".\foundation_notes" ".\validation\inventory"
+```
+
+Render a representative regression matrix with QA and review bundles:
+
+```powershell
+python -m pdf_branding.regression matrix ".\foundation_notes" ".\validation\matrix" `
+  --manifest ".\validation\inventory\inventory.json"
+```
+
+Diagram/table flags are review candidates derived from geometry. Missing real-source layouts are recorded explicitly; synthetic coverage stays distinct from real-library validation.
+
+Measure worker counts against the same selected fixtures:
+
+```powershell
+python -m pdf_branding.benchmark ".\foundation_notes" ".\validation\benchmark" `
+  --manifest ".\tests\fixtures\real_matrix.json" --workers 1 2 4
+```
+
+The benchmark records throughput, sampled process-tree RSS, and each page's rendered pixel signature. Worker recommendations use measured successful runs; QA failures remain failures. `--selection-manifest` on the batch command can process fixture lists or inventory representatives.
+
+Bundled OCR provenance and hashes are in [assets/ocr/README.md](assets/ocr/README.md). Header/footer OCR is limited to configured legacy words and cannot certify arbitrary branding elsewhere on a page.
+
+## Release validation
+
+Implementation and evidence are tracked in [BUILD_STATUS.md](BUILD_STATUS.md).
+
+**v3.5.0:** 225 tests pass; 21 real representative PDFs and all 7 Measurement and Motion PDFs pass QA. The inventory accounts for all 803 files (801 teaching PDFs, 2 administrative exclusions, no unclassified files); all original source hashes remain unchanged.
+
+Corrected chapter outputs and contact reviews are in `v3_output_350`. One worker is recommended on the measured machine; cropping remains opt-in. Full-library rendering and review of its flagged pages remain rollout work. See [BUILD_STATUS.md](BUILD_STATUS.md) for exact scope, timings, memory, GUI evidence and limits.

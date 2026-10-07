@@ -116,6 +116,15 @@ class PageAnalysis:
     local_logo_background: tuple[float, float, float] | None = None
     large_image_ratio: float = 0.0
     reasons: list[str] = field(default_factory=list)
+    protected_text_rects: list[RectData] = field(default_factory=list)
+    protected_visual_rects: list[RectData] = field(default_factory=list)
+    text_extraction_ok: bool = True
+    image_only: bool = False
+    legacy_logo_rects: list[RectData] = field(default_factory=list)
+    legacy_image_digests: list[str] = field(default_factory=list)
+    raster_ocr_checked: bool = False
+    raster_ocr_error: str | None = None
+    raster_ocr_unsafe: bool = False
 
 
 @dataclass(slots=True)
@@ -136,6 +145,37 @@ class PagePlan:
     recommended_crop_bottom: float = 0.0
     crop_is_safe: bool = False
     reasons: list[str] = field(default_factory=list)
+    protected_text_rects: list[RectData] = field(default_factory=list)
+    protected_visual_rects: list[RectData] = field(default_factory=list)
+    text_extraction_ok: bool = True
+    image_only: bool = False
+    source_clip_rect: RectData | None = None
+    source_to_output_matrix: tuple[float, float, float, float, float, float] | None = None
+    legacy_logo_rects: list[RectData] = field(default_factory=list)
+    legacy_image_digests: list[str] = field(default_factory=list)
+    raster_ocr_checked: bool = False
+    raster_ocr_error: str | None = None
+    raster_ocr_unsafe: bool = False
+    unsafe_image_cleanup: bool = False
+    additional_logo_rects: list[RectData] = field(default_factory=list)
+
+    def map_source_rect(self, rect: RectData) -> RectData:
+        if self.source_to_output_matrix is None:
+            return rect
+        import pymupdf as fitz
+        return RectData.from_rect(fitz.Rect(*rect.as_tuple()) * fitz.Matrix(*self.source_to_output_matrix))
+
+    def prepare_crop_geometry(self, width: float, height: float) -> None:
+        top, bottom = self.recommended_crop_top, self.recommended_crop_bottom
+        header = self.header_rect.y1 if self.header_rect else 0.0
+        footer = self.footer_rect.y0 if self.footer_rect else height
+        if top < 0 or bottom < 0 or height - top - bottom <= 1 or footer <= header:
+            raise ValueError("Invalid source crop or destination content rectangle")
+        self.source_clip_rect = RectData(0, top, width, height - bottom)
+        scale = min(1.0, (footer - header) / (height - top - bottom))
+        dx = (width - width * scale) / 2
+        dy = header + ((footer - header) - (height - top - bottom) * scale) / 2 - top * scale
+        self.source_to_output_matrix = (scale, 0.0, 0.0, scale, dx, dy)
 
 
 @dataclass(slots=True)

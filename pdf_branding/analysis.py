@@ -8,9 +8,12 @@ from dataclasses import dataclass
 
 import pymupdf as fitz
 
+from .image_info import image_info as page_image_info
+
 from .config import BrandingProfile
 from .metadata import norm
 from .models import DocumentMeta, PageAnalysis, PageType, RectData, RepeatedBands
+from .raster_brand import scan_header
 
 
 @dataclass(slots=True)
@@ -27,6 +30,7 @@ class PageFeatures:
     top_lines: list[float]
     bottom_lines: list[float]
     bottom_visual_bands: list[tuple[float, float, float]]
+    text_extraction_ok: bool = True
 
 
 def _block_text(block: dict) -> str:
@@ -262,23 +266,26 @@ def extract_page_features(doc: fitz.Document) -> list[PageFeatures]:
     out: list[PageFeatures] = []
     for i in range(len(doc)):
         page = doc[i]
+        text_extraction_ok = True
         try:
             td = page.get_text("dict")
             blocks = td.get("blocks", [])
         except Exception:
             blocks = []
+            text_extraction_ok = False
         try:
             drawings = page.get_drawings()
         except Exception:
             drawings = []
         try:
-            image_info = page.get_image_info(xrefs=True)
+            image_info = page_image_info(page)
         except Exception:
             image_info = []
         try:
             plain = page.get_text("text")
         except Exception:
             plain = ""
+            text_extraction_ok = False
         try:
             blank = not plain.strip() and not page.get_images(full=True) and not drawings
         except Exception:
@@ -296,6 +303,7 @@ def extract_page_features(doc: fitz.Document) -> list[PageFeatures]:
             top_lines=_wide_horizontal_line_ys(drawings, page.rect.width, page.rect.height, True),
             bottom_lines=_wide_horizontal_line_ys(drawings, page.rect.width, page.rect.height, False),
             bottom_visual_bands=_visual_horizontal_bands(page, bottom=True),
+            text_extraction_ok=text_extraction_ok,
         ))
     return out
 
@@ -601,42 +609,97 @@ def _known_headerish_text(text_n: str, meta: DocumentMeta, legacy_terms: tuple[s
     return False
 
 
-def content_bounds(features: PageFeatures, meta: DocumentMeta, repeated: RepeatedBands, legacy_terms: tuple[str, ...]) -> tuple[float | None, float | None]:
-    first: float | None = None
-    last: float | None = None
+def _academic_text_rects(features: PageFeatures, meta: DocumentMeta, repeated: RepeatedBands, legacy_terms: tuple[str, ...]) -> list[fitz.Rect]:
+    result: list[fitz.Rect] = []
     for block in features.text_blocks:
         if block.get("type") != 0:
             continue
-        text = _block_text(block).strip()
-        if not text:
+        for line in block.get("lines", []):
+            text = "".join(s.get("text", "") for s in line.get("spans", [])).strip()
+            if not text or _is_vertical_line(line):
+                continue
+            r = fitz.Rect(line.get("bbox", block.get("bbox", (0, 0, 0, 0))))
+            text_n, sig = norm(text), _repeat_signature(text)
+            if sig in repeated.header_signatures and r.y1 <= max(repeated.header_bottom + 12, features.height * 0.20):
+                continue
+            if _known_headerish_text(text_n, meta, legacy_terms) and r.y0 <= max(repeated.header_bottom + 20, features.height * 0.16):
+                continue
+            if r.y1 <= features.height * 0.16 and re.search(r"\bncert\s+(?:basics|course)\s*:?\s*class\s*\d+\b", text_n):
+                continue
+            if repeated.footer_top is not None and r.y0 >= repeated.footer_top:
+                if sig in repeated.footer_signatures or re.fullmatch(r"\[?\d+\]?|page\s+\d+", text_n):
+                    continue
+            if not r.is_empty:
+                result.append(r)
+    return result
+
+
+def content_bounds(features: PageFeatures, meta: DocumentMeta, repeated: RepeatedBands, legacy_terms: tuple[str, ...]) -> tuple[float | None, float | None]:
+    rects = _academic_text_rects(features, meta, repeated, legacy_terms)
+    return (min((r.y0 for r in rects), default=None), max((r.y1 for r in rects), default=None))
+
+
+def _subtract_regions(rect: fitz.Rect, exclusions: list[fitz.Rect]) -> list[fitz.Rect]:
+    """Keep every portion of an image outside verified legacy regions."""
+    pieces = [rect]
+    for excluded in exclusions:
+        kept: list[fitz.Rect] = []
+        for piece in pieces:
+            cut = piece & excluded
+            if cut.is_empty:
+                kept.append(piece)
+                continue
+            for coords in (
+                (piece.x0, piece.y0, piece.x1, cut.y0),
+                (piece.x0, cut.y1, piece.x1, piece.y1),
+                (piece.x0, cut.y0, cut.x0, cut.y1),
+                (cut.x1, cut.y0, piece.x1, cut.y1),
+            ):
+                candidate = fitz.Rect(coords)
+                if candidate.width > 0.1 and candidate.height > 0.1:
+                    kept.append(candidate)
+        pieces = kept
+    return pieces
+
+
+def protected_geometry(features: PageFeatures, meta: DocumentMeta, repeated: RepeatedBands, profile: BrandingProfile,
+                       legacy: list[fitz.Rect], vertical: list[fitz.Rect]) -> tuple[list[RectData], list[RectData]]:
+    """Record academic text, images and paths; omit verified bands/backgrounds."""
+    excluded = legacy + vertical
+    text = [r for r in _academic_text_rects(features, meta, repeated, profile.legacy_terms)
+            if not any(ex.contains(r) for ex in excluded)]
+    visual: list[fitz.Rect] = []
+    page_rect = fitz.Rect(0, 0, features.width, features.height)
+    fallback_target = profile.raw.get("legacy", {}).get("first_page_cleanup_targets", {}).get(meta.material_type, 0)
+    for drawing in features.drawings:
+        r = fitz.Rect(drawing.get("rect", (0, 0, 0, 0))) & page_rect
+        # Bounding boxes of strokes may have zero area; include their actual ink.
+        pad = max(0.5, float(drawing.get("width") or 0) / 2)
+        r = fitz.Rect(r.x0 - pad, r.y0 - pad, r.x1 + pad, r.y1 + pad) & page_rect
+        if r.is_empty:
             continue
-        if any(_is_vertical_line(line) for line in block.get("lines", [])):
+        if r.width >= features.width * .80 and r.height >= features.height * .80:
+            continue  # full-page background or border; rendered QA still checks it
+        header_band = (r.width >= features.width * .45 and r.height <= 45
+                       and repeated.header_confidence >= .65 and r.y1 <= repeated.header_bottom + 3)
+        footer_band = (r.width >= features.width * .60 and r.height <= 60
+                       and repeated.footer_confidence >= .65 and repeated.footer_top is not None
+                       and r.y0 >= repeated.footer_top - 3)
+        first_logo_art = (features.index == 0 and fallback_target and r.y1 <= fallback_target + 1
+                          and features.width * .30 <= r.x0 and r.x1 <= features.width * .70
+                          and r.width <= features.width * .48 and r.height <= features.height * .13)
+        if header_band or footer_band or first_logo_art or any(ex.contains(r) for ex in excluded):
             continue
-        r = fitz.Rect(block.get("bbox", (0, 0, 0, 0)))
-        text_n = norm(text)
-        sig = _repeat_signature(text)
-        # Repeated top-of-page text is boilerplate even when it does not contain the
-        # brand name. Real source PDFs use labels such as "NCERT Basics : Class 6"
-        # or "NCERT Course : Class 6" above the academic body. Treat those repeated
-        # signatures as header content so they never become the body safety boundary.
-        if (
-            sig in repeated.header_signatures
-            and r.y1 <= max(repeated.header_bottom + 12, features.height * 0.20)
-        ):
+        visual.extend(_subtract_regions(r, excluded))
+    for info in features.image_info:
+        r = fitz.Rect(info.get("bbox", (0, 0, 0, 0))) & page_rect
+        footer_band = (r.width >= features.width * .60 and r.height <= 60
+                       and repeated.footer_confidence >= .65 and repeated.footer_top is not None
+                       and r.y0 >= repeated.footer_top - 3)
+        if r.is_empty or footer_band:
             continue
-        if (
-            _known_headerish_text(text_n, meta, legacy_terms)
-            and r.y0 <= max(repeated.header_bottom + 20, features.height * 0.16)
-        ):
-            continue
-        # A few recurring legacy header labels are not always repeated in short PDFs.
-        if r.y1 <= features.height * 0.16 and re.search(r"\bncert\s+(?:basics|course)\s*:?\s*class\s*\d+\b", text_n):
-            continue
-        if repeated.footer_top is not None and r.y0 >= repeated.footer_top and (text_n.startswith("page") or len(text_n) < 60):
-            continue
-        first = r.y0 if first is None else min(first, r.y0)
-        last = r.y1 if last is None else max(last, r.y1)
-    return first, last
+        visual.extend(_subtract_regions(r, excluded))
+    return [RectData.from_rect(r) for r in text], [RectData.from_rect(r) for r in visual]
 
 
 def sample_local_background(page: fitz.Page, rect: fitz.Rect) -> tuple[float, float, float]:
@@ -721,10 +784,49 @@ def analyze_document(doc: fitz.Document, meta: DocumentMeta, profile: BrandingPr
     repeated = detect_repeated_bands_from_features(features)
     side_width = float(profile.layout("side_text_width", 68))
     analyses: list[PageAnalysis] = []
+    # Repetition locates a structural band, but only verified image bytes or
+    # independent object OCR authorize removal of a bitmap publisher mark.
+    verified_digests = {bytes.fromhex(value) for value in profile.raw.get("legacy", {}).get("raster_logo_digests", [])}
 
     for f in features:
         page = doc[f.index]
         legacy = find_legacy_rects(page, f, profile)
+        footer_legacy: list[fitz.Rect] = []
+        header_band = fitz.Rect(0, 0, f.width, min(140, f.height * .17))
+        footer_band = fitz.Rect(0, f.height - min(90, f.height * .13), f.width, f.height)
+        image_digests = []
+        ocr_checked, ocr_error, ocr_unsafe = False, None, False
+        for image in f.image_info:
+            r = fitz.Rect(image.get("bbox", (0, 0, 0, 0)))
+            verified_logo = image.get("digest") in verified_digests and (header_band.contains(r) or footer_band.contains(r))
+            if verified_logo:
+                target = footer_legacy if footer_band.contains(r) else legacy
+                target.append(fitz.Rect(max(0, r.x0 - 4), max(0, r.y0 - 4), min(f.width, r.x1 + 4), min(f.height, r.y1 + 4)))
+                image_digests.append(image["digest"].hex())
+        unknown_band_images = any(
+            image.get("digest") not in verified_digests
+            and any(fitz.Rect(image["bbox"]).intersects(band) for band in (header_band, footer_band))
+            for image in f.image_info
+        )
+        if unknown_band_images and profile.raw.get("assets", {}).get("ocr_eng"):
+            scan = scan_header(page, profile)
+            ocr_checked, ocr_error, ocr_unsafe = True, scan.error, bool(scan.unsafe_hits)
+            for region, digest in scan.hits:
+                target = footer_legacy if footer_band.contains(region) else legacy
+                target.append(fitz.Rect(max(0, region.x0-4), max(0, region.y0-4), min(f.width, region.x1+4), min(f.height, region.y1+4)))
+                image_digests.append(digest)
+        # Catalog and OCR may independently verify the same image when an
+        # unknown image also overlaps its band. Merge each band independently
+        # so one mark produces one surgical replacement.
+        for regions in (legacy, footer_legacy):
+            merged_regions = []
+            for region in sorted(regions, key=lambda rect: (rect.y0, rect.x0)):
+                matches = [existing for existing in merged_regions if _near(existing, region, 5)]
+                for existing in matches:
+                    region |= existing
+                    merged_regions.remove(existing)
+                merged_regions.append(region)
+            regions[:] = merged_regions
         vertical = find_vertical_text_rects(f, side_width, profile.side_text_terms)
         first_y, last_y = content_bounds(f, meta, repeated, profile.legacy_terms)
         reasons: list[str] = []
@@ -792,6 +894,10 @@ def analyze_document(doc: fitz.Document, meta: DocumentMeta, profile: BrandingPr
         else:
             ptype = PageType.STANDARD
 
+        protected_text, protected_visual = protected_geometry(f, meta, repeated, profile, legacy + footer_legacy, vertical)
+        all_protected = protected_text + protected_visual
+        first_y = min((r.y0 for r in all_protected), default=None)
+        last_y = max((r.y1 for r in all_protected), default=None)
         bg = sample_local_background(page, legacy[0]) if legacy else None
         analyses.append(PageAnalysis(
             page_number=f.index + 1,
@@ -807,5 +913,14 @@ def analyze_document(doc: fitz.Document, meta: DocumentMeta, profile: BrandingPr
             local_logo_background=bg,
             large_image_ratio=large_image_ratio,
             reasons=reasons,
+            protected_text_rects=protected_text,
+            protected_visual_rects=protected_visual,
+            text_extraction_ok=f.text_extraction_ok,
+            image_only=not bool(f.plain_text.strip()) and bool(f.image_info or f.drawings),
+            legacy_logo_rects=[RectData.from_rect(r) for r in legacy + footer_legacy],
+            legacy_image_digests=sorted(set(image_digests)),
+            raster_ocr_checked=ocr_checked,
+            raster_ocr_error=ocr_error,
+            raster_ocr_unsafe=ocr_unsafe,
         ))
     return repeated, analyses

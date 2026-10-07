@@ -1,3 +1,3 @@
-"""PDF Branding V3.4.6: analyze -> PagePlan -> render -> QA."""
+"""PDF Branding: analyze -> PagePlan -> render -> QA -> atomic publication."""
 
-__version__ = "3.4.6.post1"
+__version__ = "3.5.0"

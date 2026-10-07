@@ -1,0 +1,332 @@
+{
+  "schema_version": 1,
+  "source_root_hint": "foundation_notes",
+  "source_fixture_policy": "Original library references; no source PDFs copied",
+  "sources": [
+    {
+      "source_id": "8th class/math/08 Mensuration/Mensuration_Key point.pdf",
+      "sha256": "004a215048d4af8a8cec6392339aff8b6d05023ff5539f4a0377399df55055f9",
+      "covers": [
+        "class:8",
+        "class_subject:8/mathematics",
+        "family:key_points",
+        "layout:designed",
+        "layout:diagrams",
+        "layout:image_only",
+        "layout:raster_images",
+        "layout:tables",
+        "material:KEY POINTS",
+        "subject:mathematics"
+      ],
+      "family": "key_points",
+      "page_count": 6,
+      "layout_flags": [
+        "designed",
+        "diagrams",
+        "image_only",
+        "raster_images",
+        "tables"
+      ]
+    },
+    {
+      "source_id": "6th class/science/07 Measurement and Motion/NCERT _ solutions_Measurement and Motion.pdf",
+      "sha256": "bc4a11af97f3c691b59dee78a378d99cdd476948053f123afcf09a3988aad40a",
+      "covers": [
+        "class:6",
+        "class_subject:6/physics",
+        "family:ncert",
+        "layout:dense_text",
+        "material:NCERT SOLUTIONS",
+        "subject:physics"
+      ],
+      "family": "ncert",
+      "page_count": 2,
+      "layout_flags": [
+        "dense_text",
+        "raster_images",
+        "tables"
+      ]
+    },
+    {
+      "source_id": "10th class/bio/01 Nutrition/055_Biology_➤_Nutrition_➤_Practice_Practice_Sheet_&_Solutions_.pdf",
+      "sha256": "beae2c71ca24d2cb5adf148fc72797fc296f2731c28df8452ece50d745a184ba",
+      "covers": [
+        "class:10",
+        "class_subject:10/biology",
+        "family:practice_sheet",
+        "material:PRACTICE SHEET",
+        "subject:biology"
+      ],
+      "family": "practice_sheet",
+      "page_count": 2,
+      "layout_flags": [
+        "diagrams",
+        "raster_images",
+        "tables"
+      ]
+    },
+    {
+      "source_id": "7th class/science/05 Physical And Chemical Changes/Test _ solutions_ Physical and Chemical Changes.pdf",
+      "sha256": "c4b19f6b7a815b7bd0affc813e86b5892a79cc7f731d01e288d67f74e4cda6d5",
+      "covers": [
+        "class:7",
+        "class_subject:7/chemistry",
+        "family:test",
+        "material:TEST",
+        "subject:chemistry"
+      ],
+      "family": "test",
+      "page_count": 2,
+      "layout_flags": [
+        "diagrams",
+        "raster_images",
+        "tables"
+      ]
+    },
+    {
+      "source_id": "9th class/math/02 Polynomials/Practice Exercise _ solutions_Polynomials.pdf",
+      "sha256": "e2b9f97c8653c10f3d88b9fd372676dd4267079a9ebc21ad449f8a99a8b80a5a",
+      "covers": [
+        "class:9",
+        "class_subject:9/mathematics",
+        "family:exercise",
+        "material:PRACTICE EXERCISE"
+      ],
+      "family": "exercise",
+      "page_count": 3,
+      "layout_flags": [
+        "diagrams",
+        "raster_images",
+        "tables"
+      ]
+    },
+    {
+      "source_id": "10th class/phy/01 Light - Reflection and Refraction/1192_Physics_➤_Optics_Refraction_Of_Light_➤_Notes_Optics_Refrac.pdf",
+      "sha256": "a46ab6c290b623a5d7c3c6d9bb5d6cd0c2d28ae50a7771f3f10c53edef463dbf",
+      "covers": [
+        "class_subject:10/physics",
+        "family:notes",
+        "layout:blank",
+        "material:NOTES"
+      ],
+      "family": "notes",
+      "page_count": 8,
+      "layout_flags": [
+        "blank",
+        "image_only",
+        "raster_images"
+      ]
+    },
+    {
+      "source_id": "10th class/math/01 Real Numbers/953_Maths_➤_Real_Numbers_➤_Practice_Race_&_Solutions_Real_Numb.pdf",
+      "sha256": "3d4812ac89a86db6d2da0016458539918dc4e6f5193e0d81697bc73d4747d04c",
+      "covers": [
+        "class_subject:10/mathematics",
+        "family:dpp",
+        "material:DPP"
+      ],
+      "family": "dpp",
+      "page_count": 8,
+      "layout_flags": [
+        "diagrams",
+        "raster_images",
+        "tables"
+      ]
+    },
+    {
+      "source_id": "6th class/science/01 Components of Food/NCERT Practice Exercise _ solutions _ Components of Food.pdf",
+      "sha256": "2cc508a46efefc39312794c2f14d6f7ebdca67f69b1e89eca9e95e037a9ba49b",
+      "covers": [
+        "class_subject:6/biology",
+        "material:NCERT PRACTICE"
+      ],
+      "family": "ncert",
+      "page_count": 1,
+      "layout_flags": [
+        "raster_images"
+      ]
+    },
+    {
+      "source_id": "7th class/science/07 Transportation In Plants And Animals/Practice_Test_solutions_Transportation_in_Plants_and_Animals.pdf",
+      "sha256": "d5055f52f54b3cb7491332c521e5320872cc0c99e508f3572c277e35cd290489",
+      "covers": [
+        "class_subject:7/biology",
+        "material:PRACTICE TEST"
+      ],
+      "family": "test",
+      "page_count": 3,
+      "layout_flags": [
+        "diagrams",
+        "raster_images",
+        "tables"
+      ]
+    },
+    {
+      "source_id": "7th class/math/11 Symmetry/Exercise _ solutions_Symmetry.pdf",
+      "sha256": "cb5525f1b97ff44219944551a1938a5a36a5f50d779d33f5e6e6313a22d45332",
+      "covers": [
+        "class_subject:7/mathematics",
+        "material:EXERCISE"
+      ],
+      "family": "exercise",
+      "page_count": 10,
+      "layout_flags": [
+        "diagrams",
+        "raster_images",
+        "tables"
+      ]
+    },
+    {
+      "source_id": "10th class/chem/01 Chemical Reactions and Equations/203_Chemistry_➤_Chemical_Reactions_And_Equations_➤_Practice_Pr.pdf",
+      "sha256": "dfb123b85d0c1cf477049f46eec243c60850537737ff0e8e491d1eb131d3e2f4",
+      "covers": [
+        "class_subject:10/chemistry"
+      ],
+      "family": "notes",
+      "page_count": 2,
+      "layout_flags": [
+        "diagrams",
+        "raster_images",
+        "tables"
+      ]
+    },
+    {
+      "source_id": "6th class/math/12 Ratio and Proportion/Ratio and Proportion_Key point.pdf",
+      "sha256": "b9f9c09228c1019ee0026dd26f6ac0ba648a1ef5759ab89388239c1757af30cb",
+      "covers": [
+        "class_subject:6/mathematics"
+      ],
+      "family": "key_points",
+      "page_count": 2,
+      "layout_flags": [
+        "designed",
+        "raster_images"
+      ]
+    },
+    {
+      "source_id": "6th class/science/02 Sorting Materials into Groups/NCERT_Practice_Exercise_solutions_Sorting_materials_into_groups.pdf",
+      "sha256": "c55827c89941f88816176ce49cda0ff1f123818e217d5ab574c853821980f078",
+      "covers": [
+        "class_subject:6/chemistry"
+      ],
+      "family": "ncert",
+      "page_count": 2,
+      "layout_flags": [
+        "diagrams",
+        "raster_images",
+        "tables"
+      ]
+    },
+    {
+      "source_id": "7th class/science/03 Heat/NCERT Practice Exercise _ solutions_Heat.pdf",
+      "sha256": "0dce6f17172d891d58245ccac1d1b6704464fd57a38821a3cf67ed3138dac447",
+      "covers": [
+        "class_subject:7/physics"
+      ],
+      "family": "ncert",
+      "page_count": 2,
+      "layout_flags": [
+        "diagrams",
+        "raster_images",
+        "tables"
+      ]
+    },
+    {
+      "source_id": "8th class/science/01 Crop Production And Management/Practice Sheet _ Solutions_ Crop Production And Management.pdf",
+      "sha256": "7518777827fe4151e15dda2b6e2d7b9faa684cb6fe7120b9bb8a52b1c98be4a4",
+      "covers": [
+        "class_subject:8/biology"
+      ],
+      "family": "practice_sheet",
+      "page_count": 2,
+      "layout_flags": [
+        "diagrams",
+        "raster_images",
+        "tables"
+      ]
+    },
+    {
+      "source_id": "8th class/science/03 Coal And Petroleum/Practice Sheet _ Solutions_ Coal And Petroleum.pdf",
+      "sha256": "5dc2e98565af9c97c2585d6e279620fb4c16034b5639b79eebc1b2f8c4fa9d6c",
+      "covers": [
+        "class_subject:8/chemistry"
+      ],
+      "family": "practice_sheet",
+      "page_count": 2,
+      "layout_flags": [
+        "diagrams",
+        "raster_images",
+        "tables"
+      ]
+    },
+    {
+      "source_id": "8th class/science/08 Force And Pressure/Force And Pressure_Key Points.pdf",
+      "sha256": "06cd98cb86087179f72fa4d23a7706ae6e528b42451abe7a4a13320e3fe9ffc4",
+      "covers": [
+        "class_subject:8/physics"
+      ],
+      "family": "key_points",
+      "page_count": 2,
+      "layout_flags": [
+        "designed",
+        "raster_images"
+      ]
+    },
+    {
+      "source_id": "9th class/science/03 Atoms And Molecules/Practice Sheet _ Solutions_ Atoms And Molecules.pdf",
+      "sha256": "3413cc29440327ed0d54c8292ddbeed917577fb62bc32ebc049870383209043c",
+      "covers": [
+        "class_subject:9/chemistry"
+      ],
+      "family": "practice_sheet",
+      "page_count": 2,
+      "layout_flags": [
+        "diagrams",
+        "raster_images",
+        "tables"
+      ]
+    },
+    {
+      "source_id": "9th class/science/05 The Fundamental Unit Of Life/Practice Sheet _ Solutions_ The Fundamental Unit Of Life.pdf",
+      "sha256": "82d2624565abf082cac032d09432f4560b3933ec1142acc1116de2c6cdf83359",
+      "covers": [
+        "class_subject:9/biology"
+      ],
+      "family": "practice_sheet",
+      "page_count": 2,
+      "layout_flags": [
+        "diagrams",
+        "raster_images",
+        "tables"
+      ]
+    },
+    {
+      "source_id": "9th class/science/08 Gravitation/Practice Sheet _ Solutions_ Gravitation.pdf",
+      "sha256": "dea0a5c52f23ac9f068919c8fe0cc510eb69c1439e13ea8f59b3497189b2d16f",
+      "covers": [
+        "class_subject:9/physics"
+      ],
+      "family": "practice_sheet",
+      "page_count": 2,
+      "layout_flags": [
+        "diagrams",
+        "raster_images",
+        "tables"
+      ]
+    },
+    {
+      "source_id": "6th class/science/01 Components of Food/Chapter Test_ Components of Food.pdf",
+      "sha256": "80197a12e628956c03841914e013fff21f7d859edba9416196fde74c0cf4c39a",
+      "covers": [
+        "material:CHAPTER TEST"
+      ],
+      "family": "test",
+      "page_count": 5,
+      "layout_flags": [
+        "diagrams",
+        "raster_images",
+        "tables"
+      ]
+    }
+  ]
+}
